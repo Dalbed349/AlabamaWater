@@ -8,4 +8,4 @@
 
 ### Abstract
 
-This project analyzes
+This project analyzes the
