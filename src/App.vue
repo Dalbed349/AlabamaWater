@@ -1,9 +1,14 @@
 <template>
   <div class="IntroGlacier">
     <div class="container"></div>
-    <div class="bg"></div>
+
+    <!-- <div class="bg"></div> -->
+    <div class="darken"></div>
     <div>
-      <h1 class="title2">20 years of Water Quality testing in Alabama</h1>
+      <h1 class="title1">
+        20 Years of Water
+      </h1>
+      <h2 class="title2">Visualising Alabama's List of Impaired Waters</h2>
     </div>
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
 
@@ -21,52 +26,52 @@
         sample text sample text sample text sample text sample text sample text
       </p>
     </div>
-
-    <!-- FILTERS -->
-    <div class="filters">
-      <el-checkbox-group v-model="filters">
-        <el-checkbox label="2020"></el-checkbox>
-        <el-checkbox label="2018"></el-checkbox>
-        <el-checkbox label="2016"></el-checkbox>
-        <el-checkbox label="2014"></el-checkbox>
-        <el-checkbox label="2012"></el-checkbox>
-        <el-checkbox label="2010"></el-checkbox>
-        <el-checkbox label="2008"></el-checkbox>
-        <el-checkbox label="2006"></el-checkbox>
-        <el-checkbox label="2004"></el-checkbox>
-        <el-checkbox label="2002"></el-checkbox>
-        <el-checkbox label="2000"></el-checkbox>
-      </el-checkbox-group>
-    </div>
-    <!--  -->
-
-    <div class="filters">
-      <el-checkbox
-        :indeterminate="isIndeterminate"
-        v-model="checkAll"
-        @change="handleCheckAllChange"
-        >Check all</el-checkbox
-      >
-      <div style="margin: 15px 0;"></div>
-      <el-checkbox-group
-        v-model="checkedUnits"
-        @change="handleCheckedUnitsChange"
-      >
-        <el-checkbox v-for="unit in units" :label="unit" :key="unit">{{
-          unit
-        }}</el-checkbox>
-      </el-checkbox-group>
-    </div>
-
-    <!--  -->
-
-    <!-- -->
-
-    <img alt="Vue" src="./assets/riverBasins.png" height="400" contain />
-    <div>
-      <h2>Understanding the length of the problem {{ scrollTop }}</h2>
-    </div>
   </div>
+  <!-- -->
+  <div class="map">
+    <img alt="Vue" src="./assets/riverBasins.png" contain />
+  </div>
+  <div>
+    <h2>Understanding the length of the problem {{ scrollTop }}</h2>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <el-checkbox-group v-model="filters">
+      <el-checkbox label="2020"></el-checkbox>
+      <el-checkbox label="2018"></el-checkbox>
+      <el-checkbox label="2016"></el-checkbox>
+      <el-checkbox label="2014"></el-checkbox>
+      <el-checkbox label="2012"></el-checkbox>
+      <el-checkbox label="2010"></el-checkbox>
+      <el-checkbox label="2008"></el-checkbox>
+      <el-checkbox label="2006"></el-checkbox>
+      <el-checkbox label="2004"></el-checkbox>
+      <el-checkbox label="2002"></el-checkbox>
+      <el-checkbox label="2000"></el-checkbox>
+    </el-checkbox-group>
+  </div>
+  <!--  -->
+
+  <div class="filters">
+    <el-checkbox
+      :indeterminate="isIndeterminate"
+      v-model="checkAll"
+      @change="handleCheckAllChange"
+      >Check all</el-checkbox
+    >
+    <div style="margin: 15px 0;"></div>
+    <el-checkbox-group
+      v-model="checkedUnits"
+      @change="handleCheckedUnitsChange"
+    >
+      <el-checkbox v-for="unit in units" :label="unit" :key="unit">{{
+        unit
+      }}</el-checkbox>
+    </el-checkbox-group>
+  </div>
+
+  <!--  -->
   <!-- <div
     class="section"
 
@@ -330,13 +335,14 @@ export default {
 .Intro {
   position: relative;
   left: 0;
-  height: 325px;
+  height: 60vh;
   color: white;
-  margin-top: 100px;
+  margin-top: 13%;
   margin-left: 20%;
   margin-right: 20%;
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000;
+  font-size: 20px;
 }
 .viz2 {
   display: grid;
@@ -344,21 +350,22 @@ export default {
   grid-template-columns: repeat(2, 1fr);
 }
 .IntroGlacier {
-  /* background-image: url("./assets/glacier.jpg"); */
+  height: 100vh;
 }
-/* .myDiv {
-  position: relative;
-  z-index: 5;
-  height: 250px;
-  width: 300px;
-  color: #000;
-  font-size: 400%;
-  padding: 20px;
-} */
+
+.title1 {
+  font-size: xxx-large;
+  margin-bottom: 5%;
+  color: black;
+  text-shadow: 3px 3px 0 rgb(73, 192, 192), -1px -1px 0 rgb(73, 192, 192),
+    1px -1px 0 rgb(73, 192, 192), -1px 1px 0 rgb(73, 192, 192);
+}
 .title2 {
-  color: white;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000;
+  font-size: xx-large;
+  margin-bottom: 10%;
+  color: rgb(9, 25, 41);
+  text-shadow: 3px 3px 0 rgb(73, 192, 192), -1px -1px 0 rgb(73, 192, 192),
+    1px -1px 0 rgb(73, 192, 192), -1px 1px 0 rgb(73, 192, 192);
 }
 .IntroGlacier .bg {
   position: absolute;
@@ -368,8 +375,24 @@ export default {
   left: 0;
   right: 0;
   background: url("./assets/glacier.jpg") center center;
-  opacity: 0.7;
+  opacity: 0.9;
   width: 100%;
-  height: 110%;
+  height: 100%;
+}
+.IntroGlacier .darken {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./assets/glacier.jpg") center center;
+  width: 100%;
+  height: 100%;
+}
+.Map {
+  margin-top: 2100px;
 }
 </style>
