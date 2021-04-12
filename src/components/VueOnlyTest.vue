@@ -114,7 +114,7 @@
 
         <div
           class="Details"
-          v-for="key2 in FinalByBasin2.get(key[0])"
+          v-for="(key2, index2) in FinalByBasin2.get(key[0])"
           :key="key2"
         >
           <div
@@ -122,7 +122,7 @@
             :style="{
               height: (key2[1] / key[1]) * 100 + 'px',
               width: xScale(key[1]) + 'px',
-              backgroundColor: 'baby blue',
+              backgroundColor: colors[index2],
             }"
           ></div>
           <!-- colors[index] -->
@@ -333,6 +333,7 @@ export default {
   font-size: 150%;
   text-align: right;
   opacity: 1;
+  margin-right: 5%;
 }
 /* .Details:hover {
   cursor: pointer;
@@ -363,9 +364,9 @@ export default {
   background-color: red;
   margin-top: 15px;
 }
-.ByBasin:hover {
+/* .ByBasin:hover {
   /* margin-bottom: 100px; */
-}
+/* } */
 .wave2 {
   position: relative;
   /* position: relative; */

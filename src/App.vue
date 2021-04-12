@@ -330,7 +330,7 @@ export default {
 .Intro {
   position: relative;
   left: 0;
-  height: 200px;
+  height: 325px;
   color: white;
   margin-top: 100px;
   margin-left: 20%;

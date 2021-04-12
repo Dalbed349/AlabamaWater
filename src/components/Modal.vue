@@ -1,8 +1,8 @@
 <template>
   <div class="Modal" :style="{ display: scrollCheck }">
-    <div>Scroll-Y is {{ scrollPosition }}</div>
+    <!-- <div>Scroll-Y is {{ scrollPosition }}</div>
     <div>{{ scrollCheck }}</div>
-    <div>Rounded to the nearest 100: {{ scrollBlock }}</div>
+    <div>Rounded to the nearest 100: {{ scrollBlock }}</div> -->
     <img
       alt="Vue"
       src="../assets/riverBasins.png"
@@ -40,12 +40,12 @@ export default {
 <style>
 .Modal {
   position: fixed;
-  top: 25vh;
+  top: 30vh;
   left: 0vw;
   width: 20vw;
   height: 50vh;
-  opacity: 0.5;
+  opacity: 1;
 
-  padding: 10px;
+  padding: 5px;
 }
 </style>

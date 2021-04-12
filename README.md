@@ -1,6 +1,6 @@
 # dallas_thesis
 
-![Hompage](vueStuff\dallas_thesis\src\assets\basin.jpg)
+![Hompage](preview.png)
 
 # 20 Years of Water
 
