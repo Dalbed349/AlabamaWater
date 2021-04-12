@@ -7,35 +7,37 @@
     <transition-group name="fade">
       <div class="ByBasin" v-for="(key, index) in sortedBasin" :key="key[0]">
         <!--  -->
-        <div class="horizontal-title">{{ key[0] }}</div>
-        <div class="horizontal-bar" style="height: 50px; overflow: none;">
-          <div
-            class="horizontal-title2"
-            :style="{
-              width: xScale(key[1]) + 130 + 'px',
-              fill: colors[index],
-            }"
-          >
-            {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits }}
-          </div>
-          <svg
-            class="wave2"
-            viewBox="100 0 500 150"
-            preserveAspectRatio="none"
-            :style="{
-              height: 100 + '%',
-              width: xScale(key[1]) + 'px',
-              fill: colors[index],
-            }"
-          >
-            <g
-              transform="translate(0 -45.5)
+        <div>
+          <div class="horizontal-title">{{ key[0] }}</div>
+          <div class="horizontal-bar" style="height: 50px; overflow: none;">
+            <div
+              class="horizontal-title2"
+              :style="{
+                width: xScale(key[1]) + 130 + 'px',
+                fill: colors[index],
+              }"
+            >
+              {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits }}
+            </div>
+
+            <svg
+              class="wave2"
+              viewBox="100 0 500 150"
+              preserveAspectRatio="none"
+              :style="{
+                height: 100 + '%',
+                width: xScale(key[1]) + 'px',
+                fill: colors[index],
+              }"
+            >
+              <g
+                transform="translate(0 -45.5)
                             
                                 scale(.5 1)"
-            >
-              <!-- https://codepen.io/liquidcharcoal/pen/rEeYrw -->
-              <path
-                d="
+              >
+                <!-- https://codepen.io/liquidcharcoal/pen/rEeYrw -->
+                <path
+                  d="
                     M0 67
                     C 273,183
                         822,-40
@@ -45,13 +47,13 @@
                     H 0 
                     V 67
                     Z"
-              >
-                <animate
-                  repeatCount="indefinite"
-                  fill="#454599"
-                  attributeName="d"
-                  dur="10s"
-                  values="
+                >
+                  <animate
+                    repeatCount="indefinite"
+                    fill="#454599"
+                    attributeName="d"
+                    dur="10s"
+                    values="
                         M0 77 
                         C 473,283
                         822,-40
@@ -92,50 +94,43 @@
                         V 67 
                         Z
                         "
-                ></animate>
-              </path>
-            </g>
-          </svg>
-        </div>
-        <!-- <div class="horizontal-bar2" :style="{ height: 50 + 'px' ,width: xScale(key[1]) + 'px'}"></div>  -->
-
-        <!--  -->
-        <!-- v-for="key in listOfBasins"
-      :key="key" -->
-
-        <div class="section">
-          <PercentageDetails
-            title="Bar Chart Placeholder"
-            xKey="name"
-            yKey="amount"
-            :data="barChartData"
-          />
-        </div>
-
-        <div
-          class="Details"
-          v-for="(key2, index2) in FinalByBasin2.get(key[0])"
-          :key="key2"
-        >
-          <div
-            class="horizontal-bar4"
-            :style="{
-              height: (key2[1] / key[1]) * 100 + 'px',
-              width: xScale(key[1]) + 'px',
-              backgroundColor: colors[index2],
-            }"
-          ></div>
-          <!-- colors[index] -->
-          <div class="Details2" :style="{ display: 'inline' }">
-            {{ key2[0] }}
+                  ></animate>
+                </path>
+              </g>
+            </svg>
           </div>
-          <!-- {{ (key2[1] / key[1]) * 100 }} -->
-        </div>
+          <!-- <div class="horizontal-bar2" :style="{ height: 50 + 'px' ,width: xScale(key[1]) + 'px'}"></div>  -->
 
-        <!-- {{ Array.from(key[1]) }}  -->
+          <!--  -->
+          <!-- v-for="key in listOfBasins"
+      :key="key" -->
+          <!-- @mouseleave="hover = false" -->
+          <div
+            @mouseover="hover = true"
+            class="Details"
+            v-for="(key2, index2) in FinalByBasin2.get(key[0])"
+            :key="key2"
+          >
+            <div
+              class="horizontal-bar4"
+              :style="{
+                height: (key2[1] / key[1]) * 100 + 'px',
+                width: xScale(key[1]) + 'px',
+                backgroundColor: colors[index2],
+              }"
+            ></div>
 
-        <!-- {{ key[0] }} -->
-        <!-- <div class="wrapper" :style="{ width: xScale(key[1]) + 'px' }">
+            <!-- colors[index] -->
+            <div v-if="hover" class="Details2" :style="{ display: 'inline' }">
+              {{ key2[0] }}
+            </div>
+            <!-- {{ (key2[1] / key[1]) * 100 }} -->
+          </div>
+
+          <!-- {{ Array.from(key[1]) }}  -->
+
+          <!-- {{ key[0] }} -->
+          <!-- <div class="wrapper" :style="{ width: xScale(key[1]) + 'px' }">
           <div
             class="horizontal-bar3"
             :style="{ height: 0.1 + 'px', width: xScale(key[1]) + 'px' }"
@@ -172,7 +167,7 @@
             :style="{ width: xScale(key[1]) + 'px' }"
           ></div>
         </div> -->
-        <!-- 
+          <!-- 
         <ul>
           <li v-for="(basin, label, index) in sortedFinalByBasin2" :key="index">
             <ul>
@@ -185,22 +180,24 @@
           </li>
         </ul> -->
 
-        <!--  -->
+          <!--  -->
 
-        <div class="horizontal-bar" style="height: 30px; overflow: visible;">
-          <svg
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            :style="{ height: 50 + 'px', width: xScale(key[1]) + 'px' }"
-          >
-            <path
-              d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
-              :style="{ stroke: none, fill: colors[index] }"
-            ></path>
-            <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
-          </svg>
+          <div class="horizontal-bar" style="height: 30px; overflow: visible;">
+            <svg
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              :style="{ height: 50 + 'px', width: xScale(key[1]) + 'px' }"
+            >
+              <path
+                d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+                :style="{ stroke: none, fill: colors[index] }"
+              ></path>
+              <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
+            </svg>
+          </div>
+
+          <div @mouseenter="hover = false" class="filler"></div>
         </div>
-
         <!-- </div> -->
       </div>
     </transition-group>
@@ -210,13 +207,13 @@
 <script>
 import * as d3 from "d3";
 
-import PercentageDetails from "./PercentageDetails.vue";
-
 export default {
-  components: { PercentageDetails },
+  components: {},
   name: "VueOnlyTest",
   data() {
     return {
+      hover: false,
+      active: false,
       colors: [
         "#2828fb",
         "#2898fb",
@@ -267,8 +264,8 @@ export default {
     },
   },
   methods: {
-    // filterByIndex(array, index) {
-    //   return array.filter((object) => object.index === index);
+    // mouseOver: function() {
+    //   this.active = !this.active;
     // },
   },
 };
@@ -326,6 +323,7 @@ export default {
   text-align: right;
 }
 .Details2 {
+  position: relative;
   font-size: 100%;
   text-align: right;
 }
@@ -364,9 +362,11 @@ export default {
   background-color: red;
   margin-top: 15px;
 }
-/* .ByBasin:hover {
-  /* margin-bottom: 100px; */
-/* } */
+.ByBasin {
+  transform: scale(1, 1);
+  margin-bottom: 0%;
+  margin-left: 10%;
+}
 .wave2 {
   position: relative;
   /* position: relative; */
@@ -395,6 +395,9 @@ export default {
 .title-chart-1 {
   font-weight: bold;
   margin-bottom: 50px;
+}
+.filler {
+  height: 100px;
 }
 @keyframes example {
   0% {
