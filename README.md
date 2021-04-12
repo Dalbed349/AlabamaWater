@@ -1,6 +1,6 @@
 # dallas_thesis
 
-![Hompage](preview.png)
+![Hompage](/preview.png)
 
 # 20 Years of Water
 
