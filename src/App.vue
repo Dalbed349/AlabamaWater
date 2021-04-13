@@ -1,35 +1,66 @@
 <template>
   <div class="IntroGlacier">
-    <div class="container"></div>
+    <!-- <div class="container"></div> -->
 
     <!-- <div class="bg"></div> -->
     <div class="darken"></div>
-    <div>
-      <h1 class="title1">
-        20 Years of Water
-      </h1>
-      <h2 class="title2">Visualising Alabama's List of Impaired Waters</h2>
-    </div>
-    <!-- <img alt="Vue logo" src="./assets/logo.png" />
-
-    <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <!-- INTRO   -->
-    <div class="Intro">
-      <h2>INTRO</h2>
-      <p>
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-        sample text sample text sample text sample text sample text sample text
-      </p>
+    <div class="margins">
+      <div>
+        <h1 class="title1">
+          20 Years of Water
+        </h1>
+        <h2 class="title2">Visualising Alabama's List of Impaired Waters</h2>
+      </div>
+      <!-- INTRO   -->
+      <div class="Intro">
+        <h2>INTRO</h2>
+        <p>
+          Alabama’s climate and geographic history makes it one of the most
+          ecologically diverse states in the United States. At the same time, a
+          history of industrial accidents and abuse has led to disasters that
+          have harmed everything from ponds to populations of cities to
+          coastlines. Since 1998 stricter water monitoring policies have been
+          mandated in an attempt to control the human and environmental harm
+          caused by pollutants. This project seeks to analyze the progress that
+          has been made during the past 20 years of water quality testing. Data
+          from the Alabama Department of Environmental Management (ADEM) is used
+          to visualize the scope of water contamination in each river basin by
+          size, cause, and source.
+        </p>
+      </div>
     </div>
   </div>
   <!-- -->
+
   <div class="map">
-    <img alt="Vue" src="./assets/riverBasins.png" contain />
+    <!-- <div class="darken"></div> -->
+    <div class="mapImage">
+      <div class="transbox">
+        <p>
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text
+        </p>
+      </div>
+      <div class="transbox2">
+        <p>
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text
+        </p>
+      </div>
+      <img alt="Vue" src="./assets/riverBasins.png" contain />
+    </div>
   </div>
   <div class="TitleLarge">
     <h2>Understanding the length of the problem</h2>
@@ -93,8 +124,37 @@
   </div>
 
   <!--  -->
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+
+  <div class="map">
+    <!-- <div class="darken"></div> -->
+    <div class="mapImage">
+      <div class="transbox">
+        <p>
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text
+        </p>
+      </div>
+      <div class="transbox2">
+        <p>
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text sample text sample text
+          sample text sample text sample text sample text sample text sample
+          text sample text sample text sample text
+        </p>
+      </div>
+      <img alt="Vue" src="./assets/riverBasins.png" contain />
+    </div>
+  </div>
 
   <!-- SMALL MULTIPLES -->
   <!-- FILTERS -->
@@ -133,7 +193,6 @@
       yKey="amount"
       :data="barChartData"
     />
-    <!-- <BarChart title="Bar Chart Placeholder" xKey="Causes" yKey="Size" :data="filteredFinal"/> -->
   </div>
   <!--  -->
   <img alt="Vue logo" src="./assets/logo.png" />
@@ -141,7 +200,7 @@
   <HelloWorld2 msg="new world" />
 
   <Modal :scrollPosition="scrollTop"> </Modal>
-
+  <HelloWorld msg="Welcome to Your Vue.js App" />
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
@@ -332,44 +391,68 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 0px;
+  /* margin-top: -100px; */
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -2%;
 }
 .Intro {
   position: relative;
   left: 0;
-  height: 60vh;
+  height: 40vh;
   color: white;
-  margin-top: 13%;
+  margin-top: 20vh;
   margin-left: 20%;
   margin-right: 20%;
+
   text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
     -1px 1px 0 #000;
   font-size: 20px;
 }
 .viz2 {
   display: grid;
-  grid-template-rows: repeat(4, 2fr);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 2fr);
 }
 .IntroGlacier {
+  position: relative;
   height: 100vh;
 }
+.mapImage {
+  position: inline-block;
+  margin-left: -10%;
+  height: 100vh;
+  /* width: 550px; */
+  transform: scale(0.8, 0.8);
+}
+.mapImage img {
+  position: relative;
+  /* margin-left: 0%; */
+  /* padding-top: 100%; */
+  margin-top: 5vh;
+  margin-right: 86vw;
+  width: 30vw;
+  height: auto;
+  /* height: 10%;
+  width: 10%; */
 
+  transform: scale(1, 1);
+}
 .title1 {
   font-size: xxx-large;
-  margin-bottom: 5%;
+  margin-bottom: 5vh;
   color: black;
   text-shadow: 3px 3px 0 rgb(73, 192, 192), -1px -1px 0 rgb(73, 192, 192),
     1px -1px 0 rgb(73, 192, 192), -1px 1px 0 rgb(73, 192, 192);
 }
 .title2 {
   font-size: xx-large;
-  margin-bottom: 10%;
+  margin-bottom: 10vh;
   color: rgb(9, 25, 41);
   text-shadow: 3px 3px 0 rgb(73, 192, 192), -1px -1px 0 rgb(73, 192, 192),
     1px -1px 0 rgb(73, 192, 192), -1px 1px 0 rgb(73, 192, 192);
 }
-.IntroGlacier .bg {
+/* .IntroGlacier .bg {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -380,7 +463,7 @@ export default {
   opacity: 0.9;
   width: 100%;
   height: 100%;
-}
+} */
 .IntroGlacier .darken {
   position: absolute;
   z-index: -1;
@@ -395,11 +478,66 @@ export default {
   height: 100%;
   opacity: 0.9;
 }
+.margins {
+  position: absolute;
+  margin-top: 15vh;
+}
+.map {
+  position: relative;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./assets/glacier.jpg") center center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
 .TitleLarge {
   text-align: left;
   margin-left: 30%;
 }
-.Map {
-  margin-top: 2100px;
+div.transbox {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 40%;
+  /* margin-right: 40vw; */
+
+  width: 30vw;
+  height: 63vh;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
 }
+/* background-position: 50% 0; */
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+div.transbox2 {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 80%;
+  /* margin-right: 40vw; */
+
+  width: 30vw;
+  height: 63vh;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+/* background-position: 50% 0; */
+div.transbox2 p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+/* .filters {
+  width: 25vw;
+
+  margin-left: 25vw;
+} */
 </style>

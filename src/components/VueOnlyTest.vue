@@ -1,5 +1,6 @@
 <template>
   <div class="VueOnlyTest">
+    <div class="darken"></div>
     <div class="title-chart-1">
       303(d) list of impaired waterbasins by size {{ checkedUnits }}
     </div>
@@ -26,7 +27,7 @@
               fill: colors[index],
             }"
           >
-            {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits }}
+            {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits[0] }}
           </div>
 
           <svg
@@ -108,13 +109,7 @@
             </g>
           </svg>
         </div>
-        <!-- <div class="horizontal-bar2" :style="{ height: 50 + 'px' ,width: xScale(key[1]) + 'px'}"></div>  -->
 
-        <!--  -->
-        <!-- v-for="key in listOfBasins"
-      :key="key" -->
-        <!-- @mouseleave="hover = false" -->
-        <!-- @mouseover="hover = true" -->
         <div
           class="Details"
           v-for="(key2, index2) in FinalByBasin2.get(key[0])"
@@ -131,7 +126,7 @@
 
           <!-- colors[index] -->
           <div v-if="hover" class="Details2" :style="{ display: 'inline' }">
-            {{ Math.round((key2[1] / key[1]) * 1000) / 10 + "%" }}
+            {{ Math.round((key2[1] / key[1]) * 10000) / 100 + "%" }}
             {{ key2[0] }}
           </div>
           <!-- {{ (key2[1] / key[1]) * 100 }} -->
@@ -145,7 +140,7 @@
           >
             <path
               d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
-              :style="{ stroke: none, fill: colors[index] }"
+              :style="{ fill: 'rgb(160,82,45)' }"
             ></path>
             <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
           </svg>
@@ -212,9 +207,9 @@ export default {
         .domain([0, this.maxPollution[1]])
         .range([0, window.innerWidth / 2]);
     },
-    listOfCauses2() {
-      return Array.from(new Set(this.filteredFinal.map((d) => d.Causes)));
-    },
+    // listOfCauses2() {
+    //   return Array.from(new Set(this.filteredFinal2.map((d) => d.Causes)));
+    // },
   },
   methods: {
     // mouseOver: function() {
@@ -417,4 +412,11 @@ export default {
     transform: scale(1, 1.3);
   }
 }
+/* .VueOnlyTest {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("../assets/side.jpg") center center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+} */
 </style>

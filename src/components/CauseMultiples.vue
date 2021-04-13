@@ -28,9 +28,9 @@ export default {
   name: "CauseMultiples",
   data() {
     return {
-      svgHeight: 500,
-      svgWidth: 500,
-      margin: { top: 10, left: 50, bottom: 100, right: 50 },
+      svgHeight: 300,
+      svgWidth: 300,
+      margin: { top: 50, left: 50, bottom: 50, right: 50 },
     };
   },
 
@@ -87,4 +87,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+/* .CauseMultiples {
+  height: 350;
+  width: 300%;
+} */
+.CauseMultiples p {
+  height: 1vh;
+  margin-top: 2%;
+}
+</style>
