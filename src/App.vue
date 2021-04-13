@@ -98,7 +98,7 @@
 
   <!-- SMALL MULTIPLES -->
   <!-- FILTERS -->
-  <div class="filters">
+  <!-- <div class="filters">
     <el-checkbox-group v-model="filters">
       <el-checkbox label="2020"></el-checkbox>
       <el-checkbox label="2018"></el-checkbox>
@@ -112,7 +112,7 @@
       <el-checkbox label="2002"></el-checkbox>
       <el-checkbox label="2000"></el-checkbox>
     </el-checkbox-group>
-  </div>
+  </div> -->
 
   <!-- -->
   <div class="viz2">
@@ -304,6 +304,9 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   methods: {
+    // changeSelectedYear(val) {
+    //   this.selectedYear = val;
+    // },
     onScroll(/*event*/) {
       // console.log(window.scrollY);
       this.scrollTop = window.scrollY;
