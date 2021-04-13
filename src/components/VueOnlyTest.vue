@@ -7,7 +7,14 @@
     <transition-group name="fade">
       <div class="ByBasin" v-for="(key, index) in sortedBasin" :key="key[0]">
         <!--  -->
-        <div>
+        <div
+          class="test2"
+          @mouseenter="hover = true"
+          @mouseleave="hover = false"
+          :style="{
+            width: xScale(key[1]) + 130 + 'px',
+          }"
+        >
           <div class="horizontal-title">{{ key[0] }}</div>
           <div class="horizontal-bar" style="height: 50px; overflow: none;">
             <div
@@ -105,8 +112,8 @@
           <!-- v-for="key in listOfBasins"
       :key="key" -->
           <!-- @mouseleave="hover = false" -->
+          <!-- @mouseover="hover = true" -->
           <div
-            @mouseover="hover = true"
             class="Details"
             v-for="(key2, index2) in FinalByBasin2.get(key[0])"
             :key="key2"
@@ -122,6 +129,7 @@
 
             <!-- colors[index] -->
             <div v-if="hover" class="Details2" :style="{ display: 'inline' }">
+              {{ Math.round((key2[1] / key[1]) * 1000) / 10 + "%" }}
               {{ key2[0] }}
             </div>
             <!-- {{ (key2[1] / key[1]) * 100 }} -->
@@ -195,8 +203,6 @@
               <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
             </svg>
           </div>
-
-          <div @mouseenter="hover = false" class="filler"></div>
         </div>
         <!-- </div> -->
       </div>
@@ -272,17 +278,11 @@ export default {
 </script>
 
 <style>
-.horizontal-text {
-  position: absolute;
-  left: 28%;
-  color: darkblue;
-}
 .horizontal-bar {
   height: 20px;
-  background-color: steelblue;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 5px;
-  margin-left: 25%;
+  margin-left: 0%;
   margin-right: 100%;
 }
 .horizontal-bar2 {
@@ -304,7 +304,7 @@ export default {
   background-color: rgb(150, 111, 134);
   margin-top: 1px;
   margin-bottom: 1px;
-  margin-left: 25%;
+  margin-left: 0;
   margin-right: 100%;
 }
 /*display: inline-block;*/
@@ -319,11 +319,12 @@ export default {
 }
 
 .Details {
+  position: inline-block;
   font-size: 50%;
   text-align: right;
 }
 .Details2 {
-  position: relative;
+  /* position: inline-block; */
   font-size: 100%;
   text-align: right;
 }
@@ -364,8 +365,8 @@ export default {
 }
 .ByBasin {
   transform: scale(1, 1);
-  margin-bottom: 0%;
-  margin-left: 10%;
+  margin-bottom: 2%;
+  margin-left: 25vw;
 }
 .wave2 {
   position: relative;
@@ -380,10 +381,14 @@ export default {
   animation-direction: alternate-reverse;
   z-index: -1;
 }
-
+.test2 {
+  margin-left: 0%;
+  margin-right: 0%;
+}
 .horizontal-title {
   position: absolute;
-  width: 45%;
+  width: 10%;
+  margin-bottom: 5px;
 }
 .horizontal-title2 {
   position: absolute;

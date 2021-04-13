@@ -30,7 +30,7 @@ export default {
     return {
       svgHeight: 500,
       svgWidth: 500,
-      margin: { top: 100, left: 100, bottom: 100, right: 100 },
+      margin: { top: 10, left: 50, bottom: 100, right: 50 },
     };
   },
 
@@ -51,17 +51,18 @@ export default {
         .domain(this.data.map((d) => d.Causes))
         .range([0, this.width]);
     },
-    //   xScale() {
-    //   return d3
-    //     .scaleBand()
-    //     .domain(this.rollupByCause.map((d) => d[0]))
-    //     .range([0, this.width]);
-    // },
+
     yScale() {
       return d3
         .scaleLinear()
         .domain(d3.extent(this.rollupByCause, (d) => d[1]))
         .range([this.height, 0]);
+    },
+    colorScale() {
+      return d3
+        .scaleBand()
+        .domain(d3.extent(this.rollupByCause, (d) => d[1]))
+        .range(["red", "orange", "green", "blue"]);
     },
     rollupByCause() {
       return d3.rollups(

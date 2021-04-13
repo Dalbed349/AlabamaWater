@@ -31,8 +31,8 @@
   <div class="map">
     <img alt="Vue" src="./assets/riverBasins.png" contain />
   </div>
-  <div>
-    <h2>Understanding the length of the problem {{ scrollTop }}</h2>
+  <div class="TitleLarge">
+    <h2>Understanding the length of the problem</h2>
   </div>
 
   <!-- FILTERS -->
@@ -286,7 +286,6 @@ export default {
   },
 
   components: {
-    // PercentageDetails,
     HelloWorld,
     HelloWorld2,
     CauseMultiples,
@@ -346,8 +345,8 @@ export default {
 }
 .viz2 {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 2fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .IntroGlacier {
   height: 100vh;
@@ -391,6 +390,11 @@ export default {
     url("./assets/glacier.jpg") center center;
   width: 100%;
   height: 100%;
+  opacity: 0.9;
+}
+.TitleLarge {
+  text-align: left;
+  margin-left: 30%;
 }
 .Map {
   margin-top: 2100px;

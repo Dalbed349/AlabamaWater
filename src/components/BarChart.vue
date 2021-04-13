@@ -11,6 +11,7 @@
           :y="yScale(0)"
           :width="xScale.bandwidth()"
           :height="0"
+          :style="{ fill: 'red' }"
         ></rect>
       </g>
     </svg>
