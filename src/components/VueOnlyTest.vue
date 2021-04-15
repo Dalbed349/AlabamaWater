@@ -2,9 +2,35 @@
   <div class="VueOnlyTest">
     <div class="darken"></div>
     <div class="title-chart-1">
-      303(d) list of impaired waterbasins by size {{ checkedUnits }}
+      303(d) list of impaired river basins measured by
+      {{ checkedUnits[0] }}
     </div>
-
+    <div class="arrow" :height="500">
+      <!--  -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 100">
+        <defs>
+          <marker
+            id="arrowhead"
+            markerWidth="10"
+            markerHeight="7"
+            refX="0"
+            refY="3.5"
+            orient="auto"
+          >
+            <polygon points="0 0, 10 3.5, 0 7" />
+          </marker>
+        </defs>
+        <line
+          x1="0"
+          y1="50"
+          x2="1000"
+          y2="50"
+          stroke="#000"
+          stroke-width="2"
+          marker-end="url(#arrowhead)"
+        />
+      </svg>
+    </div>
     <!-- 
       
     <transition-group name="fade"> -->
@@ -12,8 +38,8 @@
       <!--  -->
       <div
         class="test2"
-        @mouseenter="hover = true"
-        @mouseleave="hover = false"
+        @mouseenter="hover = key[0]"
+        @mouseleave="hover = null"
         :style="{
           width: xScale(key[1]) + 130 + 'px',
         }"
@@ -37,7 +63,7 @@
             :style="{
               height: 100 + '%',
               width: xScale(key[1]) + 'px',
-              fill: colors[index],
+              fill: 'blue',
             }"
           >
             <g
@@ -112,7 +138,7 @@
 
         <div
           class="Details"
-          v-for="(key2, index2) in FinalByBasin2.get(key[0])"
+          v-for="key2 in FinalByBasin2.get(key[0])"
           :key="key2"
         >
           <div
@@ -120,12 +146,16 @@
             :style="{
               height: (key2[1] / key[1]) * 100 + 'px',
               width: xScale(key[1]) + 'px',
-              backgroundColor: colors[index2],
+              backgroundColor: coloring(key2[0]),
             }"
           ></div>
-
+          <!-- fill: colors2[key2[0]].color, -->
           <!-- colors[index] -->
-          <div v-if="hover" class="Details2" :style="{ display: 'inline' }">
+          <div
+            v-if="hover === key[0]"
+            class="Details2"
+            :style="{ display: 'inline' }"
+          >
             {{ Math.round((key2[1] / key[1]) * 10000) / 100 + "%" }}
             {{ key2[0] }}
           </div>
@@ -140,7 +170,7 @@
           >
             <path
               d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
-              :style="{ fill: 'rgb(160,82,45)' }"
+              :style="{ fill: 'blue' }"
             ></path>
             <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
           </svg>
@@ -160,7 +190,7 @@ export default {
   name: "VueOnlyTest",
   data() {
     return {
-      hover: false,
+      hover: null,
       active: false,
       colors: [
         "#2828fb",
@@ -179,6 +209,16 @@ export default {
         "#2898fb",
         "#01d8fd",
         "#567543",
+      ],
+      colors2: [
+        {
+          cause: "Siltation",
+          color: "#2828fb",
+        },
+        {
+          cause: "Metals",
+          color: "#5828fb",
+        },
       ],
     };
   },
@@ -210,7 +250,13 @@ export default {
     // listOfCauses2() {
     //   return Array.from(new Set(this.filteredFinal2.map((d) => d.Causes)));
     // },
+    coloring() {
+      let color = d3.scaleOrdinal(d3.schemeCategory10);
+
+      return color.domain(this.listofCauses);
+    },
   },
+
   methods: {
     // mouseOver: function() {
     //   this.active = !this.active;
@@ -272,23 +318,26 @@ export default {
 }
 .Details2 {
   /* position: inline-block; */
-  font-size: 100%;
+  font-size: 110%;
   text-align: right;
   /* transition: all 0.3s ease; */
   /* transition: all 0.2s ease-in-out; */
   /* animation-name: slowExpand;
   animation-duration: 2s;
   animation-timing-function: easeout; */
+
   transition: all 0.2s ease-in-out;
   animation-name: slowExpand;
   animation-duration: 0.2s;
   animation-timing-function: easeout;
 }
 .Details:hover > .Details2 {
-  font-size: 150%;
+  font-weight: bold;
+  font-size: 160%;
   text-align: right;
   opacity: 1;
-  margin-right: 5%;
+
+  margin-right: 2%;
 }
 /* .Details2.transReset {
   transition: intial;
@@ -326,7 +375,7 @@ export default {
   transform: scale(1, 1);
   margin-bottom: 2%;
   margin-left: 25vw;
-  background: white;
+  /* background: white; */
 }
 .wave2 {
   position: relative;
@@ -348,10 +397,10 @@ export default {
 .horizontal-title {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   color: #111;
   font-family: "Open Sans", sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
   line-height: 32px;
   text-align: left;
@@ -366,7 +415,17 @@ export default {
 }
 .title-chart-1 {
   font-weight: bold;
-  margin-bottom: 50px;
+  font-size: 26px;
+  margin-bottom: 0;
+  margin-left: 25%;
+  text-align: left;
+  width: 50vw;
+}
+.arrow {
+  height: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 1%;
 }
 .filler {
   height: 100px;
@@ -413,8 +472,7 @@ export default {
   }
 }
 /* .VueOnlyTest {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("../assets/side.jpg") center center;
+  background: url("../assets/side.jpg") center center;
   width: 100%;
   height: 100%;
   opacity: 0.9;

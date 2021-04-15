@@ -63,27 +63,12 @@
     </div>
   </div>
   <div class="TitleLarge">
-    <h2>Understanding the length of the problem</h2>
+    <h2>The length of the problem...</h2>
+    <!-- {{ filters[this.counter] }} -->
   </div>
 
   <!-- FILTERS -->
-  <div class="filters">
-    <el-checkbox-group v-model="filters">
-      <el-checkbox label="2020"></el-checkbox>
-      <el-checkbox label="2018"></el-checkbox>
-      <el-checkbox label="2016"></el-checkbox>
-      <el-checkbox label="2014"></el-checkbox>
-      <el-checkbox label="2012"></el-checkbox>
-      <el-checkbox label="2010"></el-checkbox>
-      <el-checkbox label="2008"></el-checkbox>
-      <el-checkbox label="2006"></el-checkbox>
-      <el-checkbox label="2004"></el-checkbox>
-      <el-checkbox label="2002"></el-checkbox>
-      <el-checkbox label="2000"></el-checkbox>
-    </el-checkbox-group>
-  </div>
-  <!--  -->
-
+  <!-- 
   <div class="filters">
     <el-checkbox
       :indeterminate="isIndeterminate"
@@ -100,15 +85,6 @@
         unit
       }}</el-checkbox>
     </el-checkbox-group>
-  </div>
-
-  <!--  -->
-  <!-- <div
-    class="section"
-
-  >
-  <percentage-details
-  
   </div> -->
 
   <!-- horizontal bar chart  -->
@@ -198,8 +174,23 @@
   <img alt="Vue logo" src="./assets/logo.png" />
   <!-- /// -->
   <HelloWorld2 msg="new world" />
+  <Modal
+    v-on:childToParent="onChildClick"
+    v-on:increment="
+      if (counter < 10) {
+        counter++;
+      }
+    "
+    v-on:decrease="
+      if (counter > 0) {
+        counter--;
+      }
+    "
+    :scrollPosition="scrollTop"
+    :counter="counter"
+  >
+  </Modal>
 
-  <Modal :scrollPosition="scrollTop"> </Modal>
   <HelloWorld msg="Welcome to Your Vue.js App" />
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>
@@ -222,25 +213,26 @@ export default {
     return {
       scrollTop: 0,
       Final: [],
+      filters2: [],
       filters: [
-        "2020",
-        "2018",
-        "2016",
-        "2014",
-        "2012",
-        "2010",
-        "2008",
-        "2006",
-        "2004",
-        "2002",
         "2000",
+        "2002",
+        "2004",
+        "2006",
+        "2008",
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2018",
+        "2020",
       ],
-
+      counter: 0,
+      fromChild: "",
       checkAll: false,
       checkedUnits: ["miles"],
       units: unitOptions,
       isIndeterminate: true,
-
       barChartData: [
         {
           name: "Roses",
@@ -278,7 +270,7 @@ export default {
 
       return this.Final.filter(
         (d) =>
-          this.filters.includes(d.ReportYear) &&
+          this.filters[this.counter].includes(d.ReportYear) &&
           this.checkedUnits.includes(d.UnitType)
       );
     },
@@ -366,6 +358,9 @@ export default {
     // changeSelectedYear(val) {
     //   this.selectedYear = val;
     // },
+    onChildClick(value) {
+      this.fromChild = value;
+    },
     onScroll(/*event*/) {
       // console.log(window.scrollY);
       this.scrollTop = window.scrollY;
@@ -412,7 +407,7 @@ export default {
 .viz2 {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(4, auto);
 }
 .IntroGlacier {
   position: relative;
@@ -497,7 +492,11 @@ export default {
 }
 .TitleLarge {
   text-align: left;
-  margin-left: 30%;
+  margin-left: 25%;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  /* font-weight: 200; */
 }
 div.transbox {
   position: absolute;
@@ -535,9 +534,9 @@ div.transbox2 p {
   font-weight: bold;
   color: #000000;
 }
-/* .filters {
-  width: 25vw;
+.filters {
+  width: 15vw;
 
-  margin-left: 25vw;
-} */
+  margin-left: 60vw;
+}
 </style>
