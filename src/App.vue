@@ -1,7 +1,5 @@
 <template>
   <div class="IntroGlacier">
-    <!-- <div class="container"></div> -->
-
     <!-- <div class="bg"></div> -->
     <div class="darken"></div>
     <div class="margins">
@@ -64,6 +62,7 @@
   </div>
   <div class="TitleLarge">
     <h2>The length of the problem...</h2>
+    <!-- <iframe src="https://justinbakse.com"> </iframe> -->
     <!-- {{ filters[this.counter] }} -->
   </div>
 
@@ -102,7 +101,6 @@
   <!--  -->
 
   <div class="map">
-    <!-- <div class="darken"></div> -->
     <div class="mapImage">
       <div class="transbox">
         <p>
@@ -151,27 +149,35 @@
   </div> -->
 
   <!-- -->
-  <div class="viz2">
-    <!-- listOfBasins key = key -->
-    <CauseMultiples
-      v-for="key in sortedBasin"
-      :key="key"
-      :data="filteredSmallMultiples"
-      :basin="key[0]"
-    >
-    </CauseMultiples>
-  </div>
-
   <div class="section">
+    <h2>Mile by mile, a count of the offending pollutants</h2>
+
+    <div class="viz2Wrapper">
+      <div class="viz2details"></div>
+      <div class="viz2">
+        <!-- listOfBasins key = key -->
+        <CauseMultiples
+          v-for="key in sortedBasin"
+          :key="key"
+          :data="filteredSmallMultiples"
+          :basin="key[0]"
+        >
+        </CauseMultiples>
+      </div>
+    </div>
+  </div>
+  <h2>A difference 5 years can make</h2>
+  <!-- <div class="section">
     <BarChart
       title="Bar Chart Placeholder"
       xKey="name"
       yKey="amount"
       :data="barChartData"
     />
-  </div>
+  </div> -->
+  <div class="section"><Scatter> </Scatter></div>
   <!--  -->
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- /// -->
   <HelloWorld2 msg="new world" />
   <Modal
@@ -188,21 +194,31 @@
     "
     :scrollPosition="scrollTop"
     :counter="counter"
+    :modalYpos="modalYpos"
   >
   </Modal>
 
-  <HelloWorld msg="Welcome to Your Vue.js App" />
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <ModalLegend
+    :scrollPosition="scrollTop"
+    :counter="counter"
+    :modalYpos="modalYpos"
+    :listofCauses="listOfCauses"
+  >
+  </ModalLegend>
+
+  <div></div>
 </template>
 
 <script>
-import BarChart from "./components/BarChart.vue";
-import HelloWorld from "./components/HelloWorld.vue";
+// import BarChart from "./components/BarChart.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import VueOnlyTest from "./components/VueOnlyTest.vue";
 import HelloWorld2 from "./components/HelloWorld2.vue";
 import CauseMultiples from "./components/CauseMultiples.vue";
+import Scatter from "./components/Scatter.vue";
 import Modal from "./components/Modal.vue";
 import * as d3 from "d3";
+import ModalLegend from "./components/ModalLegend.vue";
 // import PercentageDetails from "./components/PercentageDetails.vue";
 
 const unitOptions = ["miles", "acres"];
@@ -213,7 +229,9 @@ export default {
     return {
       scrollTop: 0,
       Final: [],
+      MacroFinal: [],
       filters2: [],
+      modalYpos: 0,
       filters: [
         "2000",
         "2002",
@@ -323,7 +341,7 @@ export default {
       return Array.from(new Set(this.Final.map((d) => d.RiverBasin)));
     },
     listOfCauses() {
-      return Array.from(new Set(this.filteredFinal.map((d) => d.Causes)));
+      return Array.from(new Set(this.Final.map((d) => d.Causes)));
     },
     filteredSmallMultiples() {
       // if (!this.Final) {
@@ -337,12 +355,14 @@ export default {
   },
 
   components: {
-    HelloWorld,
+    // HelloWorld,
     HelloWorld2,
     CauseMultiples,
     VueOnlyTest,
-    BarChart,
+    // BarChart,
     Modal,
+    ModalLegend,
+    Scatter,
   },
   mounted() {
     Promise.all([d3.csv("TESTFinalCompiledCSV.csv")]).then((data) => {
@@ -350,7 +370,17 @@ export default {
       // console.log(this.Final);
     }),
       window.addEventListener("scroll", this.onScroll);
+    var x = document.getElementsByClassName("TitleLarge")[0];
+    console.log(x);
+
+    var domRect = x.getBoundingClientRect();
+    this.modalYpos = domRect.y;
   },
+  // modalYpos() {
+  //   var x = document.getElementsByClassName("TitleLarge");
+  //   let domRect = x.getBoundingClientRect();
+  //   return domRect;
+  // },
   unmounted() {
     window.removeEventListener("scroll", this.onScroll);
   },
@@ -380,6 +410,13 @@ export default {
 </script>
 
 <style>
+.viz2details {
+  position: absolute;
+  margin-left: 75%;
+  width: 23%;
+  height: 100vh;
+  background-color: bisque;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -406,12 +443,12 @@ export default {
 }
 .viz2 {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(5);
   grid-template-columns: repeat(4, auto);
 }
 .IntroGlacier {
   position: relative;
-  height: 100vh;
+  height: 105vh;
 }
 .mapImage {
   position: inline-block;
@@ -426,8 +463,8 @@ export default {
   /* padding-top: 100%; */
   margin-top: 5vh;
   margin-right: 86vw;
-  width: 30vw;
-  height: auto;
+  /* width: 30vw; */
+  height: 70vh;
   /* height: 10%;
   width: 10%; */
 
@@ -447,18 +484,7 @@ export default {
   text-shadow: 3px 3px 0 rgb(73, 192, 192), -1px -1px 0 rgb(73, 192, 192),
     1px -1px 0 rgb(73, 192, 192), -1px 1px 0 rgb(73, 192, 192);
 }
-/* .IntroGlacier .bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("./assets/glacier.jpg") center center;
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-} */
+
 .IntroGlacier .darken {
   position: absolute;
   z-index: -1;
@@ -494,8 +520,8 @@ export default {
   text-align: left;
   margin-left: 25%;
   font-size: 20px;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-top: 4%;
   /* font-weight: 200; */
 }
 div.transbox {
@@ -538,5 +564,13 @@ div.transbox2 p {
   width: 15vw;
 
   margin-left: 60vw;
+}
+.viz2Wrapper {
+  float: left;
+  margin-right: 25%;
+  margin-top: 5%;
+  overflow: hidden;
+}
+@media (min-width: 1440x) {
 }
 </style>

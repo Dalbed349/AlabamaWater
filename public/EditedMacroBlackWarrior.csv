@@ -1,0 +1,64 @@
+﻿County,Year,Basin,StationID,Lat,Lon,HabitatQualityScore,Rating,Ephemeroptera(mayfly) taxa,Plecoptera (stonefly) taxa,Trichoptera (caddisfly) taxa,TaxaRichnessEPT,TaxaRichEPTScore,TaxaRichEPTRaing,WMBIAssessmentScore,WMBIRating
+Bibb,2007,Black Warrior,SSB-1,32.96906,-87.39776,59,Sub-optimal(53-65),,,,eptgenera14,56,Fair,87,Excellent
+Blount,2007,Black Warrior,CCB-5,33.952694,-86.546056,75,Optimal(>70),,,,epttaxa20,70,Optimal,57,Fair
+Blount,2007,Black Warrior,CCB-4,33.94035,-86.54229,79,Optimal(>70),6,2,7,,,,34,Poor
+Hale,2007,Black Warrior,BBRH-42D,32.78504,-87.65406,54,Sub-optimal(53-65),,,,eptgenera11,,Fair,,Poor
+Hale,2007,Black Warrior,HINH-43A,32.691813,-87.76383,53,Sub-optimal(53-65),,,,eptgenera10,40,Fair,46,Fair
+Jefferson,2007,Black Warrior,FMCJ-3,33.58654,-86.79341,68,Sub-optimal(59-70),3,0,3,,,,9,Very Poor
+Jefferson,2007,Black Warrior,FMCJ-1,33.60707,-86.74214,80,Optimal(>70),5,0,8,,,,39,Poor
+Jefferson,2007,Black Warrior,FMCJ-2,33.58498,-86.78891,75,Optimal(>70),4,0,5,,,,29,Poor
+Jefferson,2007,Black Warrior,VC-5,33.420027,-86.963056,63,Sub-optimal(59-70),5,0,4,,,,12,Very Poor
+Tuscaloosa,2007,Black Warrior,BERT-4,33.54244664,-87.56166864,67,Sub-optimal(59-70),6,4,4,,,,52,Fair
+Tuscaloosa,2007,Black Warrior,BLUT-1,33.450833,-87.412222,75,Optimal(>70),7,3,8,,,,55,Fair
+Tuscaloosa,2007,Black Warrior,DNC-1,33.295,-87.3644,73,Optimal(>70),,,,epttaxa8,17,,46,Fair
+Tuscaloosa,2007,Black Warrior,H-1,33.229826,-87.46181,60,Sub-optimal(59-70),,,,epttaxa14,43,,47,Fair
+Tuscaloosa,2007,Black Warrior,JKC-1,33.4531,-87.4282,73,Optimal(>70),1,2,6,,,,43,Fair
+Tuscaloosa,2007,Black Warrior,LYET-64A,33.56672,-87.41025,65,Sub-optimal(59-70),10,3,3,,,,48,Fair
+Tuscaloosa,2007,Black Warrior,NRRT-1,33.47980015,-87.59680551,74,Optimal(>65),11,4,11,,,,71,Fair
+Walker,2007,Black Warrior,LOSW-5,33.88197,-87.5104,72,Optimal(>70),4,2,7,,,,44,Poor
+Walker,2007,Black Warrior,LOSW-3,33.85279,-87.44661,70,Sub-optimal(59-70),,,,epttaxa22,78,,57,Fair
+Winston,2007,Black Warrior,CLCW-53,34.166178,-87.513259,64,Sub-optimal(59-70),,,,eptgenera24,96,Excellent,63,Good
+Winston,2007,Black Warrior,SF-1,34.285583,-87.399056,75,Optimal(>70),,,,epttaxa20,70,,58,Fair
+Bibb,2012,Black Warrior,SSB-1,32.96906,-87.39776,61,Sub-optimal(53-65),,,,,,,61,Good
+Blount,2012,Black Warrior,HNMB-4,33.87612,-86.56885,82,Optimal(>70),9,3,12,,,,76,Good
+Blount,2012,Black Warrior,LFKB-1,34.023696,-86.573336,74,Optimal(>70),,,,epttaxa26,,,22,Fair
+Blount,2012,Black Warrior,LFKB-2,33.888486,-86.695319,68,Sub-optimal(59-70),,,,epttaxa18,,,14,Fair
+Blount,2012,Black Warrior,MBFB-10,34.173639,-86.561139,74,Optimal(>70),,,,epttaxa16,52,,34,Poor
+Cullman,2012,Black Warrior,BLVC-1,34.2674,-87.0776,71,Optimal(>70),,,,epttaxa20,70,,72,Good
+Cullman,2012,Black Warrior,MUDC-4,34.05242,-86.72396,66,Sub-optimal(59-70),,,,epttaxa6,9,,22,Poor
+Cullman,2012,Black Warrior,MBFB-7,4.086694,-86.697389,58,Marginal(41-58),,,,epttaxa18,,,14,Fair
+Cullman,2012,Black Warrior,TIBC-1,34.26215098,-86.5139189,76,Optimal(>65),,,,epttaxa12,,,40,Fair
+Cullman,2012,Black Warrior,MBFB-13,33.95045,-86.83842,66,Sub-optimal(59-70),,,,epttaxa19,,,12,Fair
+Cullman,2012,Black Warrior,WARB-2,34.278139,-86.470583,63,Sub-optimal(59-70),,,,epttaxa22,78,,48,Fair
+Etowah,2012,Black Warrior,LFKB-15,34.08444,-86.28917,69,Sub-optimal(59-70),,,,epttaxa18,61,,53,Fair
+Fayette,2012,Black Warrior,NRRF-4,33.6807328,-87.631504,71,Optimal(>70),,,,epttaxa17,57,,56,Fair
+Greene,2012,Black Warrior,LBUG-36a,2.99289,-87.76303,55,Sub-optimal(53-65),,,,,,,41,Fair
+Hale,2012,Black Warrior,COTH-57c,32.50946,-87.64409,48,Marginal(41-58),,,,eptgenera1,,,13,Very Poor
+Hale,2012,Black Warrior,ELLH-1,32.994737,-87.624137,73,Optimal(>65),,,,,,,48,Good
+Hale,2012,Black Warrior,GABH-39a,32.94227,-87.65974,55,Sub-optimal(53-65),,,,,,,59,Good
+Jefferson,2012,Black Warrior,LFKJ-3,33.74402383,-86.91852549,56,Marginal(41-58),,,,epttaxa13,,,12,Fair
+Jefferson,2012,Black Warrior,LFKB-8,33.809306,-86.80075,61,Sub-optimal(59-70),,,,epttaxa13,,,12,Fair
+Jefferson,2012,Black Warrior,MUDJ-100,33.484467,-87.18443335,65,Sub-optimal(59-70),,,,epttaxa19,,,59,Good
+Jefferson,2012,Black Warrior,NFDJ-2,33.64345,-86.91195,74,Optimal(>70),,,,epttaxa11,,,48,Fair
+Jefferson,2012,Black Warrior,TRKJ-3,33.702484,-86.69717,86,Optimal(>70),,,,epttaxa17,,,4,Fair
+Jefferson,2012,Black Warrior,TRKJ-2a,33.729243,-86.739746,71,Optimal(>70),,,,epttaxa23,83,,57,Fair
+Jefferson,2012,Black Warrior,VC-5,33.41958333,-86.9652,75,Optimal(>70),,,,epttaxa11,30,,19,Very Poor
+Jefferson,2012,Black Warrior,TPSL-1,34.341,-87.4712,77,Optimal(>70),,,,epttaxa20,70,,48,Fair
+Tuscaloosa,2012,Black Warrior,BERT-4,33.54244664,-87.56166864,75,Optimal(>70),,,,epttaxa20,70,,61,Good
+Tuscaloosa,2012,Black Warrior,BLUT-1,33.450833,-87.412222,74,Optimal(>70),,,,epttaxa20,70,,47,Fair
+Tuscaloosa,2012,Black Warrior,CTNT-1,3.200562,-87.446348,77,Optimal(>65),,,,,,,46,Fair
+Tuscaloosa,2012,Black Warrior,CRTT-1,33.006811,-87.622123,54,Sub-optimal(53-65),,,,,,,23,Poor
+Tuscaloosa,2012,Black Warrior,DNCT-2,33.305016,-87.385126,47,Marginal(41-58),,,,epttaxa0,0,,37,Poor
+Tuscaloosa,2012,Black Warrior,CYPT-1,33.16516,-87.55678,56,Sub-optimal(53-65),1,0,2,,,,24,Poor
+Tuscaloosa,2012,Black Warrior,DAVT-5,33.40089,-87.3379,86,Optimal(>70),,,,epttaxa11,30,,52,Fair
+Tuscaloosa,2012,Black Warrior,MLCT-3,33.2441197,-87.603167,45,Marginal(41-58),,,,,,,32,Fair
+Tuscaloosa,2012,Black Warrior,NRRT-1,33.47980015,-87.59680551,80,Optimal(>70),,,,epttaxa23,,,3,Fair
+Tuscaloosa,2012,Black Warrior,NRRT-2,3.56193043,-87.6302631,82,Optimal(>70),,,,epttaxa22,,,3,Fair
+Tuscaloosa,2012,Black Warrior,TTHT-2,33.22788,-87.6226,48,Marginal(41-58),,,,,,,17,Poor
+Walker,2012,Black Warrior,BKBW-1,33.73807,-87.41524,65,Sub-optimal(59-70),,,,epttaxa7,,,4,Fair
+Walker,2012,Black Warrior,CANW-33,33.70939,-87.39071,60,Sub-optimal(59-70),,,,epttaxa9,22,,60,Good
+Walker,2012,Black Warrior,CANW-1a,33.68765,-87.30972,59,Marginal(41-58),,,,epttaxa8,17,,48,Fair
+Walker,2012,Black Warrior,LOSW-5,33.88197,-87.5104,64,Sub-optimal(59-70),,,,epttaxa14,43,,41,Fair
+Walker,2012,Black Warrior,LOSW-1,33.76422,-87.35835,61,Sub-optimal(59-70),,,,epttaxa16,52,,51,Fair
+Winston,2012,Black Warrior,LCLW-19,34.12919207,-87.50900526,67,Sub-optimal(59-70),,,,epttaxa30,100,,65,Good
+Winston,2012,Black Warrior,ROCW-52,34.22613,-87.14102,70,Sub-optimal(59-70),,,,epttaxa19,65,,60,Good

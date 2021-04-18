@@ -68,13 +68,17 @@ export default {
   props: {
     scrollPosition: Number,
     counter: Number,
+    modalYpos: Number,
   },
   computed: {
     scrollBlock() {
       return Math.floor(this.scrollPosition / 100);
     },
     scrollCheck() {
-      if (this.scrollPosition < 1900 || this.scrollPosition > 4300) {
+      if (
+        this.scrollPosition < this.modalYpos - 90 ||
+        this.scrollPosition > 4300
+      ) {
         let result = "none";
         return result;
       } else {

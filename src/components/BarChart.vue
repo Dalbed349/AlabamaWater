@@ -11,8 +11,18 @@
           :y="yScale(0)"
           :width="xScale.bandwidth()"
           :height="0"
-          :style="{ fill: 'red' }"
         ></rect>
+        <!-- <text
+          class="testingyal"
+          v-for="item in data"
+          :key="item[xKey]"
+          :x="xScale(item[xKey])"
+          :y="yScale(0) - yScale(0)"
+          :width="xScale.bandwidth()"
+          :height="0"
+        >
+          {{ item }}
+        </text> -->
       </g>
     </svg>
   </div>
@@ -21,11 +31,8 @@
 <script>
 import { scaleLinear, scaleBand } from "d3-scale";
 import { max, min } from "d3-array";
-// import { selectAll } from "d3-selection";
-//import { transition } from "d3-transition";
-
-//  import * as d3 from 'd3'
-
+import { selectAll } from "d3-selection";
+// import { transition } from "d3-transition";
 export default {
   name: "BarChart",
   props: {
@@ -36,54 +43,32 @@ export default {
   },
   mounted() {
     this.svgWidth = document.getElementById("container").offsetWidth * 0.75;
-    this.AddResizeListener();
-    // this.AnimateLoad();
+    // this.AddResizeListener();
+    this.AnimateLoad();
   },
   data: () => ({
     svgWidth: 0,
     redrawToggle: true,
   }),
   methods: {
-    // AnimateLoad() {
-    //   selectAll("rect")
-    //     .data(this.data)
-    //     .transition()
-    //     .delay((d, i) => {
-    //       return i * 150;
-    //     })
-    //     .duration(1000)
-    //     .attr("y", (d) => {
-    //       return this.yScale(d[this.yKey]);
-    //     })
-    //     .attr("height", (d) => {
-    //       return this.svgHeight - this.yScale(d[this.yKey]);
-    //     });
-    // },
-    AddResizeListener() {
-      // redraw the chart 300ms after the window has been resized
-      window.addEventListener("resize", () => {
-        this.$data.redrawToggle = false;
-        setTimeout(() => {
-          this.$data.redrawToggle = true;
-          this.$data.svgWidth =
-            document.getElementById("container").offsetWidth * 0.75;
-          // this.AnimateLoad();
-        }, 300);
-      });
+    AnimateLoad() {
+      selectAll("rect")
+        .data(this.data)
+        .transition()
+        .delay((d, i) => {
+          return i * 150;
+        })
+        .duration(1000)
+        .attr("y", (d) => {
+          console.log(d[this.yKey]);
+          return this.yScale(d[this.yKey]);
+        })
+        .attr("height", (d) => {
+          return this.svgHeight - this.yScale(d[this.yKey]);
+        });
     },
   },
   computed: {
-    //      FinalByBasin(){
-    //             if (!this.Final) {
-    //             return new Map()
-    //         }                                                                      // first key  can chain more , d.key1, d => d.key2, ...)
-    //     let g = d3.rollup(this.Final,values => d3.mean(values.map( d => +d["Size"])),d => d["RiverBasin"])
-
-    // // sortedG = g.slice().sort((a, b) => d3.descending(a.votes, b.votes))
-
-    // // d3.rollup(data, values => values, d => d.key1, d => d.key2, ...)
-    //                     return g
-    //  },
     dataMax() {
       return max(this.data, (d) => {
         return d[this.yKey];
@@ -133,5 +118,13 @@ export default {
   padding-bottom: 1%;
   vertical-align: top;
   overflow: hidden;
+}
+#tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  border: solid 1px red;
+  padding: 5px;
 }
 </style>
