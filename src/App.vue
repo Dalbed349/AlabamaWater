@@ -29,41 +29,41 @@
     </div>
   </div>
   <!-- -->
+  <!-- <div class="darken"></div> -->
 
   <div class="map">
-    <!-- <div class="darken"></div> -->
-    <div class="mapImage">
-      <div class="transbox">
-        <p>
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text
-        </p>
-      </div>
-      <div class="transbox2">
-        <p>
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text
-        </p>
-      </div>
-      <img alt="Vue" src="./assets/riverBasins.png" contain />
+    <!-- <div class="mapImage"> -->
+    <div class="transtitle"></div>
+    <div class="transbox3">
+      <p>
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+      </p>
     </div>
+    <div class="transbox2"></div>
+  </div>
+
+  <!-- </div> -->
+  <!-- <div class="darken"></div> -->
+  <div class="map">
+    <div class="transbox">
+      <p>
+        20 Years of Water
+      </p>
+    </div>
+    <img alt="Vue" src="./assets/riverBasins.png" contain />
+    <div class="transbox2">
+      <p></p>
+    </div>
+    <div class="transbox3"></div>
   </div>
   <div class="TitleLarge">
     <h2>The length of the problem...</h2>
-    <!-- <iframe src="https://justinbakse.com"> </iframe> -->
-    <!-- {{ filters[this.counter] }} -->
   </div>
 
   <!-- FILTERS -->
@@ -95,67 +95,64 @@
       :FinalByBasin2="FinalByBasin2"
       :checkedUnits="checkedUnits"
       :listofCauses="listOfCauses"
+      :fromChild="fromChild"
     />
   </div>
 
   <!--  -->
 
   <div class="map">
-    <div class="mapImage">
-      <div class="transbox">
-        <p>
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text
-        </p>
-      </div>
-      <div class="transbox2">
-        <p>
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text sample text sample text
-          sample text sample text sample text sample text sample text sample
-          text sample text sample text sample text
-        </p>
-      </div>
-      <img alt="Vue" src="./assets/riverBasins.png" contain />
+    <div class="transbox">
+      <p>
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+      </p>
     </div>
+    <div class="transbox2">
+      <p>
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+      </p>
+    </div>
+    <!-- <img alt="Vue" src="./assets/logo.png" contain /> -->
   </div>
 
   <!-- SMALL MULTIPLES -->
   <!-- FILTERS -->
-  <!-- <div class="filters">
-    <el-checkbox-group v-model="filters">
-      <el-checkbox label="2020"></el-checkbox>
-      <el-checkbox label="2018"></el-checkbox>
-      <el-checkbox label="2016"></el-checkbox>
-      <el-checkbox label="2014"></el-checkbox>
-      <el-checkbox label="2012"></el-checkbox>
-      <el-checkbox label="2010"></el-checkbox>
-      <el-checkbox label="2008"></el-checkbox>
-      <el-checkbox label="2006"></el-checkbox>
-      <el-checkbox label="2004"></el-checkbox>
-      <el-checkbox label="2002"></el-checkbox>
-      <el-checkbox label="2000"></el-checkbox>
-    </el-checkbox-group>
-  </div> -->
 
   <!-- -->
-  <div class="section">
+  <div class="viz2Wrapper">
     <h2>Mile by mile, a count of the offending pollutants</h2>
 
     <div class="viz2Wrapper">
-      <div class="viz2details"></div>
+      <div class="viz2details">
+        <div class="filters">
+          <el-checkbox-group v-model="filters">
+            <el-checkbox label="2020"></el-checkbox>
+            <el-checkbox label="2018"></el-checkbox>
+            <el-checkbox label="2016"></el-checkbox>
+            <el-checkbox label="2014"></el-checkbox>
+            <el-checkbox label="2012"></el-checkbox>
+            <el-checkbox label="2010"></el-checkbox>
+            <el-checkbox label="2008"></el-checkbox>
+            <el-checkbox label="2006"></el-checkbox>
+            <el-checkbox label="2004"></el-checkbox>
+            <el-checkbox label="2002"></el-checkbox>
+            <el-checkbox label="2000"></el-checkbox>
+          </el-checkbox-group>
+        </div>
+      </div>
       <div class="viz2">
-        <!-- listOfBasins key = key -->
         <CauseMultiples
           v-for="key in sortedBasin"
           :key="key"
@@ -166,22 +163,38 @@
       </div>
     </div>
   </div>
-  <h2>A difference 5 years can make</h2>
-  <!-- <div class="section">
-    <BarChart
-      title="Bar Chart Placeholder"
-      xKey="name"
-      yKey="amount"
-      :data="barChartData"
-    />
-  </div> -->
-  <div class="section"><Scatter> </Scatter></div>
-  <!--  -->
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <!-- /// -->
-  <HelloWorld2 msg="new world" />
+
+  <div class="new">
+    <div class="backgroundDam"></div>
+  </div>
+
+  <Scatter> </Scatter>
+  <div class="map">
+    <div class="transbox">
+      <p>
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+      </p>
+    </div>
+    <div class="transbox2">
+      <p>
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+        sample text sample text sample text sample text sample text sample text
+      </p>
+    </div>
+  </div>
+  <!-- <HelloWorld2 msg="new world" /> -->
   <Modal
-    v-on:childToParent="onChildClick"
     v-on:increment="
       if (counter < 10) {
         counter++;
@@ -199,10 +212,12 @@
   </Modal>
 
   <ModalLegend
+    v-on:childToParent="onChildClick"
     :scrollPosition="scrollTop"
     :counter="counter"
     :modalYpos="modalYpos"
     :listofCauses="listOfCauses"
+    :listOfCausesFiltered="listOfCausesFiltered"
   >
   </ModalLegend>
 
@@ -210,16 +225,14 @@
 </template>
 
 <script>
-// import BarChart from "./components/BarChart.vue";
 // import HelloWorld from "./components/HelloWorld.vue";
 import VueOnlyTest from "./components/VueOnlyTest.vue";
-import HelloWorld2 from "./components/HelloWorld2.vue";
+// import HelloWorld2 from "./components/HelloWorld2.vue";
 import CauseMultiples from "./components/CauseMultiples.vue";
 import Scatter from "./components/Scatter.vue";
 import Modal from "./components/Modal.vue";
 import * as d3 from "d3";
 import ModalLegend from "./components/ModalLegend.vue";
-// import PercentageDetails from "./components/PercentageDetails.vue";
 
 const unitOptions = ["miles", "acres"];
 
@@ -246,37 +259,12 @@ export default {
         "2020",
       ],
       counter: 0,
+      hoverValue: "",
       fromChild: "",
       checkAll: false,
       checkedUnits: ["miles"],
       units: unitOptions,
       isIndeterminate: true,
-      barChartData: [
-        {
-          name: "Roses",
-          amount: 25,
-        },
-        {
-          name: "Tulips",
-          amount: 40,
-        },
-        {
-          name: "Daisies",
-          amount: 15,
-        },
-        {
-          name: "Narcissuses",
-          amount: 9,
-        },
-        {
-          name: "farcissuses",
-          amount: 9,
-        },
-        {
-          name: "harcissuses",
-          amount: 9,
-        },
-      ],
     };
   },
 
@@ -343,6 +331,9 @@ export default {
     listOfCauses() {
       return Array.from(new Set(this.Final.map((d) => d.Causes)));
     },
+    listOfCausesFiltered() {
+      return Array.from(new Set(this.filteredFinal.map((d) => d.Causes)));
+    },
     filteredSmallMultiples() {
       // if (!this.Final) {
       //   return null;
@@ -356,7 +347,7 @@ export default {
 
   components: {
     // HelloWorld,
-    HelloWorld2,
+    // HelloWorld2,
     CauseMultiples,
     VueOnlyTest,
     // BarChart,
@@ -385,6 +376,9 @@ export default {
     window.removeEventListener("scroll", this.onScroll);
   },
   methods: {
+    // onClickChild(value) {
+    //   console.log(value); // someValue
+    // },
     // changeSelectedYear(val) {
     //   this.selectedYear = val;
     // },
@@ -410,11 +404,36 @@ export default {
 </script>
 
 <style>
+.new {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./assets/CoosaDam.jpg") center center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* .backgroundDamn {
+  display: block;
+  padding-top: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("./assets/glacier.jpg") center center;
+  width: 100%;
+  height: 100px;
+} */
+.section2 {
+  display: block;
+}
+.section {
+  display: block;
+}
 .viz2details {
   position: absolute;
   margin-left: 75%;
-  width: 23%;
-  height: 100vh;
+  width: 20%;
+  height: 100%;
   background-color: bisque;
 }
 #app {
@@ -427,6 +446,8 @@ export default {
   margin-left: -10px;
   margin-right: -10px;
   margin-top: -2%;
+  display: flex;
+  flex-direction: column;
 }
 .Intro {
   position: relative;
@@ -450,26 +471,14 @@ export default {
   position: relative;
   height: 105vh;
 }
-.mapImage {
+/* .mapImage {
   position: inline-block;
-  margin-left: -10%;
-  height: 100vh;
-  /* width: 550px; */
-  transform: scale(0.8, 0.8);
-}
-.mapImage img {
-  position: relative;
-  /* margin-left: 0%; */
-  /* padding-top: 100%; */
-  margin-top: 5vh;
-  margin-right: 86vw;
-  /* width: 30vw; */
-  height: 70vh;
-  /* height: 10%;
-  width: 10%; */
 
-  transform: scale(1, 1);
-}
+  height: 100vh;
+
+  transform: scale(0.9, 0.9);
+} */
+
 .title1 {
   font-size: xxx-large;
   margin-bottom: 5vh;
@@ -498,12 +507,21 @@ export default {
   width: 100%;
   height: 100%;
   opacity: 0.9;
+  background-size: 100vw;
 }
 .margins {
   position: absolute;
   margin-top: 15vh;
 }
+
+.map img {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
 .map {
+  display: grid;
   position: relative;
   z-index: -1;
   top: 0;
@@ -513,8 +531,10 @@ export default {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
     url("./assets/glacier.jpg") center center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   opacity: 0.9;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px 100px 100px auto;
 }
 .TitleLarge {
   text-align: left;
@@ -524,52 +544,73 @@ export default {
   margin-top: 4%;
   /* font-weight: 200; */
 }
-div.transbox {
-  position: absolute;
-  margin-top: 5vh;
-  margin-left: 40%;
-  /* margin-right: 40vw; */
-
-  width: 30vw;
-  height: 63vh;
+div.transtitle {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: #ffffff;
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.5;
+}
+div.transbox {
+  margin-left: 25%;
+  margin-right: 25%;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.7;
 }
 /* background-position: 50% 0; */
 div.transbox p {
-  margin: 5%;
   font-weight: bold;
   color: #000000;
 }
-div.transbox2 {
-  position: absolute;
-  margin-top: 5vh;
-  margin-left: 80%;
-  /* margin-right: 40vw; */
 
-  width: 30vw;
-  height: 63vh;
+div.transbox3 {
+  margin-left: 50%;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
   background-color: #ffffff;
   border: 1px solid black;
   opacity: 0.6;
 }
-/* background-position: 50% 0; */
-div.transbox2 p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+div.transbox2 {
+  margin-left: 50%;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
 }
-.filters {
-  width: 15vw;
 
-  margin-left: 60vw;
+.filters {
 }
 .viz2Wrapper {
-  float: left;
-  margin-right: 25%;
+  margin-right: 50%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.wrapper {
+  display: inline-block;
+  margin-right: 2%;
   margin-top: 5%;
-  overflow: hidden;
+  margin-left: 2%;
 }
 @media (min-width: 1440x) {
 }

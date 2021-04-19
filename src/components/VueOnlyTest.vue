@@ -150,6 +150,9 @@
                 backgroundColor: coloring(key2[0]),
               }"
             ></div>
+            <div v-if="fromChild === key2[0]" class="Details3" :style="{}">
+              <img class="icon" src="../assets/caution.png" />
+            </div>
             <!-- fill: colors2[key2[0]].color, -->
             <!-- colors[index] -->
             <!-- backgroundColor: coloring(key2[0]), -->
@@ -238,6 +241,7 @@ export default {
     checkedUnits: Array,
     listofCauses: Array,
     FinalByBasin2: Map,
+    fromChild: String,
   },
 
   computed: {
@@ -308,7 +312,9 @@ export default {
 .fade-leave-active {
   transition: opacity 1s ease;
 }
-
+.Details3 {
+  float: right;
+}
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
@@ -410,6 +416,10 @@ export default {
   margin-left: 25%;
   text-align: left;
   width: 50vw;
+}
+.icon {
+  height: 20px;
+  width: 20px;
 }
 .arrow {
   height: 50px;

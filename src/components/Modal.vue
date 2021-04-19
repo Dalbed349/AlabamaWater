@@ -5,22 +5,6 @@
         <!-- <div class="scrollY">Scroll-Y is {{ scrollPosition }}</div> -->
         <!-- <div>{{ scrollCheck }}</div>
       <div>Rounded to the nearest 100: {{ scrollBlock }}</div> -->
-        <!-- <div>{{ this.filters }}</div> -->
-        <!-- <div class="filters">
-        <el-checkbox-group v-model="filters">
-          <el-checkbox label="2020"></el-checkbox>
-          <el-checkbox label="2018"></el-checkbox>
-          <el-checkbox label="2016"></el-checkbox>
-          <el-checkbox label="2014"></el-checkbox>
-          <el-checkbox label="2012"></el-checkbox>
-          <el-checkbox label="2010"></el-checkbox>
-          <el-checkbox label="2008"></el-checkbox>
-          <el-checkbox label="2006"></el-checkbox>
-          <el-checkbox label="2004"></el-checkbox>
-          <el-checkbox label="2002"></el-checkbox>
-          <el-checkbox label="2000"></el-checkbox>
-        </el-checkbox-group>
-      </div> -->
 
         <div class="child">
           <button type="button" name="button" v-on:click="$emit('decrease')">
@@ -48,7 +32,6 @@
 export default {
   data() {
     return {
-      childMessage: "",
       filters: [
         "2000",
         "2002",
@@ -77,7 +60,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > 4300
+        this.scrollPosition > 5500
       ) {
         let result = "none";
         return result;

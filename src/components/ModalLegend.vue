@@ -1,12 +1,15 @@
 <template>
   <transition name="fade">
     <div class="ModalLegend" :style="{ display: scrollCheck }">
-      <div class="container1">
-        <div class="box" v-for="key in listofCauses" :key="key">
+      <div class="container1" v-on:click="emitToParent">
+        <div class="box" v-for="key in listOfCausesFiltered" :key="key">
           <div
             class="legend1"
+            @mouseenter="hoverValue = key"
+            @mouseleave="hoverValue = null"
+            v-on:mouseenter="emitToParent"
             :style="{
-              height: 2.27 + 'vh',
+              height: 2.0 + 'vh',
               width: 20 + 'px',
               backgroundColor: coloring(key),
               float: 'left',
@@ -36,13 +39,18 @@
 <script>
 import * as d3 from "d3";
 export default {
-  data() {},
+  data() {
+    return {
+      hoverValue: null,
+    };
+  },
   name: "ModalLegend",
   props: {
     scrollPosition: Number,
     counter: Number,
     modalYpos: Number,
     listofCauses: Array,
+    listOfCausesFiltered: Array,
   },
   computed: {
     scrollBlock() {
@@ -51,7 +59,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > 4300
+        this.scrollPosition > 5000
       ) {
         let result = "none";
         return result;
@@ -72,8 +80,11 @@ export default {
     },
   },
   methods: {
-    // emitToParent(event) {
-    //   this.$emit("childToParent", this.childMessage);
+    emitToParent() {
+      this.$emit("childToParent", this.hoverValue);
+    },
+    // onClickButton(event) {
+    //   this.$emit("clicked", "someValue");
     // },
   },
 };
@@ -82,7 +93,7 @@ export default {
 <style>
 .ModalLegend {
   position: fixed;
-  top: 0vh;
+  top: 30vh;
   left: 90vw;
   width: 150px;
   height: 0;

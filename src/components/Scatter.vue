@@ -1,9 +1,13 @@
 <template>
   <div class="wrapper">
     <div class="Scatter">
-      <h1>D3 Scatterplot</h1>
+      <h4>
+        Macroinvertebrate community health and Habitat Quality Score in the
+        Black Warrior river basin
+      </h4>
       <div id="chart"></div>
     </div>
+    <div class="scatterDetails">hello</div>
   </div>
 </template>
 
@@ -53,7 +57,10 @@ export default {
             return d.Wmbia;
           }),
         ]);
-
+        var yAccessor = (d) => d.WMBIAssessmentScore;
+        console.log(yAccessor(data[5]));
+        var xAccessor = (d) => d.HabitatQualityScore;
+        console.log(xAccessor(data[5]));
         svg
           .selectAll("dot")
           .data(data)
@@ -69,22 +76,7 @@ export default {
           .style("fill", function(d) {
             return d.Year <= 2007 ? "red" : "green";
           })
-          //   .on("mouseover", (event, d) => {
-          //     tooltip
-          //       .transition()
-          //       .duration(200)
-          //       .style("opacity", 0.9);
-          //     tooltip
-          //       .html(`${textValue(d)} \n$${yValue(d)} Billion`)
-          //       .style("left", d3.event.pageX + "px")
-          //       .style("top", d3.event.pageY + "px");
-          //   })
-          //   .on("mouseout", (d) => {
-          //     tooltip
-          //       .transition()
-          //       .duration(500)
-          //       .style("opacity", 0);
-          //   });
+
           .on("mouseover", function(event, d) {
             tooltip.style("opacity", 1);
             tooltip
@@ -106,6 +98,10 @@ export default {
             // console.log(d3.pointer(event));
           });
 
+        // var shape = d3.scaleOrdinal(
+        //   data.map((d) => d.category),
+        //   d3.symbols.map((s) => d3.symbol().type(s)())
+        // );
         var tooltip = d3
           .select("#chart")
           .append("div")
@@ -138,8 +134,6 @@ export default {
           )
           .style("text-anchor", "middle")
           .text("Habitat Quality Score");
-
-        svg.selectAll("dot");
       });
     },
   },
@@ -150,12 +144,12 @@ export default {
 </script>
 
 <style>
-.scatter {
+/* .scatter {
   margin-top: 100px;
   margin-right: 50%;
   height: 800px;
   width: 800px;
-}
+} */
 .axis path,
 .axis line {
   fill: none;
@@ -174,8 +168,10 @@ export default {
 .tooltip {
   position: absolute;
 }
-.wrapper {
-  margin-right: 50%;
-  margin-left: 25%;
+.Scatter {
+  float: left;
+}
+.scatterDetails {
+  float: left;
 }
 </style>
