@@ -1,12 +1,23 @@
 <template>
-  <div class="CauseMultiples">
+  <div
+    class="CauseMultiples"
+    @mouseenter="hover = basin"
+    @mouseleave="hover = null"
+    v-on:mouseenter="emitToParent"
+  >
     <p>{{ basin }}</p>
+
     <svg :width="svgWidth" :height="svgHeight">
       <g
         class="barwithtooltip"
         :transform="'translate(' + margin.left + ',' + margin.top + ')'"
       >
+        <!-- @mouseenter="hover = key[0]"
+          @mouseleave="hover = null" -->
+        <!-- @mouseover="hovertrue = true"
+          @mouseleave="hovertrue = false" -->
         <rect
+          v-on:mouseenter="emitToParent"
           class="bars"
           v-for="(d, i) in rollupByCause"
           :key="i"
@@ -15,18 +26,38 @@
           fill="steelblue"
           :x="xScale(d[0])"
           :y="yScale(d[1])"
+          @mouseover="(hovertrue = d[0]), (hovertruevalue = d[1])"
+          @mouseleave="(hovertrue = null), (hovertruevalue = null)"
         ></rect>
-        <text
-          class="testingya"
-          v-for="(d, i) in rollupByCause"
-          :key="i"
-          fill="steelblue"
-          :x="xScale(d[0])"
-          :y="yScale(d[1])"
-        >
-          {{ d[0] }},{{ Math.round(d[1] * 10) / 10 }}
-        </text>
-
+        <g>
+          <rect
+            v-if="hovertrue"
+            fill="white"
+            :x="xScale(hovertrue)"
+            :y="yScale(hovertruevalue) - 21"
+            background-color="white"
+            font-size=".9em"
+            dy="-.5em"
+            dx=".5em"
+            width="100%"
+            height="18"
+          >
+            <!-- {{ d[0] }},{{ Math.round(d[1] * 10) / 10 }} -->
+          </rect>
+          <text
+            v-if="hovertrue"
+            class="testingya"
+            fill="steelblue"
+            :x="xScale(hovertrue)"
+            :y="yScale(hovertruevalue)"
+            background-color="#000"
+            font-size=".9em"
+            dy="-.5em"
+            dx=".5em"
+          >
+            {{ hovertrue }},{{ Math.round(hovertruevalue * 10) / 10 }}
+          </text>
+        </g>
         <g v-axis:x="xScale" :transform="`translate(0, ${height})`"></g>
         <g v-axis:y="yScale"></g>
       </g>
@@ -44,9 +75,14 @@ export default {
       svgHeight: 300,
       svgWidth: 350,
       margin: { top: 50, left: 40, bottom: 70, right: 10 },
+      hovertrue: null,
+      hovertruevalue: null,
+      hover: null,
     };
   },
-
+  components: {
+    // tooltip,
+  },
   props: {
     data: Array,
     basin: String,
@@ -86,8 +122,26 @@ export default {
         (d) => d.Causes
       );
     },
+    rollupByCauseTEST() {
+      return d3.rollups(
+        this.data.filter((d) => d.RiverBasin == this.basin),
+        (values) => d3.sum(values.map((d) => +d.Size)),
+        (d) => d.Causes,
+        (d) => d.Sources
+      );
+    },
   },
-  methods: {},
+  methods: {
+    hovertrue1() {
+      this.hovertrue = true;
+    },
+
+    emitToParent() {
+      this.$emit("hoverSecondVis", this.hover);
+      this.$emit("hoverSecondVisCause", this.hovertrue);
+      console.log(this.hovertrue);
+    },
+  },
   directives: {
     axis(el, binding) {
       const axisSelection = binding.arg; // either X or Y
@@ -98,9 +152,9 @@ export default {
       ///// d3.select(‘g.x-axis’).call(g => yAxis(g))
       // console.log(axisSelection);
       //if(axisSelection === ‘y’){ g.append(‘text’)     .attr(‘transform’, ‘rotate(90)’)     .text(‘Y AXIS’)}
-
+      // .transition()
       const g = d3.select(el);
-      g.transition()
+      g
         //Line 92 ==> .call(d3[“axisBottom”](xScale))
         .call(d3[axisMethod](methodArg));
       if (axisSelection === "x") {
@@ -111,7 +165,7 @@ export default {
         // .attr("x", 7);
         // .text("X AXIS");
         g.selectAll("text")
-          .attr("y", 0)
+          .attr("y", 10)
           .attr("x", 2)
           .attr("dx", "1em")
           .attr("dy", "-.5em")
@@ -119,6 +173,42 @@ export default {
           //.attr("transform", "translate(2,0)")
           .style("text-anchor", "start")
           .style("font", "8px times");
+
+        // var tooltip = d3
+        //   .select(".CauseMultiples")
+        //   .append("div")
+        //   .attr("class", "tooltip")
+        //   .style("opacity", 1);
+
+        // g.selectAll(".bars")
+        //   .data(this.rollupByCause)
+        //   .enter()
+        //   .on("mouseover", function(event, d) {
+        //     console.log(d[0]);
+        //     tooltip.style("opacity", 1);
+        //     // tooltip
+        //     //   .transition()
+        //     //   .duration(200)
+        //     //   .style("opacity", 0.9);
+        //     tooltip
+        //       // .html(`${d[1]} `)
+        //       .html("hello")
+        //       .style("left", d3.pointer(event)[0] + "px")
+        //       .style("top", d3.pointer(event)[1] + "px");
+        //     // .style("left", 10 + "px")
+        //     // .style("top", 10 + "px");
+        //     // .style("height", 50)
+        //     // .style("width", 50);
+        //     console.log(d3.pointer(event)[0], "x", d3.pointer(event)[1], "y");
+        //   });
+        // .on("mouseleave", function() {
+        //   // console.log(d);
+        //   tooltip
+        //     .transition()
+        //     .duration(500)
+        //     .style("opacity", 0);
+        //   // console.log(d3.pointer(event));
+        // });
       }
     },
   },
@@ -139,21 +229,21 @@ export default {
 
 .CauseMultiples p {
   height: 1 vh;
-  margin-top: 2%;
+  margin-top: 1%;
+  position: absolute;
 }
 .testingya {
-  opacity: 0;
+  background-color: red;
 }
-/* .testingya:hover {
+
+/* .barwithtooltip:hover text {
   opacity: 1;
 } */
-/* .bars:hover ~ .testingya {
-  opacity: 1;
-} */
-.barwithtooltip:hover text {
-  opacity: 1;
-}
 .bars:hover {
   fill: brown;
+}
+.tooltip {
+  position: absolute;
+  height: 10px;
 }
 </style>

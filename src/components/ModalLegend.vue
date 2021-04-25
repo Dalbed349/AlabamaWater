@@ -1,6 +1,9 @@
 <template>
   <transition name="fade">
-    <div class="ModalLegend" :style="{ display: scrollCheck }">
+    <div
+      class="ModalLegend"
+      :style="{ display: scrollCheck[0], opacity: scrollopacity[0] }"
+    >
       <div class="container1" v-on:click="emitToParent">
         <div class="box" v-for="key in listOfCausesFiltered" :key="key">
           <div
@@ -51,6 +54,7 @@ export default {
     modalYpos: Number,
     listofCauses: Array,
     listOfCausesFiltered: Array,
+    modalYposEnd: Number,
   },
   computed: {
     scrollBlock() {
@@ -58,14 +62,30 @@ export default {
     },
     scrollCheck() {
       if (
-        this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > 5000
+        this.scrollPosition < this.modalYpos - 190 ||
+        this.scrollPosition > this.modalYposEnd
       ) {
         let result = "none";
-        return result;
+
+        return [result];
       } else {
-        let result1 = "inline";
-        return result1;
+        let result = "inline";
+
+        return [result];
+      }
+    },
+    scrollopacity() {
+      if (
+        this.scrollPosition < this.modalYpos - 90 ||
+        this.scrollPosition > this.modalYposEnd - 100
+      ) {
+        let result = 0;
+
+        return [result];
+      } else {
+        let result = 1;
+
+        return [result];
       }
     },
     coloring() {
@@ -83,9 +103,6 @@ export default {
     emitToParent() {
       this.$emit("childToParent", this.hoverValue);
     },
-    // onClickButton(event) {
-    //   this.$emit("clicked", "someValue");
-    // },
   },
 };
 </script>
@@ -101,6 +118,12 @@ export default {
   margin-left: 0%;
   transform: scale(1.2, 1.2);
   /* // padding: 5px; */
+  visibility: visible;
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  opacity: 1;
 }
 .lengend1 {
 }

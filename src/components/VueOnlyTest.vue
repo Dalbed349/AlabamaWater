@@ -41,6 +41,8 @@
           class="test2"
           @mouseenter="hover = key[0]"
           @mouseleave="hover = null"
+          v-on:mouseenter="emitToParent"
+          v-on:mouseleave="emitToParent"
           :style="{
             width: xScale(key[1]) + 130 + 'px',
           }"
@@ -270,9 +272,9 @@ export default {
   },
 
   methods: {
-    // mouseOver: function() {
-    //   this.active = !this.active;
-    // },
+    emitToParent() {
+      this.$emit("hoverMain", this.hover);
+    },
   },
 };
 </script>
@@ -464,4 +466,25 @@ export default {
     transform: scale(1, 1.3);
   }
 }
+.cls-1,
+.cls-10,
+.cls-11,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6,
+.cls-7,
+.cls-8,
+.cls-9 {
+  stroke: rgb(255, 255, 255);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+/* .vueOnlyTest {
+ z-index: -1;
+  background-image: linear-gradient(rgb(23, 99, 143), rgba(255, 0, 0, 0)); 
+  background-color: red;
+} */
 </style>
