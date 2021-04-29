@@ -225,6 +225,7 @@ export default {
 
 <style>
 .CauseMultiples {
+  overflow: visible;
 }
 
 .CauseMultiples p {

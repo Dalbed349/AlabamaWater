@@ -39,7 +39,7 @@
             <!-- v-if="hoverCentral === test[0]"
               :style="{
                 fill: 'red',
-              }" -->12/17
+              }" -->
 
             <!-- v-bind:style="{ fill: activeColor }" -->
             <defs></defs>
@@ -48,7 +48,7 @@
               class="cls-1"
               :style="
                 hoverCentral === test[0]
-                  ? { fill: 'red', opacity: 1 }
+                  ? { fill: 'red', opacity: 0.5 }
                   : { fill: coloring(test[0]) }
               "
               d="M7320.77,7249.83c-.92-5.17,1.71-11.61-5.24-14.61h-8.7l-3.5,8.53-12.71-.42-2.2,2.46c-.43,1.2,2.23,3.71,2.85,4.34,3.39,3.46,3.19,7.64,3.51,12a7.72,7.72,0,0,1-2.86,7.1c-3,2.62-6,5.46-9.39,7.41-4.18,2.38-4.53,6.8-6.63,10.26a186.78,186.78,0,0,1-13.64,19.72c-3,3.72-4.37,7.95-6.27,12.07-.77,1.69-.16,3.43.16,4.85,1.14,5-.16,9.22-3.94,12.32a21.55,21.55,0,0,0-7.92,12.48c-1,5.6-3.29,12,.93,17.38l-.28,2.77c4.62.22,12.11.38,16.73.47,6.23.12,12.07-1,18.3-1.27,5-.24,9.66,1.75,14.6,1.2l.75.38c1.5,1,3.24,0,4.9.64a2.82,2.82,0,0,0,3.71-1.77l.37,1.13c2.62,1.63,5.5.65,8.24.68,7.48.1,7.59,0,7.44-7.43-.09-4.38-.9-8.76.4-13.11.43-1.46.73-2.48,2.59-3.12,3.21-1.12,7.08-2.29,7.82-6.26.89-4.8,4.49-9.16,3.17-14.33-.14-.57.11-1.32.65-1.12l.31-.83c.37-2.82-.52-1-1.09-1.94-.33-2.72-.29-3.22-.6-5.74-.26-2.06-.26-4.63.75-6.29,4.45-7.31,2.66-14.94,1.72-22.53-.41-3.38-1.94-6.67-1.4-10.11.7-4.48-1.4-7.51-4.59-10.06-.35-.28-1.2-.3-1.43-.82-2.31-5.27-7.58-9.2-7.13-15.72Z"
@@ -202,6 +202,29 @@
               transform="translate(-7004.84 -6879.99)"
             />
           </svg>
+
+          <svg
+            class="GradientLegend"
+            viewBox="0 0 10 10"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <linearGradient id="myGradient" gradientTransform="rotate(0)">
+                <stop offset="1%" stop-color="#99ddff" />
+
+                <stop offset="50%" stop-color="#0077b3" />
+                <stop offset="95%" stop-color="#00111a" />
+              </linearGradient>
+            </defs>
+
+            <!-- using my linear gradient -->
+            <rect width="8" height=".7" fill="url('#myGradient')" />
+          </svg>
+          <div class="legend">
+            Lowest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Length&nbsp; &nbsp;&nbsp;&nbsp;
+            Highest
+          </div>
           <!-- <img class="svgimg" src="../assets/testingSVGmap.svg" height="400" /> -->
         </div>
       </div>
@@ -284,7 +307,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd - 90
+        this.scrollPosition > this.modalYposEnd - 100
       ) {
         let result = 0;
 
@@ -406,6 +429,13 @@ export default {
   grid-row-start: 2;
   grid-row-end: span 2;
 }
+.legend {
+  margin-top: 5%;
+}
+.GradientLegend {
+  margin-top: 145%;
+  margin-left: 40px;
+}
 .item-a #svgimg {
   position: absolute;
 }
@@ -426,34 +456,4 @@ export default {
   stroke-linejoin: round;
   stroke-width: 2px;
 }
-/* .cls-2 {
-  fill: #15ffd6;
-}
-.cls-3 {
-  fill: #00a2e9;
-}
-.cls-4 {
-  fill: #6a6800;
-}
-.cls-5 {
-  fill: #00283f;
-}
-.cls-6 {
-  fill: #65007f;
-}
-.cls-7 {
-  fill: #003f2d;
-}
-.cls-8 {
-  fill: #003f1b;
-}
-.cls-9 {
-  fill: #3dbf00;
-}
-.cls-10 {
-  fill: #d45a00;
-}
-.cls-11 {
-  fill: #940037;
-} */
 </style>

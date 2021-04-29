@@ -31,52 +31,52 @@
         />
       </svg>
     </div>
-    <!-- 
-      
-    <transition-group name="fade"> -->
+
     <div class="BoundsByBasin">
       <div class="ByBasin" v-for="(key, index) in sortedBasin" :key="key[0]">
         <!--  -->
-        <div
-          class="test2"
-          @mouseenter="hover = key[0]"
-          @mouseleave="hover = null"
-          v-on:mouseenter="emitToParent"
-          v-on:mouseleave="emitToParent"
-          :style="{
-            width: xScale(key[1]) + 130 + 'px',
-          }"
-        >
-          <div class="horizontal-title">{{ key[0] }}</div>
-          <div class="horizontal-bar" style="height: 50px; overflow: none;">
-            <div
-              class="horizontal-title2"
-              :style="{
-                width: xScale(key[1]) + 130 + 'px',
-                fill: colors[index],
-              }"
-            >
-              {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits[0] }}
-            </div>
+        <transition-group name="flip-list" tag="div" class="test2">
+          <div
+            class="expand"
+            key="testingTgrp"
+            @mouseenter="hover = key[0]"
+            @mouseleave="hover = null"
+            v-on:mouseenter="emitToParent"
+            v-on:mouseleave="emitToParent"
+            :style="{
+              width: xScale(key[1]) + 130 + 'px',
+            }"
+          >
+            <div class="horizontal-title">{{ key[0] }}</div>
+            <div class="horizontal-bar" style="height: 50px; overflow: none;">
+              <div
+                class="horizontal-title2"
+                :style="{
+                  width: xScale(key[1]) + 130 + 'px',
+                  fill: colors[index],
+                }"
+              >
+                {{ Math.round(key[1] * 10) / 10 }} {{ checkedUnits[0] }}
+              </div>
 
-            <svg
-              class="wave2"
-              viewBox="100 0 500 150"
-              preserveAspectRatio="none"
-              :style="{
-                height: 100 + '%',
-                width: xScale(key[1]) + 'px',
-                fill: '#227488',
-              }"
-            >
-              <g
-                transform="translate(0 -45.5)
+              <svg
+                class="wave2"
+                viewBox="100 0 500 150"
+                preserveAspectRatio="none"
+                :style="{
+                  height: 100 + '%',
+                  width: xScale(key[1]) + 'px',
+                  fill: '#227488',
+                }"
+              >
+                <g
+                  transform="translate(0 -45.5)
                             
                                 scale(.5 1)"
-              >
-                <!-- https://codepen.io/liquidcharcoal/pen/rEeYrw -->
-                <path
-                  d="
+                >
+                  <!-- https://codepen.io/liquidcharcoal/pen/rEeYrw -->
+                  <path
+                    d="
                     M0 67
                     C 273,183
                         822,-40
@@ -86,13 +86,13 @@
                     H 0 
                     V 67
                     Z"
-                >
-                  <animate
-                    repeatCount="indefinite"
-                    fill="#454599"
-                    attributeName="d"
-                    dur="10s"
-                    values="
+                  >
+                    <animate
+                      repeatCount="indefinite"
+                      fill="#454599"
+                      attributeName="d"
+                      dur="10s"
+                      values="
                         M0 77 
                         C 473,283
                         822,-40
@@ -133,60 +133,64 @@
                         V 67 
                         Z
                         "
-                  ></animate>
-                </path>
-              </g>
-            </svg>
-          </div>
-
-          <div
-            class="Details"
-            v-for="key2 in FinalByBasin2.get(key[0])"
-            :key="key2"
-          >
-            <div
-              class="horizontal-bar4"
-              :style="{
-                height: (key2[1] / key[1]) * 100 + 'px',
-                width: xScale(key[1]) + 'px',
-                backgroundColor: coloring(key2[0]),
-              }"
-            ></div>
-            <div v-if="fromChild === key2[0]" class="Details3" :style="{}">
-              <img class="icon" src="../assets/caution.png" />
+                    ></animate>
+                  </path>
+                </g>
+              </svg>
             </div>
-            <!-- fill: colors2[key2[0]].color, -->
-            <!-- colors[index] -->
-            <!-- backgroundColor: coloring(key2[0]), -->
-            <div
-              v-if="hover === key[0]"
-              class="Details2"
-              :style="{ display: 'inline' }"
-            >
-              {{ Math.round((key2[1] / key[1]) * 10000) / 100 + "%" }}
-              {{ key2[0] }}
-            </div>
-            <!-- {{ (key2[1] / key[1]) * 100 }} -->
-          </div>
 
-          <div class="horizontal-bar" style="height: 30px; overflow: visible;">
-            <svg
-              viewBox="0 0 500 150"
-              preserveAspectRatio="none"
-              :style="{ height: 50 + 'px', width: xScale(key[1]) + 'px' }"
+            <div
+              class="Details"
+              v-for="key2 in FinalByBasin2.get(key[0])"
+              :key="key2"
             >
-              <path
-                d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
-                :style="{ fill: '#227488' }"
-              ></path>
-              <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
-            </svg>
+              <div
+                class="horizontal-bar4"
+                :style="{
+                  height: (key2[1] / key[1]) * 100 + 'px',
+                  width: xScale(key[1]) + 'px',
+                  backgroundColor: coloring(key2[0]),
+                }"
+              ></div>
+
+              <div v-if="fromChild === key2[0]" class="Details3" :style="{}">
+                <img class="icon" src="../assets/caution.png" />
+              </div>
+
+              <!-- fill: colors2[key2[0]].color, -->
+              <!-- colors[index] -->
+              <!-- backgroundColor: coloring(key2[0]), -->
+              <transition-group name="list-complete">
+                <div v-if="hover === key[0]" class="Details2">
+                  <!-- :style="{ display: 'inline' }" -->
+                  {{ Math.round((key2[1] / key[1]) * 10000) / 100 + "%" }}
+                  {{ key2[0] }}
+                </div>
+              </transition-group>
+              <!-- {{ (key2[1] / key[1]) * 100 }} -->
+            </div>
+
+            <div
+              class="horizontal-bar"
+              style="height: 30px; overflow: visible;"
+            >
+              <svg
+                viewBox="0 0 500 150"
+                preserveAspectRatio="none"
+                :style="{ height: 50 + 'px', width: xScale(key[1]) + 'px' }"
+              >
+                <path
+                  d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+                  :style="{ fill: '#227488' }"
+                ></path>
+                <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
+              </svg>
+            </div>
           </div>
-        </div>
-        <!-- </div> -->
+          <!-- </div> -->
+        </transition-group>
       </div>
     </div>
-    <!-- </transition-group> -->
   </div>
 </template>
 
@@ -314,12 +318,13 @@ export default {
 .fade-leave-active {
   transition: opacity 1s ease;
 }
-.Details3 {
-  float: right;
-}
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+.Details3 {
+  position: absolute;
+  margin-left: -25px;
 }
 
 .Details {
@@ -374,6 +379,19 @@ export default {
   margin-left: 0;
   /* background: white; */
 }
+.ByBasin:hover .Details {
+  max-height: 100px;
+  transition-delay: 5s;
+}
+
+.Details {
+  max-height: 100%;
+  transition: max-height 5s;
+
+  /* white-space: nowrap;
+  overflow: hidden; */
+}
+
 .wave2 {
   position: relative;
   /* position: relative; */
@@ -382,7 +400,7 @@ export default {
   width: 100%;
   margin-bottom: 5%;
   /* animation-name: move-left; */
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   z-index: -1;
@@ -390,7 +408,6 @@ export default {
 .test2 {
   margin-left: 0%;
   margin-right: 100px;
-  /* height: 1000px; */
 }
 .horizontal-title {
   position: relative;
@@ -409,7 +426,7 @@ export default {
   /* width: 100%; */
   text-align: right;
   margin-top: 0;
-  font-size: 1.1em;
+  font-size: 1.4em;
 }
 .title-chart-1 {
   font-weight: bold;
@@ -482,9 +499,38 @@ export default {
   stroke-linejoin: round;
   stroke-width: 2px;
 }
-/* .vueOnlyTest {
- z-index: -1;
-  background-image: linear-gradient(rgb(23, 99, 143), rgba(255, 0, 0, 0)); 
-  background-color: red;
+.flip-list-move {
+  transition: transform 1s;
+}
+/* transition: max-height 0.25s ease-out; */
+.list-complete-item {
+  /* transition: max-height 15s ease-out; */
+  transition: all 1s;
+  /* display: absolute;
+
+  margin-right: 10px;
+  transition-property: width; */
+}
+.list-complete-enter,
+.list-complete-leave-to {
+  opacity: 0;
+}
+.list-complete-leave-active {
+  position: inline-block;
+}
+
+/* .expand-enter-active,
+.expand-leave-active {
+  transition-property: height;
+  transition-duration: 5s;
+}
+
+.expand-leave-to {
+  height: 0px;
+  opacity: 0;
+}
+
+.expand-enter {
+  height: 200px;
 } */
 </style>
