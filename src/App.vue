@@ -5,7 +5,7 @@
     <div class="curved-div">
       <span style="color: #fff">20 Years of </span>
 
-      <span style="color: #98F5FF">Water</span>
+      <span style="color: #fff">Water</span>
       <p style="color: #fff">Visualising Alabama's List of Impaired Waters</p>
       <svg viewBox="0 0 1440 319">
         <path
@@ -21,8 +21,16 @@
   <div class="IntroGlacier2"></div>
   <!--  -->
   <div class="map3">
-    <div class="curved-div"></div>
-    <h1>A Sprawling Wildlife</h1>
+    <div class="curved-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,64L60,64C120,64,240,64,360,53.3C480,43,600,21,720,53.3C840,85,960,171,1080,202.7C1200,235,1320,213,1380,202.7L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+    <h1>A Lush Habitat</h1>
     <div class="drop">
       <svg width="100%" height="100%" viewbox="0 0 20 22">
         <defs>
@@ -33,8 +41,7 @@
         </defs>
         <path
           fill="white"
-          opacity=".7"
-          stroke="url(#linear)"
+          opacity="1"
           stroke-width=".2"
           transform="scale(23 25)"
           d="M15 3
@@ -44,38 +51,43 @@
         />
       </svg>
     </div>
-
     <div class="transbox3">
-      <p>
+      <p id="bigger1">
         <br />
-        Alabama’s climate and geographic history makes it one of the most
-        ecologically diverse states in the U.S. <br /><br />
+        Alabama's climate and geographic history makes it one of the most
+        ecologically diverse states in the U.S. <br />
+      </p>
+      <p id="bigger">
         During the Ice Age much of this land remained unfrozen due to its
         lattitude. A combination of proximity to coastal waters and unique
         geological formations around inland waters allowed for evolution to
         continue unabated while most of the planet was covered in ice.
-        <br /><br />
-        Today the state ranks number one in the country for aquatic biodiversity
-        with more than 450 known species of fish.<br /><br />
       </p>
+
+      <p id="bigger">
+        Today the state ranks number one in the country for aquatic biodiversity
+        with more than 450 known species of freshwater fish.<br /><br />
+      </p>
+
+      <p></p>
     </div>
+
     <div class="transbox2">
       <p>
         Black Warrior River <br />
-        Photo by Riverkeeper
+        Photo by Riverkeeper Nelson Brooke
         <a href="https://www.w3schools.com/">Nelson Brooke</a>
       </p>
     </div>
   </div>
   <!--  -->
-
   <div class="IntroGlacier3" style="height: 90vh">
     <h2>A Troubling History</h2>
     <h3>
-      At the same time, a history of industrial accidents and abuse has led to
-      disasters that have harmed everything from ponds to coastlines and cities.
+      A history of industrial accidents, oversight, and abuse has led to
+      disasters that have harmed everything from ponds to rivers and cities.
     </h3>
-
+    <!--  -->
     <div class="drop">
       <p class="droptxt">Monsanto PCB plant in Anniston</p>
       <svg
@@ -116,6 +128,7 @@
         />
       </svg>
     </div>
+    <!--  -->
     <div class="drop2">
       <p class="droptxt">Coal Ash Waste at Barry Power Plant</p>
       <svg width="100%" height="100%" viewbox="0 0 20 22">
@@ -124,7 +137,6 @@
             <stop offset="10%" stop-color="#fff" />
             <stop offset="100%" stop-color="teal" />
           </linearGradient>
-
           <pattern
             id="img2"
             patternUnits="userSpaceOnUse"
@@ -153,6 +165,7 @@
         />
       </svg>
     </div>
+    <!--  -->
     <div class="drop3">
       <p class="droptxt">Lay Dam Coosa River</p>
       <svg width="100%" height="100%" viewbox="0 0 20 22">
@@ -190,73 +203,64 @@
       </svg>
     </div>
   </div>
-
+  <!--  -->
   <div class="map2">
+    <h1>The River Basins of Alabama</h1>
     <img alt="Vue" src="./assets/riverBasins.png" />
     <div class="transbox2">
       <p>
         Since 1998 stricter water monitoring policies have been mandated in the
         state in an attempt to control the human and environmental harm caused
-        by pollutants. This project seeks to analyze the progress that has been
-        made during the past 20 years of water quality testing.<br /><br />
+        by pollutants.
+      </p>
+      <p>
         Section 303(d) of the Clean Water Act (CWA) establishes that states are
         to list (the 303(d) list) waters for which technology-based limits alone
         do not ensure attainment of applicable water quality standards.
-        <br /><br />
+        <br /><br /><br />
         The Alabama Department of Environmental Management (ADEM) creates these
         lists which can be found at:
         <a href="http://adem.alabama.gov/programs/water/303d.cnt"
           >http://adem.alabama.gov/programs/water/303d.cnt</a
         >
-        <br /><br />
+        <br /><br /><br />
         The past 20 years of impaired (303d) waters are aggregated and organized
         by the major river basin. Data is used to visualize the scope of water
-        contamination by size, cause, and source.
+        contamination by size, cause, and source.This project seeks to analyze
+        the progress that has been made during the past 20 years of water
+        quality testing.
       </p>
     </div>
-
+    <!--  -->
     <div class="curved-div">
-      <p style="color: transparent">
-        Visualising Alabama's List of Impaired Waters
-      </p>
-      <span style="color: #000"> The River Basins of Alabama <br /></span>
-      <!-- <span style="color: #fff">20 Years of </span> -->
-
-      <svg viewBox="0 0 1440 319">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
           fill-opacity="1"
-          d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          d="M0,96L80,80C160,64,320,32,480,48C640,64,800,128,960,133.3C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>
       </svg>
       <div class="spacer"></div>
     </div>
   </div>
-
   <!--  -->
   <div class="TitleLarge">
-    <h2>The length of the problem...</h2>
+    <h2>
+      The Size of the Problem.
+    </h2>
   </div>
-
-  <!-- FILTERS -->
-  <!-- 
   <div class="filters">
-    <el-checkbox
-      :indeterminate="isIndeterminate"
-      v-model="checkAll"
-      @change="handleCheckAllChange"
-      >Check all</el-checkbox
-    >
-    <div style="margin: 15px 0;"></div>
-    <el-checkbox-group
-      v-model="checkedUnits"
-      @change="handleCheckedUnitsChange"
-    >
-      <el-checkbox v-for="unit in units" :label="unit" :key="unit">{{
-        unit
-      }}</el-checkbox>
+    <el-checkbox-group v-model="checkedUnits">
+      <el-checkbox
+        @mousedown="removeOtherUnit"
+        v-for="unit in units"
+        :label="unit"
+        :key="unit"
+        >{{ unit }}</el-checkbox
+      >
     </el-checkbox-group>
-  </div> -->
+  </div>
+  <!-- FILTERS -->
 
   <!-- horizontal bar chart  -->
   <div class="section">
@@ -271,53 +275,55 @@
       v-on:hoverMain="onChildClick2"
     />
   </div>
-
   <!--  -->
-
   <div class="map1">
-    <h1>Where could this all come from?</h1>
-    <!-- <div class="transbox">
-      <p>
-        Where could this all come from?
-      </p>
-    </div> -->
-    <div class="transbox2">
-      <p>
-        Man’s activities have had a profound, and usually negative, influence on
-        freshwater fishes from the smallest streams to the largest rivers”-James
-        R. Karr (1981)
-        <br /><br />
-        Researcherers from various discplines have tackled this issued. 1. 2. 3.
-      </p>
+    <h1>Over 40 Unique Causes of Impairment in 20 Years.</h1>
+
+    <!-- <p>
+      As changes in the 
+    </p> -->
+
+    <div class="curved-div2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a89d99"
+          fill-opacity="1"
+          d="M0,224L60,213.3C120,203,240,181,360,154.7C480,128,600,96,720,112C840,128,960,192,1080,208C1200,224,1320,192,1380,176L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="spacer"></div>
     </div>
-    <!-- <img alt="Vue" src="./assets/logo.png" contain /> -->
+    <div class="curved-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#a89d99"
+          fill-opacity="1"
+          d="M0,96L60,85.3C120,75,240,53,360,69.3C480,85,600,139,720,165.3C840,192,960,192,1080,176C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="spacer"></div>
+    </div>
   </div>
 
   <!-- SMALL MULTIPLES -->
   <!-- FILTERS -->
-
   <!-- -->
   <div class="viz2Wrapper">
-    <h2>The offending contaminants and their sources</h2>
+    <h2>Causes and Sources of Impairment</h2>
     <img id="industry" src="./assets/industry.svg" contain />
     <div class="viz2details">
-      <!-- <div class="filters">
-        <el-checkbox-group v-model="filters">
-          <el-checkbox label="2020"></el-checkbox>
-          <el-checkbox label="2018"></el-checkbox>
-          <el-checkbox label="2016"></el-checkbox>
-          <el-checkbox label="2014"></el-checkbox>
-          <el-checkbox label="2012"></el-checkbox>
-          <el-checkbox label="2010"></el-checkbox>
-          <el-checkbox label="2008"></el-checkbox>
-          <el-checkbox label="2006"></el-checkbox>
-          <el-checkbox label="2004"></el-checkbox>
-          <el-checkbox label="2002"></el-checkbox>
-          <el-checkbox label="2000"></el-checkbox>
-        </el-checkbox-group>
-      </div> -->
-      <!-- <img id="agriculture" src="./assets/cowfield.png" contain /> -->
       <!-- NEW COMPONENT -->
+      <div class="filters" id="viz2filters">
+        <el-checkbox-group v-model="checkedUnits">
+          <el-checkbox
+            @mousedown="removeOtherUnit"
+            v-for="unit in units"
+            :label="unit"
+            :key="unit"
+            >{{ unit }}</el-checkbox
+          >
+        </el-checkbox-group>
+      </div>
       <StackedSideBar
         :data="filteredSmallMultiples"
         :basin="hoverSecondVis"
@@ -352,10 +358,12 @@
   <!-- <div class="new">
     <div class="backgroundDam">
       <div class="curved-div">
-        <p style="color: transparent">
-          Visualising Alabama's List of Impaired Waters
+        <p style="color: white">
+          Man's activities have had a profound, and usually negative, influence
+          on freshwater fishes from the smallest streams to the largest
+          rivers”-James R. Karr (1981)
         </p>
-        <span style="color: #000"> The River Basins of Alabama <br /></span>
+        <span style="color: #000"> Thdasdasds<br /></span>
 
         <svg viewBox="0 0 1440 319">
           <path
@@ -370,7 +378,18 @@
   </div> -->
   <!-- <Scatter> </Scatter> -->
   <div class="map">
-    <h1>More Information</h1>
+    <div class="curved-div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L80,80C160,64,320,32,480,48C640,64,800,128,960,133.3C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+    <h1>What is being done?</h1>
+    <img src="./assets/keepers.svg" />
+
     <div class="transbox">
       <h2>The Riverkeepers</h2>
       <p>
@@ -378,12 +397,10 @@
         this dataset.
         <br /><br />They act independently, but help inform decisions, from
         state agencies such as Alabama Department of Environmental Protection.
-        <br /><br />Current news and research regarding each basin linked below
-        or visit: http://waterkeepersalabama.org/
+        <br />Current news and research regarding each basin linked below or
+        visit: http://waterkeepersalabama.org/
         <br />
         <br />
-
-        <img src="./assets/waterkeepermap.jpg" />
       </p>
       <p id="resourcelinks">
         https://www.mobilebaykeeper.org/<br />
@@ -404,11 +421,6 @@
         Files and documentation can be found at
         <a href="https://github.com/Dalbed349/AlabamaWater/"
           >github.com/Dalbed349/AlabamaWater/</a
-        >
-        <br /><br />For more water quality information visit:<a
-          href="http://adem.alabama.gov/programs/water/waterquality.cnt"
-        >
-          ADEM water quality monitoring</a
         >
       </p>
     </div>
@@ -443,10 +455,13 @@
     :listOfCausesFiltered="listOfCausesFiltered"
   >
   </ModalLegend>
+  <!-- end HTML skeleton  filler div-->
   <div></div>
 </template>
 
 <script>
+// BEGIN SCRIPT
+
 import VueOnlyTest from "./components/VueOnlyTest.vue";
 import CauseMultiples from "./components/CauseMultiples.vue";
 // import Scatter from "./components/Scatter.vue";
@@ -469,7 +484,6 @@ function uniqueSum(data) {
   }
   return sum;
 }
-
 export default {
   name: "App",
   data() {
@@ -507,7 +521,7 @@ export default {
       isIndeterminate: true,
     };
   },
-
+  //
   computed: {
     filteredFinal() {
       if (!this.Final) {
@@ -559,7 +573,7 @@ export default {
       return g;
       // return g;
     },
-
+    //////////////////////finalbybasin3
     sortedBasin() {
       let g = Array.from(this.FinalByBasin); //.sort((a,b) => d3.ascending(a.value, b.value))
 
@@ -568,6 +582,7 @@ export default {
       });
       return f;
     },
+    //
     sortedBasinOnlyNames() {
       let g = [];
       for (let i = 0; i < this.sortedBasin.length; i++) {
@@ -575,6 +590,7 @@ export default {
       }
       return g;
     },
+    //
     sortedFinalByBasin2() {
       let g = Array.from(this.FinalByBasin2);
       var f = g.sort(function(a, b) {
@@ -582,28 +598,28 @@ export default {
       });
       return f;
     },
+    //
     listOfBasins() {
       return Array.from(new Set(this.Final.map((d) => d.RiverBasin)));
     },
+    //
     listOfCauses() {
       return Array.from(new Set(this.Final.map((d) => d.Causes)));
     },
+    //
     listOfCausesFiltered() {
       return Array.from(new Set(this.filteredFinal.map((d) => d.Causes)));
     },
+    //
     filteredSmallMultiples() {
-      // if (!this.Final) {
-      //   return null;
-      // }
-
       return this.Final.filter(
         (d) =>
           this.filters[this.counter].includes(d.ReportYear) &&
-          d.UnitType == "miles"
+          this.checkedUnits.includes(d.UnitType)
       );
     },
   },
-
+  //
   components: {
     CauseMultiples,
     VueOnlyTest,
@@ -613,12 +629,12 @@ export default {
     StackedSideBar,
   },
   mounted() {
+    //load data
     Promise.all([d3.csv("TESTFinalCompiledCSV.csv")]).then((data) => {
       this.Final = data[0];
-      // console.log(this.Final);
     }),
       window.addEventListener("scroll", this.onScroll);
-
+    // modal positioning
     var x = document.getElementsByClassName("TitleLarge")[0];
     var domRect = x.getBoundingClientRect();
     this.modalYpos = domRect.y;
@@ -626,17 +642,18 @@ export default {
     var domRect2 = x2.getBoundingClientRect();
     this.modalYposEnd = domRect2.bottom;
   },
-
+  //
   unmounted() {
     window.removeEventListener("scroll", this.onScroll);
   },
-  // updated() {
-  //   var x2 = document.getElementsByClassName("map1")[0];
-  //   var domRect2 = x2.getBoundingClientRect();
-  //   let g = domRect2.bottom;
-
-  //   this.modalYposEnd = g;
-  // },
+  //
+  updated() {
+    // var x2 = document.getElementsByClassName("map1")[0];
+    // var domRect2 = x2.getBoundingClientRect();
+    // let g = domRect2.bottom;
+    // this.modalYposEnd = g;
+  },
+  //
   methods: {
     onChildClick(value) {
       this.fromChild = value;
@@ -663,6 +680,16 @@ export default {
       this.isIndeterminate =
         checkedCount > 0 && checkedCount < this.units.length;
     },
+    removeOtherUnit() {
+      if (this.checkedUnits.includes("miles")) {
+        this.checkedUnits.splice(0, 1);
+        console.log("hello");
+      }
+      if (this.checkedUnits.includes("acres")) {
+        this.checkedUnits.splice(0, 1);
+        console.log("hello");
+      }
+    },
   },
 };
 </script>
@@ -673,13 +700,20 @@ export default {
   display: inline-block;
   margin: auto;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
     url("./assets/CoosaDam.jpg") center center;
   width: 100%;
   height: 100vh;
+  margin-bottom: 5%;
+  margin-top: -5%;
 }
 .new .curved-div {
   margin-top: 16%;
+}
+.new .curved-div p {
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .section2 {
@@ -691,7 +725,7 @@ export default {
 .viz2details {
   position: absolute;
   margin-left: 1%;
-
+  z-index: 0;
   width: 20vw;
   height: 90%;
   border-radius: 15px;
@@ -704,7 +738,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #000;
   /* margin-top: -100px; */
   margin-left: -10px;
   margin-right: -10px;
@@ -758,7 +792,7 @@ export default {
   width: 100%;
   height: auto;
   text-align: top;
-  margin-top: -1%;
+  margin-top: 6%;
 }
 
 .IntroGlacier .darken {
@@ -791,11 +825,20 @@ export default {
   grid-row-start: 1;
   grid-row-end: span 2;
   font-size: 3em;
-  color: #98f5ff;
+  z-index: 1;
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 15%;
+  /* margin-left: -15%; */
+
+  /* color: #98f5ff; */
   /* color: #ffffff; */
+  /* color: #98f5ff; */
 }
+
 .map h1 {
   margin-right: 0%;
+  margin-top: 1%;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -804,13 +847,70 @@ export default {
   /* color: #98f5ff; */
   /* color: #fff; */
   /* color: #000; */
-  color: #2c3e50;
+  z-index: 1;
+  color: #000;
+  margin-left: 45%;
+  margin-top: 3%;
+}
+.map {
+  display: grid;
+  position: relative;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(59, 45, 4, 0.198)
+    ),
+    linear-gradient(to left, rgba(255, 255, 255, 0), rgba(23, 99, 143, 0.616)),
+    url("./assets/cahaba.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  margin-top: 2%;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px 100px 100px auto;
+  /* margin-left: 0.5%; */
+  margin-bottom: -1%;
+  /* margin-top: 10%; */
+
+  /* border-radius: 350px; */
+  background-size: 100% 100%;
 }
 .map .transbox p {
   margin-top: 5%;
   font-size: 1.1em;
   margin-left: 5%;
   margin-right: 5%;
+}
+.map .curved-div {
+  margin-top: -3%;
+
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.map1 .curved-div {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  margin-top: -2%;
+}
+.map1 .curved-div2 {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin-top: -10%;
 }
 .map .transbox h2 {
   margin-top: 2%;
@@ -819,8 +919,8 @@ export default {
   margin-right: 5%;
 }
 .map .transbox {
-  margin-left: 60%;
-  margin-right: 0%;
+  margin-left: 55%;
+  margin-right: 5%;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -832,20 +932,41 @@ export default {
 }
 .map .transbox img {
   position: absolute;
+  /* display: none; */
+
   height: 45%;
-  margin-top: -13%;
+  margin-top: -12.5%;
   margin-left: -72%;
   border-radius: 50px;
 }
 
-.map1 .transbox {
-  grid-column-start: 2;
-
-  grid-row-start: 2;
+.map1 p {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  margin-right: 0%;
+  grid-row-start: 3;
   grid-row-end: span 2;
-
+  font-size: 1.8em;
+  font-weight: bold;
+  /* color: rgb(255, 0, 0); */
   background-color: none;
-  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+
+  z-index: 1;
+}
+.map img {
+  transform: scale(9, 9);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  /* grid-row-end: span 4; */
+
+  border-radius: 20px;
+  margin-top: -5%;
+  height: 100%;
+  margin-left: 35%;
+  margin-top: 13%;
+  /* object-fit: contain; */
 }
 .map .transbox {
   grid-column-start: 1;
@@ -855,7 +976,7 @@ export default {
   border-radius: 50px;
   background-color: #ffffff;
   border: none;
-  opacity: 0.8;
+  opacity: 0.9;
   font-weight: bold;
 
   color: #000000;
@@ -873,8 +994,7 @@ export default {
   border-radius: 50px;
 }
 .drop {
-  /* margin-left: 45vw; */
-  margin-top: -80px;
+  margin-top: -15px;
   margin-left: 0%;
   grid-column-start: 3;
   grid-column-end: 3;
@@ -889,19 +1009,20 @@ export default {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 6;
-  /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
+  transform: scale(0.9, 0.9);
 }
 .IntroGlacier3 > h2 {
-  margin-left: 50%;
-  margin-right: 25%;
+  margin-left: 44%;
+  margin-right: 10%;
   font-size: 3em;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
+  color: black;
 }
 .IntroGlacier3 > h3 {
+  text-align: left;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
@@ -931,48 +1052,27 @@ export default {
   /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
 }
 /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), */
-.map {
-  display: grid;
-  position: relative;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: url("./assets/Locust-Fork-River.jpg") center center;
-  width: 99%;
-  height: 100vh;
-  opacity: 0.9;
-  margin-top: 1%;
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px 100px 100px auto;
-  margin-left: 0.5%;
-  margin-bottom: -1%;
-  border-radius: 350px;
-}
 
 .map1 {
   display: grid;
   position: relative;
   z-index: -1;
-  top: 0;
-  bottom: 0;
-  margin-top: 200px;
-  margin-left: 0.5%;
-  margin-bottom: 100px;
-  left: 0;
-  right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("./assets/acesimg.jpg") center center;
-  width: 99%;
-  border-radius: 350px;
-  background-size: 100% 100%;
-  height: 100vh;
-  opacity: 0.9;
+  position: sticky;
+  margin-top: 15%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  margin-bottom: 15%;
+  /* background: url("./assets/CoosaDam.jpg") center no-repeat; */
+  width: 100%;
+
+  background-size: 100% 80%;
+  height: 50vh;
+  opacity: 1;
   background-repeat: no-repeat;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
 }
+/*     url("./assets/cahaba.jpg") */
 .map2 {
   display: grid;
   position: relative;
@@ -981,41 +1081,45 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("./assets/glacier.jpg") center center; */
+  margin-top: 10%;
   background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      rgba(59, 45, 4, 0.198)
+      to left,
+      rgb(116, 156, 243, 0.4),
+      rgb(158, 188, 216, 0.7)
     ),
-    linear-gradient(to left, rgba(255, 255, 255, 0), rgba(23, 99, 143, 0.616)),
-    url("./assets/cahaba.jpg");
+    linear-gradient(rgb(158, 188, 216, 0.1), rgba(0, 104, 40, 1));
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
-  opacity: 0.9;
+  /* opacity: 0.8; */
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
 }
 .map3 {
+  margin-top: -1%;
   display: grid;
   position: relative;
   z-index: -1;
   top: 0;
   bottom: 0;
-  left: 2%;
-  right: 2%;
+  left: 0%;
+  right: 0%;
   /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
     url("./assets/glacier.jpg") center center; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+  background-image: linear-gradient(
+      rgba(69, 143, 161, 0.075),
+      rgba(0, 0, 0, 0.4)
+    ),
     url("./assets/Blackwarrior.jpg");
-  border-radius: 350px;
+  /* border-radius: 350px; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 96%;
+  width: 100%;
+
+  margin-bottom: 2%;
   height: 100vh;
-  opacity: 0.9;
+  opacity: 1;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 10% auto 100px auto;
 }
@@ -1024,9 +1128,20 @@ export default {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: span 2;
-  margin-left: 5%;
-  border-radius: 30px;
-  border: 5px solid rgb(155, 197, 187);
+  margin-left: -2%;
+  border-radius: 20px;
+  /* border: 5px solid rgb(155, 197, 187);  */
+}
+
+.map2 h1 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  z-index: 1;
+  font-size: 3em;
+  margin-left: 35%;
+  margin-top: 17%;
 }
 .TitleLarge {
   /* text-align: left;
@@ -1065,18 +1180,18 @@ div.transbox {
 /* background-position: 50% 0; */
 div.transbox3 p {
   font-weight: bold;
-  font-size: 21px;
-  color: rgb(19, 70, 77);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
 }
 
 div.transbox3 {
   position: absolute;
-  margin-left: 8%;
+  margin-left: 12%;
 
-  margin-top: 1%;
+  margin-top: 4%;
 
-  text-align: center;
-  margin-right: 69%;
+  text-align: left;
+  margin-right: 68%;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -1084,7 +1199,8 @@ div.transbox3 {
 
   /* background-color: #ffffff;
 
-  opacity: 0.8; */
+  opacity: 0.8;
+  */
   border-radius: 55px;
 }
 .map .transbox2 {
@@ -1097,61 +1213,78 @@ div.transbox3 {
   opacity: 0.9;
   background-color: #ffffff;
   /* border: 1px solid black; */
-  opacity: 0.8;
+  opacity: 1;
   margin-bottom: 10%;
   margin-top: 17%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 53%;
+  margin-right: 5%;
 }
 .map .transbox2 p {
   margin-top: 2%;
   font-size: 1em;
 }
 .map2 .transbox2 {
-  margin-left: 50%;
+  margin-left: 37%;
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 5;
+  grid-row-start: 3;
   grid-row-end: 5;
   border-radius: 55px;
-  opacity: 0.7;
-  background-color: #ffffff;
+  opacity: 1;
+}
 
-  /* border: 1px solid black; */
+.map3 #bigger {
+  margin-left: -25%;
+  margin-right: -45%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.map3 #bigger1 {
+  margin-left: -5%;
+  margin-right: -20%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  font-size: 1.5em;
 }
 .map3 .transbox2 {
-  margin-left: 50%;
+  margin-left: 85%;
+  margin-right: 0%;
+  margin-top: 25%;
+  margin-bottom: 0%;
   grid-column-start: 3;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 5;
   grid-row-end: 5;
-  border-radius: 55px;
-  opacity: 0.9;
-  background-color: #ffffff;
-  /* border: 1px solid black; */
-  opacity: 0.6;
+  opacity: 1;
+}
+.map3 .transbox3 {
+  margin-top: 15%;
+  margin-left: 11%;
+  margin-right: 74%;
+}
+.map3 .transbox2 p {
+  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
+  margin: 20px;
+  opacity: 0.7;
+}
+.map3 .drop {
+  margin-top: 10%;
 }
 div.transbox2 p {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 120px;
   color: #000000;
   margin: 20px;
 }
-.viz2Wrapper {
-  display: inline-block;
-  margin-right: 0%;
-  margin-top: 2%;
-  margin-bottom: 7%;
-  margin-left: 0%;
-  /* background-image: url("./assets/industry.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%; */
-}
+
 #industry {
   position: absolute;
   margin-top: -5%;
-  margin-left: -94px;
-  width: 20vw;
+  margin-left: 0%;
+  width: 380px;
+  z-index: -1;
 }
 #agriculture {
   position: absolute;
@@ -1160,18 +1293,26 @@ div.transbox2 p {
   width: 20vw;
   height: 10%;
 }
+.viz2Wrapper {
+  display: inline-block;
+  margin-right: 0%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  margin-left: 0%;
+}
 .viz2Wrapper h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3em;
-  margin-bottom: 0%;
-  margin-left: 5%;
+  margin-bottom: 2%;
+
+  margin-left: 3%;
 }
 
 .viz2Wrapper2 {
   display: inline-block;
   margin-right: 0%;
-  margin-top: 2%;
+  margin-top: -1%;
   margin-bottom: 2%;
   margin-left: 20%;
 }
@@ -1189,11 +1330,12 @@ div.transbox2 p {
   margin-bottom: 7%;
   margin-top: -1%;
   text-align: left;
+  margin-top: 7%;
 }
 .map2 .transbox2 p {
   margin-bottom: 4%;
   text-align: left;
-  font-size: 20px;
+  font-size: 1.3em;
   opacity: 1;
 }
 .map2 .curved-div {
@@ -1201,25 +1343,23 @@ div.transbox2 p {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
+  margin-top: -6%;
 }
-/* .map2 .curved-div span {
+.map3 .curved-div {
   grid-column-start: 1;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
-  transform: rotate(180deg);
-} */
+  margin-top: -8%;
+  transform: scale(1, 0.6);
+}
 .map2 > .curved-div > span {
-  -webkit-transform: rotate(180deg);
   display: inline-block;
   margin-right: 45%;
-  /* margin-top: 10%; */
 }
 .map2 > .curved-div > p {
-  -webkit-transform: rotate(180deg);
 }
-
 .curved-div {
   position: block;
   height: 55vh;
@@ -1234,8 +1374,10 @@ div.transbox2 p {
   -webkit-text-stroke-color: black;
 }
 .map2 .curved-div span {
-  font-size: 3.5rem;
+  font-size: 3.5em;
   margin-top: 1%;
+  margin-left: -10%;
+  margin-right: 0%;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -1253,25 +1395,18 @@ div.transbox2 p {
   text-align: top;
   margin-top: 2%;
 }
-.map3 .transbox2 {
-  margin-left: 65%;
-  margin-right: 15%;
-  margin-top: 25%;
-  margin-bottom: 3%;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 5;
-  grid-row-end: 5;
-  opacity: 0.5;
-}
+
 #app > div.map3 > h1 {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
   font-size: 3em;
-
-  color: #98f5ff;
+  margin-left: 75%;
+  /* color: #98f5ff; */
+  z-index: 1;
+  /* color: #2c3e50; */
+  color: #000;
 }
 .drop .droptxt:hover {
   opacity: 1;
@@ -1287,8 +1422,8 @@ div.transbox2 p {
 }
 .drop .droptxt {
   position: absolute;
-  margin-left: 33%;
-  margin-top: 25%;
+  margin-left: 65%;
+  margin-top: 35%;
   opacity: 0.1;
   height: 50px;
 }
@@ -1317,6 +1452,29 @@ div.transbox2 p {
 }
 #resourcelinks {
   font-size: 0.9em;
-  margin-top: -2%;
+  margin-top: 0%;
+}
+.droptop {
+  margin-left: 50%;
+  margin-top: -45%;
+  transform: scale(1.1, 0.5);
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.filters {
+  position: relative;
+  text-align: center;
+  margin-right: 55px;
+  margin-bottom: -32px;
+  margin-left: 550px;
+}
+#viz2filters {
+  position: relative;
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-left: 0;
 }
 </style>

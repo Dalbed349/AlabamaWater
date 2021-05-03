@@ -63,7 +63,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 190 ||
-        this.scrollPosition > this.modalYposEnd
+        this.scrollPosition > this.modalYposEnd + 1300
       ) {
         let result = "none";
 
@@ -77,7 +77,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd - 100
+        this.scrollPosition > this.modalYposEnd + 1300 - 100
       ) {
         let result = 0;
 
@@ -91,9 +91,83 @@ export default {
     coloring() {
       // let color = d3.scaleOrdinal(d3.schemeCategory10);
       //let color = d3.interpolator(d3.interpolatePuRd);
-      let color = d3.scaleOrdinal(d3.schemeSet3);
-      // .range(d3.schemeSet3);
+      // let color = d3.scaleOrdinal(d3.schemeSet3);
 
+      let color = d3
+        .scaleOrdinal()
+        // .range([
+        //   "#edf8fb",
+        //   "#ccece6",
+        //   "#99d8c9",
+        //   "#66c2a4",
+        //   "#2ca25f",
+        //   "#006d2c",
+        //   "#feedde",
+        //   "#fdd0a2",
+        //   "#fdae6b",
+        //   "#fd8d3c",
+        //   "#e6550d",
+        //   "#a63603",
+        //   "#f2f0f7",
+        //   "#dadaeb",
+        //   "#bcbddc",
+        //   "#9e9ac8",
+        //   "#756bb1",
+        //   "#54278f",
+        //   "#fee5d9",
+        //   "#fcbba1",
+        //   "#fc9272",
+        //   "#fb6a4a",
+        //   "#de2d26",
+        //   "#a50f15",
+        // ]);
+        // .range(d3.schemeSet3);
+        .range([
+          "#005a32",
+          "#4a1486",
+          "#feedde",
+          "#238b45",
+          "#67000d",
+          "#fdd0a2",
+          "#41ab5d",
+          "#636363",
+          "#fdae6b",
+          "#a50f15",
+          "#cb181d ",
+          "#ef3b2c ",
+          "#fb6a4a",
+          "#74c476",
+          "#969696",
+          "#fd8d3c",
+          "#fc9272",
+          "#e6550d",
+          "#fcbba1",
+          "#f7f7f7 ",
+          "#feedde",
+          "#41ab5d ",
+          "#ef3b2c ",
+          "#efedf5",
+          "#a1d99b",
+          "#ef3b2c ",
+          "#ef3b2c ",
+          "#dadaeb",
+          "#bcbddc",
+          "#f7f7f7",
+          "#f7f7f7",
+          "#9e9ac8",
+          "#41ab5d ",
+          "#cb181d",
+          "#ef3b2c  ",
+          "#ef3b2c  ",
+          "#636363",
+          "#807dba ",
+          "#efedf5",
+          "#6a51a3",
+          "#a1d99b",
+          "#252525",
+          "#bdbdbd",
+          "#d9d9d9 ",
+        ]);
       //d3.scaleOrdinal().domain([‘A’, ‘B’, ‘C’]) .range([‘#fff’, ‘#8f8’, ‘#00f’])
       console.log(this.listofCauses);
       return color.domain(this.listofCauses);

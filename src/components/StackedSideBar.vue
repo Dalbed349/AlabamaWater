@@ -14,9 +14,12 @@
       </button>
     </div>
     <div class="info">
-      Hover over a bar to see contributing sources below->
+      Sources of {{ cause }} pollution in {{ basin }} river basin.
     </div>
-
+    <div class="info2">
+      Mouse over one of the bars in the charts to the right for a breakdown of
+      the source for that contamination.
+    </div>
     <transition-group name="fade1">
       <div class="box2" v-for="key in test" :key="key">
         <div
@@ -139,10 +142,11 @@ export default {
     yScale() {
       return d3
         .scaleLinear()
-        .domain([0, 814])
-        .range([25, window.innerHeight - 500]);
+        .domain([0, this.totalval])
+        .range([25, window.innerHeight - 715]);
     },
     coloring() {
+      //        .domain([0, 814])
       // let color = d3.scaleOrdinal(d3.schemeCategory10);
       //let color = d3.interpolator(d3.interpolatePuRd);
       //let color = d3.scaleSequential(d3.interpolateBlues);
@@ -161,25 +165,12 @@ export default {
 </script>
 
 <style scoped>
-/* .bar-positive {
-  fill: steelblue;
-
-}
-
-.bar-positive:hover {
-  fill: brown;
-
-} */
-
 .svg-container {
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
-  /* margin-top: -5%; */
-
-  /* vertical-align: bottom; */
-  overflow: visible;
+  overflow: hidden;
 }
 .detailsmod {
   position: absolute;
@@ -199,6 +190,7 @@ export default {
   border-style: solid;
   border-radius: 5px;
   border-color: "coral";
+  z-index: 1;
 }
 .box2 {
   text-align: left;
@@ -218,15 +210,21 @@ export default {
 .info {
   margin-bottom: 10px;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
+}
+.info2 {
+  position: absolute;
+  margin-top: 100%;
+  z-index: -1;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* text-align: center; */
 }
 .detailsmod p {
   /* position: absolute; */
   top: 50%;
 }
-/* .box {
-  height: auto;
-} */
+
 .fade1-enter-active {
   transition: opacity 0.2s;
 }

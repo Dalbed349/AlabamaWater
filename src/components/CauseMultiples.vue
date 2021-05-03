@@ -73,8 +73,8 @@ export default {
   data() {
     return {
       svgHeight: 300,
-      svgWidth: 350,
-      margin: { top: 50, left: 40, bottom: 70, right: 10 },
+      svgWidth: 370,
+      margin: { top: 50, left: 60, bottom: 70, right: 10 },
       hovertrue: null,
       hovertruevalue: null,
       hover: null,
@@ -172,7 +172,7 @@ export default {
           .attr("transform", "rotate(80)")
           //.attr("transform", "translate(2,0)")
           .style("text-anchor", "start")
-          .style("font", "8px times");
+          .style("font", "9px times");
 
         // var tooltip = d3
         //   .select(".CauseMultiples")
@@ -232,6 +232,7 @@ export default {
   height: 1 vh;
   margin-top: 1%;
   position: absolute;
+  margin-left: 30px;
 }
 .testingya {
   background-color: red;
