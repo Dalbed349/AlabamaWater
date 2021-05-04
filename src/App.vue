@@ -260,9 +260,7 @@
       >
     </el-checkbox-group>
   </div>
-  <!-- FILTERS -->
-
-  <!-- horizontal bar chart  -->
+  <!-- Viz1 -->
   <div class="section">
     <VueOnlyTest
       :Final="filteredFinal"
@@ -278,11 +276,6 @@
   <!--  -->
   <div class="map1">
     <h1>Over 40 Unique Causes of Impairment in 20 Years.</h1>
-
-    <!-- <p>
-      As changes in the 
-    </p> -->
-
     <div class="curved-div2">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -304,10 +297,7 @@
       <div class="spacer"></div>
     </div>
   </div>
-
   <!-- SMALL MULTIPLES -->
-  <!-- FILTERS -->
-  <!-- -->
   <div class="viz2Wrapper">
     <h2>Causes and Sources of Impairment</h2>
     <img id="industry" src="./assets/industry.svg" contain />
