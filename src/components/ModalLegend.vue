@@ -185,8 +185,8 @@ export default {
 .ModalLegend {
   position: fixed;
   top: 30vh;
-  left: 90vw;
-  width: 150px;
+  left: 89vw;
+  width: 200px;
   height: 0;
   opacity: 1;
   margin-left: 0%;

@@ -32,7 +32,7 @@
     </div>
     <h1>A Lush Habitat</h1>
     <div class="drop">
-      <svg width="100%" height="100%" viewbox="0 0 20 22">
+      <svg width="100%" height="101%" viewbox="0 0 20 22">
         <defs>
           <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
@@ -325,6 +325,7 @@
         </el-checkbox-group>
       </div>
       <StackedSideBar
+        :checkedUnits="checkedUnits"
         :data="filteredSmallMultiples"
         :basin="hoverSecondVis"
         :cause="hoverSecondVisCause"
@@ -425,6 +426,8 @@
       </p>
     </div>
   </div>
+  <!-- place modal in section with visualization and look at Alec's codepen  -->
+  <!-- position sticky -->
   <Modal
     v-on:increment="
       if (counter < 10) {
@@ -608,7 +611,9 @@ export default {
     },
     //
     listOfCausesFiltered() {
-      return Array.from(new Set(this.filteredFinal.map((d) => d.Causes)));
+      return Array.from(
+        new Set(this.filteredFinal.map((d) => d.Causes))
+      ).sort();
     },
     //
     filteredSmallMultiples() {
@@ -630,7 +635,7 @@ export default {
   },
   mounted() {
     //load data
-    Promise.all([d3.csv("TESTFinalCompiledCSV.csv")]).then((data) => {
+    Promise.all([d3.csv("TESTFinalCompiledCSV2.csv")]).then((data) => {
       this.Final = data[0];
     }),
       window.addEventListener("scroll", this.onScroll);
@@ -871,7 +876,7 @@ export default {
   width: 100%;
   height: 100vh;
   opacity: 1;
-  margin-top: 2%;
+  margin-top: 7%;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
   /* margin-left: 0.5%; */
@@ -1061,7 +1066,7 @@ export default {
   margin-top: 15%;
   /* margin-left: 10%;
   margin-right: 10%; */
-  margin-bottom: 15%;
+  margin-bottom: 25%;
   /* background: url("./assets/CoosaDam.jpg") center no-repeat; */
   width: 100%;
 
@@ -1148,9 +1153,8 @@ export default {
   margin-left: 25%; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
-  background-image: linear-gradient(rgba(23, 99, 143, 0.267), white 85%),
-    linear-gradient(to right, rgba(59, 45, 4, 0.198), white);
+  font-size: 2em;
+  background-image: linear-gradient(rgba(23, 99, 143, 0.267), white 85%);
   /* margin-bottom: 1%;
   margin-top: 4%; */
   height: 25vh;
@@ -1280,11 +1284,13 @@ div.transbox2 p {
 }
 
 #industry {
-  position: absolute;
+  position: sticky;
   margin-top: -5%;
-  margin-left: 0%;
-  width: 380px;
+  margin-right: 78%;
+  margin-bottom: -0.8%;
+  width: 19.99vw;
   z-index: -1;
+  /* margin-left: 0.1%; */
 }
 #agriculture {
   position: absolute;
@@ -1304,8 +1310,7 @@ div.transbox2 p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3em;
-  margin-bottom: 2%;
-
+  margin-bottom: 1%;
   margin-left: 3%;
 }
 
@@ -1344,7 +1349,7 @@ div.transbox2 p {
   grid-row-start: 1;
   grid-row-end: 1;
   /* transform: rotate(180deg); */
-  margin-top: -6%;
+  margin-top: -6.1%;
 }
 .map3 .curved-div {
   grid-column-start: 1;

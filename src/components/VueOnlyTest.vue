@@ -6,7 +6,6 @@
       {{ checkedUnits[0] }}
     </div>
     <div class="arrow" :height="20">
-      <!--  -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 100">
         <defs>
           <marker
@@ -156,20 +155,13 @@
               <div v-if="fromChild === key2[0]" class="Details3" :style="{}">
                 <img class="icon" src="../assets/caution.png" />
               </div>
-
-              <!-- fill: colors2[key2[0]].color, -->
-              <!-- colors[index] -->
-              <!-- backgroundColor: coloring(key2[0]), -->
               <transition-group name="list-complete">
                 <div v-if="hover === key[0]" class="Details2">
-                  <!-- :style="{ display: 'inline' }" -->
                   {{ Math.round((key2[1] / key[1]) * 10000) / 100 + "%" }}
                   {{ key2[0] }}
                 </div>
               </transition-group>
-              <!-- {{ (key2[1] / key[1]) * 100 }} -->
             </div>
-
             <div
               class="horizontal-bar"
               style="height: 30px; overflow: visible;"
@@ -183,11 +175,9 @@
                   d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
                   :style="{ fill: '#227488' }"
                 ></path>
-                <!-- <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #567543;"></path> -->
               </svg>
             </div>
           </div>
-          <!-- </div> -->
         </transition-group>
       </div>
     </div>
@@ -260,40 +250,9 @@ export default {
         .domain([0, this.maxPollution[1]])
         .range([0, window.innerWidth / 2]);
     },
-    // listOfCauses2() {
-    //   return Array.from(new Set(this.filteredFinal2.map((d) => d.Causes)));
-    // },
     coloring() {
-      // let color = d3.scaleOrdinal(d3.schemeCategory10);
-      //let color = d3.interpolator(d3.interpolatePuRd);
       let color = d3
         .scaleOrdinal()
-        // .range([
-        //   "#edf8fb",
-        //   "#ccece6",
-        //   "#99d8c9",
-        //   "#66c2a4",
-        //   "#2ca25f",
-        //   "#006d2c",
-        //   "#feedde",
-        //   "#fdd0a2",
-        //   "#fdae6b",
-        //   "#fd8d3c",
-        //   "#e6550d",
-        //   "#a63603",
-        //   "#f2f0f7",
-        //   "#dadaeb",
-        //   "#bcbddc",
-        //   "#9e9ac8",
-        //   "#756bb1",
-        //   "#54278f",
-        //   "#fee5d9",
-        //   "#fcbba1",
-        //   "#fc9272",
-        //   "#fb6a4a",
-        //   "#de2d26",
-        //   "#a50f15",
-        // ]);
         .range([
           "#005a32",
           "#4a1486",
@@ -340,19 +299,11 @@ export default {
           "#bdbdbd",
           "#d9d9d9 ",
         ]);
-      //            let color = d3.scaleOrdinal(d3.schemeSet3);
-      // #edf8fb
-      // #ccece6
-      // #99d8c9
-      // #66c2a4
-      // #2ca25f
-      // #006d2c
+      //let color = d3.scaleOrdinal(d3.schemeSet3);
       //d3.scaleOrdinal().domain([‘A’, ‘B’, ‘C’]) .range([‘#fff’, ‘#8f8’, ‘#00f’])
-
       return color.domain(this.listofCauses);
     },
   },
-
   methods: {
     emitToParent() {
       this.$emit("hoverMain", this.hover);
@@ -381,8 +332,6 @@ export default {
   background-color: rgb(150, 111, 134);
   margin-top: 1px;
   margin-bottom: 1px;
-  /* margin-left: 25%;
-  margin-right: 100%; */
 }
 .horizontal-bar4 {
   background-color: rgb(150, 111, 134);
@@ -391,7 +340,7 @@ export default {
   margin-left: 0;
   margin-right: 100%;
 }
-/*display: inline-block;*/
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1s ease;
@@ -417,15 +366,8 @@ export default {
   animation-timing-function: easeout;
 }
 .Details2 {
-  /* position: inline-block; */
   font-size: 110%;
   text-align: right;
-  /* transition: all 0.3s ease; */
-  /* transition: all 0.2s ease-in-out; */
-  /* animation-name: slowExpand;
-  animation-duration: 2s;
-  animation-timing-function: easeout; */
-
   transition: all 0.2s ease-in-out;
   animation-name: slowExpand;
   animation-duration: 0.2s;
@@ -455,7 +397,6 @@ export default {
   margin-bottom: 0;
   margin-left: 0;
   margin-left: 0;
-  /* background: white; */
 }
 .ByBasin:hover .Details {
   max-height: 100px;
@@ -465,19 +406,15 @@ export default {
 .Details {
   max-height: 100%;
   transition: max-height 5s;
-
-  /* white-space: nowrap;
-  overflow: hidden; */
 }
 
 .wave2 {
   position: relative;
-  /* position: relative; */
-  /* left: 28%; */
+
   height: 50%;
   width: 100%;
   margin-bottom: 5%;
-  /* animation-name: move-left; */
+
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -501,7 +438,7 @@ export default {
 .horizontal-title2 {
   position: absolute;
   display: inline-block;
-  /* width: 100%; */
+
   text-align: right;
   margin-top: 0;
   font-size: 1.4em;
@@ -582,12 +519,7 @@ export default {
 }
 /* transition: max-height 0.25s ease-out; */
 .list-complete-item {
-  /* transition: max-height 15s ease-out; */
   transition: all 1s;
-  /* display: absolute;
-
-  margin-right: 10px;
-  transition-property: width; */
 }
 .list-complete-enter,
 .list-complete-leave-to {
@@ -596,19 +528,4 @@ export default {
 .list-complete-leave-active {
   position: inline-block;
 }
-
-/* .expand-enter-active,
-.expand-leave-active {
-  transition-property: height;
-  transition-duration: 5s;
-}
-
-.expand-leave-to {
-  height: 0px;
-  opacity: 0;
-}
-
-.expand-enter {
-  height: 200px;
-} */
 </style>

@@ -35,7 +35,10 @@
             :style="{ height: yScale(key[1]) + 2 + 'px' }"
             v-on:mousedown="logit()"
           >
-            <p>{{ key[0] }} : {{ Math.round(key[1] * 10) / 10 }} mi</p>
+            <p>
+              {{ key[0] }} : {{ Math.round(key[1] * 10) / 10 }}
+              {{ checkedUnits[0] }}
+            </p>
           </div>
         </div>
       </div>
@@ -45,7 +48,7 @@
 
 <script>
 import * as d3 from "d3";
-// import { transition } from "d3-transition";
+
 export default {
   name: "StackedBar",
   props: {
@@ -53,6 +56,7 @@ export default {
     basin: String,
     cause: String,
     counter: Number,
+    checkedUnits: String,
   },
 
   data: () => ({
