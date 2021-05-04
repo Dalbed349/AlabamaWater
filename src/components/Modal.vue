@@ -229,7 +229,6 @@
               d="M7210.58,7351.92c11.65-10.13,21.88-26.6,28.25-30.42a6.54,6.54,0,0,1,2.59-.5l12.25.42,2.36,2.05.12.11c1.14,5-.16,9.22-3.94,12.32a21.55,21.55,0,0,0-7.92,12.48c-1,5.6-3.29,12,.93,17.38l-.28,2.77-15.77.69-9-.29-3.09-.62s-3.05.36-3.58.38-9.44.28-9.58.24-3.92,0-3.92,0l9.59-15.09Z"
               transform="translate(-7004.84 -6879.99)"
             />
-            <!--  stroke: '#D3D3D3', -->
             <path
               class="cls-10"
               :style="
@@ -283,7 +282,6 @@
           <div class="legend">
             Lowest - Relative Impairment - Highest
           </div>
-          <!-- <img class="svgimg" src="../assets/basinsingSVGmap.svg" height="400" /> -->
         </div>
       </div>
     </div>
@@ -352,7 +350,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 190 ||
-        this.scrollPosition > this.modalYposEnd + 1300 + 100
+        this.scrollPosition > this.modalYposEnd + 1500 + 100
       ) {
         let result = "none";
 
@@ -365,7 +363,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd + 1300 - 100
+        this.scrollPosition > this.modalYposEnd + 1500 - 100
       ) {
         let result = 0;
 
@@ -396,18 +394,13 @@ export default {
         "#99ddff",
       ]);
       return color.domain(this.sortedBasinOnlyNames);
-      // .range(d3.schemeSet3);
-      // "#4dc3ff",
-      //       "#66ccff",
-      //       "#80d4ff",
-      //       "#99ddff",
       //d3.scaleOrdinal().domain([‘A’, ‘B’, ‘C’]) .range([‘#fff’, ‘#8f8’, ‘#00f’])
     },
   },
   methods: {
     logit() {
-      console.log(this.coloring(this.basins[11]));
-      console.log(this.basins[11]);
+      // console.log(this.coloring(this.basins[11]));
+      // console.log(this.basins[11]);
     },
 
     // Tennessee

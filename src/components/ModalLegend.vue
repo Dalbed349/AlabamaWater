@@ -63,7 +63,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 190 ||
-        this.scrollPosition > this.modalYposEnd + 1300
+        this.scrollPosition > this.modalYposEnd + 1500
       ) {
         let result = "none";
 
@@ -77,7 +77,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd + 1300 - 100
+        this.scrollPosition > this.modalYposEnd + 1500 - 100
       ) {
         let result = 0;
 
@@ -89,39 +89,8 @@ export default {
       }
     },
     coloring() {
-      // let color = d3.scaleOrdinal(d3.schemeCategory10);
-      //let color = d3.interpolator(d3.interpolatePuRd);
-      // let color = d3.scaleOrdinal(d3.schemeSet3);
-
       let color = d3
         .scaleOrdinal()
-        // .range([
-        //   "#edf8fb",
-        //   "#ccece6",
-        //   "#99d8c9",
-        //   "#66c2a4",
-        //   "#2ca25f",
-        //   "#006d2c",
-        //   "#feedde",
-        //   "#fdd0a2",
-        //   "#fdae6b",
-        //   "#fd8d3c",
-        //   "#e6550d",
-        //   "#a63603",
-        //   "#f2f0f7",
-        //   "#dadaeb",
-        //   "#bcbddc",
-        //   "#9e9ac8",
-        //   "#756bb1",
-        //   "#54278f",
-        //   "#fee5d9",
-        //   "#fcbba1",
-        //   "#fc9272",
-        //   "#fb6a4a",
-        //   "#de2d26",
-        //   "#a50f15",
-        // ]);
-        // .range(d3.schemeSet3);
         .range([
           "#005a32",
           "#4a1486",

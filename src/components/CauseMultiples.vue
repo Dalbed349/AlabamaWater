@@ -37,22 +37,6 @@
             width="50%"
             height="18"
           ></rect>
-
-          <!-- <text
-            v-if="hovertrue"
-            class="testingya"
-            fill="White"
-            :x="xScale(hovertrue)"
-            :y="yScale(hovertruevalue)"
-            background-color="#000"
-            font-size="1em"
-            dy="-.4em"
-            dx=".4em"
-          >
-            {{ hovertrue }},{{ Math.round(hovertruevalue * 10) / 10 }}
-          </text> -->
-          <!-- if x scale > this number else make it end anchor  -->
-
           <text
             v-if="hovertrue"
             class="testingya"
@@ -162,10 +146,9 @@ export default {
       const axisSelection = binding.arg; // either X or Y
       const axisMethod = { x: "axisBottom", y: "axisLeft" }[axisSelection];
       const methodArg = binding.value; // the scale passed to this directive
-
       //////v-{directiveName}:{binding.arg}=“{binding.value}”
       ///// d3.select(‘g.x-axis’).call(g => yAxis(g))
-      // console.log(axisSelection);
+
       //if(axisSelection === ‘y’){ g.append(‘text’)     .attr(‘transform’, ‘rotate(90)’)     .text(‘Y AXIS’)}
       // .transition()
       const g = d3.select(el);
@@ -173,19 +156,12 @@ export default {
         //Line 92 ==> .call(d3[“axisBottom”](xScale))
         .call(d3[axisMethod](methodArg));
       if (axisSelection === "x") {
-        // g.selectAll("text")
-        //   .attr("transform", "rotate(80)")
-        // .style("text-anchor", "start")
-        //.style("font", "2px times");
-        // .attr("x", 7);
-        // .text("X AXIS");
         g.selectAll("text")
           .attr("y", 10)
           .attr("x", 2)
           .attr("dx", "1em")
           .attr("dy", "-.5em")
           .attr("transform", "rotate(80)")
-          //.attr("transform", "translate(2,0)")
           .style("text-anchor", "start")
           .style("font", "9px times");
       }

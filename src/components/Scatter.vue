@@ -107,17 +107,17 @@ export default {
           .append("div")
           .attr("class", "tooltip")
           .style("opacity", 0);
-        // Add the X Axis
+        // X Axis
         svg
           .append("g")
           .attr("transform", "translate(0," + h + ")")
           .call(d3.axisBottom(x));
 
-        // Add the Y Axis
+        // Y Axis
         svg.append("g").call(d3.axisLeft(y));
         svg.append("g").call(d3.axisLeft(y));
 
-        // text label for the y axis
+        //  label y axis
         svg
           .append("text")
           .attr("transform", "rotate(-90)")

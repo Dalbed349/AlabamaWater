@@ -219,12 +219,12 @@
         do not ensure attainment of applicable water quality standards.
         <br /><br /><br />
         The Alabama Department of Environmental Management (ADEM) creates these
-        lists which can be found at:
+        lists which can be found here:
         <a href="http://adem.alabama.gov/programs/water/303d.cnt"
-          >http://adem.alabama.gov/programs/water/303d.cnt</a
+          >ADEM 303(d)</a
         >
-        <br /><br /><br />
-        The past 20 years of impaired (303d) waters are aggregated and organized
+        <br /><br />
+        The past 20 years of impaired 303(d) waters are aggregated and organized
         by the major river basin. Data is used to visualize the scope of water
         contamination by size, cause, and source.This project seeks to analyze
         the progress that has been made during the past 20 years of water
@@ -688,11 +688,11 @@ export default {
     removeOtherUnit() {
       if (this.checkedUnits.includes("miles")) {
         this.checkedUnits.splice(0, 1);
-        console.log("hello");
+        // console.log("hello");
       }
       if (this.checkedUnits.includes("acres")) {
         this.checkedUnits.splice(0, 1);
-        console.log("hello");
+        // console.log("goodbye");
       }
     },
   },
@@ -834,11 +834,6 @@ export default {
   margin-top: 15%;
   margin-right: 10%;
   margin-left: 15%;
-  /* margin-left: -15%; */
-
-  /* color: #98f5ff; */
-  /* color: #ffffff; */
-  /* color: #98f5ff; */
 }
 
 .map h1 {
@@ -849,9 +844,6 @@ export default {
   grid-row-start: 1;
   grid-row-end: span 2;
   font-size: 3em;
-  /* color: #98f5ff; */
-  /* color: #fff; */
-  /* color: #000; */
   z-index: 1;
   color: #000;
   margin-left: 45%;
@@ -879,11 +871,7 @@ export default {
   margin-top: 7%;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
-  /* margin-left: 0.5%; */
   margin-bottom: -1%;
-  /* margin-top: 10%; */
-
-  /* border-radius: 350px; */
   background-size: 100% 100%;
 }
 .map .transbox p {
@@ -937,8 +925,6 @@ export default {
 }
 .map .transbox img {
   position: absolute;
-  /* display: none; */
-
   height: 45%;
   margin-top: -12.5%;
   margin-left: -72%;
@@ -953,10 +939,8 @@ export default {
   grid-row-end: span 2;
   font-size: 1.8em;
   font-weight: bold;
-  /* color: rgb(255, 0, 0); */
   background-color: none;
   text-align: center;
-
   z-index: 1;
 }
 .map img {
@@ -964,14 +948,11 @@ export default {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
-  /* grid-row-end: span 4; */
-
   border-radius: 20px;
   margin-top: -5%;
   height: 100%;
   margin-left: 35%;
   margin-top: 13%;
-  /* object-fit: contain; */
 }
 .map .transbox {
   grid-column-start: 1;
@@ -1056,20 +1037,15 @@ export default {
 
   /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
 }
-/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), */
-
 .map1 {
   display: grid;
   position: relative;
   z-index: -1;
   position: sticky;
   margin-top: 15%;
-  /* margin-left: 10%;
-  margin-right: 10%; */
   margin-bottom: 25%;
   /* background: url("./assets/CoosaDam.jpg") center no-repeat; */
   width: 100%;
-
   background-size: 100% 80%;
   height: 50vh;
   opacity: 1;
@@ -1077,7 +1053,6 @@ export default {
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
 }
-/*     url("./assets/cahaba.jpg") */
 .map2 {
   display: grid;
   position: relative;
@@ -1097,7 +1072,6 @@ export default {
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
-  /* opacity: 0.8; */
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 100px 100px 100px auto;
 }
@@ -1110,14 +1084,11 @@ export default {
   bottom: 0;
   left: 0%;
   right: 0%;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
-    url("./assets/glacier.jpg") center center; */
   background-image: linear-gradient(
       rgba(69, 143, 161, 0.075),
       rgba(0, 0, 0, 0.4)
     ),
     url("./assets/Blackwarrior.jpg");
-  /* border-radius: 350px; */
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
@@ -1135,7 +1106,6 @@ export default {
   grid-row-end: span 2;
   margin-left: -2%;
   border-radius: 20px;
-  /* border: 5px solid rgb(155, 197, 187);  */
 }
 
 .map2 h1 {
@@ -1149,17 +1119,12 @@ export default {
   margin-top: 17%;
 }
 .TitleLarge {
-  /* text-align: left;
-  margin-left: 25%; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2em;
   background-image: linear-gradient(rgba(23, 99, 143, 0.267), white 85%);
-  /* margin-bottom: 1%;
-  margin-top: 4%; */
   height: 25vh;
 }
-/* rgb(46, 115, 155) */
 div.transtitle {
   grid-column-start: 3;
   grid-column-end: 4;
@@ -1181,7 +1146,6 @@ div.transbox {
   border: 1px solid black;
   opacity: 1;
 }
-/* background-position: 50% 0; */
 div.transbox3 p {
   font-weight: bold;
   font-size: 18px;
@@ -1191,24 +1155,16 @@ div.transbox3 p {
 div.transbox3 {
   position: absolute;
   margin-left: 12%;
-
   margin-top: 4%;
-
   text-align: left;
   margin-right: 68%;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
-
-  /* background-color: #ffffff;
-
-  opacity: 0.8;
-  */
   border-radius: 55px;
 }
 .map .transbox2 {
-  /* margin-left: 50%; */
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 5;
@@ -1216,7 +1172,6 @@ div.transbox3 {
   border-radius: 55px;
   opacity: 0.9;
   background-color: #ffffff;
-  /* border: 1px solid black; */
   opacity: 1;
   margin-bottom: 10%;
   margin-top: 17%;
@@ -1290,7 +1245,6 @@ div.transbox2 p {
   margin-bottom: -0.8%;
   width: 19.99vw;
   z-index: -1;
-  /* margin-left: 0.1%; */
 }
 #agriculture {
   position: absolute;
@@ -1348,7 +1302,6 @@ div.transbox2 p {
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 1;
-  /* transform: rotate(180deg); */
   margin-top: -6.1%;
 }
 .map3 .curved-div {
@@ -1408,9 +1361,7 @@ div.transbox2 p {
   grid-row-end: 2;
   font-size: 3em;
   margin-left: 75%;
-  /* color: #98f5ff; */
   z-index: 1;
-  /* color: #2c3e50; */
   color: #000;
 }
 .drop .droptxt:hover {

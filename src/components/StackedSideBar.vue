@@ -33,7 +33,6 @@
           <div
             class="detailsmod"
             :style="{ height: yScale(key[1]) + 2 + 'px' }"
-            v-on:mousedown="logit()"
           >
             <p>
               {{ key[0] }} : {{ Math.round(key[1] * 10) / 10 }}
@@ -56,7 +55,7 @@ export default {
     basin: String,
     cause: String,
     counter: Number,
-    checkedUnits: String,
+    checkedUnits: Array,
   },
 
   data: () => ({
@@ -76,9 +75,6 @@ export default {
     ],
   }),
   methods: {
-    logit() {
-      console.log(this.yScale2(50));
-    },
     basinNull() {
       if (this.basin === "null") {
         return this.basin === "Black Warrior";
@@ -132,7 +128,7 @@ export default {
       this.test.forEach(function(item) {
         sum += parseFloat(item[1]);
       });
-      console.log(window.innerHeight - window.innerHeight * 0.2);
+
       return sum;
     },
     test() {
@@ -150,18 +146,10 @@ export default {
         .range([25, window.innerHeight - 715]);
     },
     coloring() {
-      //        .domain([0, 814])
-      // let color = d3.scaleOrdinal(d3.schemeCategory10);
-      //let color = d3.interpolator(d3.interpolatePuRd);
-      //let color = d3.scaleSequential(d3.interpolateBlues);
-      // .range(d3.schemeSet3);
-      // .domain([0, 10000]);
       var color = d3
         .scaleSequential(d3.interpolateBlues)
         .domain([0, this.totalval * 2]);
-      console.log(color(50));
       //d3.scaleOrdinal().domain([‘A’, ‘B’, ‘C’]) .range([‘#fff’, ‘#8f8’, ‘#00f’])
-
       return color;
     },
   },
@@ -181,13 +169,10 @@ export default {
   font-size: 12px;
   text-align: left;
   color: black;
-  /* font-size: 1.2vh; */
   overflow: visible;
   display: flex;
   align-items: center;
   font-weight: bold;
-  /* margin-left: 50%; */
-  /* margin: auto; */
 }
 .legend1 {
   border-width: 0.1px;
@@ -222,13 +207,10 @@ export default {
   z-index: -1;
   margin-left: 2%;
   margin-right: 2%;
-  /* text-align: center; */
 }
 .detailsmod p {
-  /* position: absolute; */
   top: 50%;
 }
-
 .fade1-enter-active {
   transition: opacity 0.2s;
 }
