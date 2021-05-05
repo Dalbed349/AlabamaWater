@@ -59,9 +59,9 @@
       </p>
       <p id="bigger">
         During the Ice Age much of this land remained unfrozen due to its
-        lattitude. A combination of proximity to coastal waters and unique
-        geological formations around inland waters allowed for evolution to
-        continue unabated while most of the planet was covered in ice.
+        lattitude. A combination of proximity to coastal waters and geological
+        formations around inland waters allowed for evolution to continue
+        unabated while most of the planet was covered in ice.
       </p>
 
       <p id="bigger">
@@ -741,19 +741,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
-.Intro {
-  position: relative;
-  left: 0;
-  height: 40vh;
-  color: white;
-  margin-top: 20vh;
-  margin-left: 20%;
-  margin-right: 20%;
 
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000;
-  font-size: 20px;
-}
 .viz2 {
   display: grid;
   grid-template-rows: repeat(5);
@@ -1017,15 +1005,12 @@ export default {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 6;
-  /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
 }
 .IntroGlacier3 .drop3 {
   grid-column-start: 2;
   grid-column-end: span3;
   grid-row-start: 1;
   grid-row-end: 6;
-
-  /* background: url("./assets/monsantoAnniston.jpg") center no-repeat; */
 }
 .map1 {
   display: grid;
@@ -1034,7 +1019,7 @@ export default {
   position: sticky;
   margin-top: 15%;
   margin-bottom: 25%;
-  /* background: url("./assets/CoosaDam.jpg") center no-repeat; */
+
   width: 100%;
   background-size: 100% 80%;
   height: 50vh;

@@ -130,7 +130,7 @@ export default {
     },
     adjustAnchor() {
       if (this.xScale(this.hovertrue) > this.svgWidth / 2) {
-        return 140;
+        return 200;
       } else {
         return 0;
       }
