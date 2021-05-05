@@ -54,7 +54,7 @@
     <div class="transbox3">
       <p id="bigger1">
         <br />
-        Alabama's climate and geographic history makes it one of the most
+        Alabama's climate and geographic history make it one of the most
         ecologically diverse states in the U.S. <br />
       </p>
       <p id="bigger">
@@ -1235,13 +1235,6 @@ div.transbox2 p {
   margin-bottom: -0.8%;
   width: 19.99vw;
   z-index: -1;
-}
-#agriculture {
-  position: absolute;
-  margin-top: 203%;
-  margin-left: -205px;
-  width: 20vw;
-  height: 10%;
 }
 .viz2Wrapper {
   display: inline-block;

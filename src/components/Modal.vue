@@ -36,16 +36,15 @@
             }"
           >
             <defs></defs>
+            <!-- #f8fcfd -->
             <image width="552" height="812" transform="scale(0.75)" />
             <path
               class="cls-1"
               :style="
                 hoverCentral === basins[0]
                   ? {
+                      fill: '#3A5311',
                       opacity: 1,
-                      fill: sortedBasinOnlyNames.includes(basins[0])
-                        ? coloring(basins[0])
-                        : '#f8fcfd',
                     }
                   : {
                       fill: sortedBasinOnlyNames.includes(basins[0])
@@ -62,10 +61,8 @@
               :style="
                 hoverCentral === basins[5]
                   ? {
+                      fill: '#3A5311',
                       opacity: 1,
-                      fill: sortedBasinOnlyNames.includes(basins[5])
-                        ? coloring(basins[5])
-                        : '#f8fcfd',
                     }
                   : {
                       fill: sortedBasinOnlyNames.includes(basins[5])
