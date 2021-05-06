@@ -17,7 +17,7 @@
       <div class="spacer"></div>
     </div>
   </div>
-  <!--  -->
+  <!-- . -->
   <div class="IntroGlacier2"></div>
   <!--  -->
   <div class="map3">
@@ -564,7 +564,6 @@ export default {
       );
 
       return g;
-      // return g;
     },
     //////////////////////finalbybasin3
     sortedBasin() {
