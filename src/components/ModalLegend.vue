@@ -63,7 +63,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 190 ||
-        this.scrollPosition > this.modalYposEnd + 1500
+        this.scrollPosition > this.modalYposEnd + 1600
       ) {
         let result = "none";
 
@@ -77,7 +77,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd + 1500 - 100
+        this.scrollPosition > this.modalYposEnd + 1600 - 100
       ) {
         let result = 0;
 
@@ -160,7 +160,6 @@ export default {
   opacity: 1;
   margin-left: 0%;
   transform: scale(1.2, 1.2);
-  /* // padding: 5px; */
   visibility: visible;
   -webkit-transition: opacity 1s ease-out;
   -moz-transition: opacity 1s ease-out;
