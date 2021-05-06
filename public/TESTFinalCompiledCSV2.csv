@@ -1,6 +1,6 @@
 AssessmentUnitID,WaterbodyName,Type,RiverBasin,County,Uses,Causes,Sources,Size,UnitType,DownstreamUpstreamLocations,YearListed,Priority,ReportYear,DraftTMDLDate,DateofData,SupportStatus,1996303(d)?
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,11.78,miles,Bouldin tailrace canal /its source,2010,M,2020,,,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2020,,,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2020,,,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation,Urban development,7.65,miles,Lower Wetumpka Road /its source,2010,L,2020,,,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation,Urban development,8.86,miles,Still Creek /its source,2010,L,2020,,,,
 AL03150201-0601-100,Swift Creek,R,Alabama,AutaugaChilton,SwimmingFish & Wildlife,Pathogens (E. coli),Pasture grazing,10.55,miles,Autauga County Road 24 /Its source,2020,L,2020,,,,
@@ -42,8 +42,8 @@ AL03160111-0204-200,Brasher Creek,R,Black Warrior,Blount,Fish & Wildlife,Total D
 AL03160111-0204-200,Brasher Creek,R,Black Warrior,Blount,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,5.09,miles,Blackburn Fork (Highland Lake) / Its source,2020,L,2020,,,,
 AL03160111-0204-300,Sand Creek,R,Black Warrior,Blount,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Collection system failurePasture grazing,4.14,miles,Blackburn Fork (Highland Lake) / Its source,2020,L,2020,,,,
 AL03160111-0407-103,Fivemile Creek,R,Black Warrior,Jefferson,SwimmingFish & Wildlife,Pathogens (E. coli),Collection system failureUrban runoff/storm sewers,9.07,miles,Alabama Highway 79 /Its source,2018,L,2020,,,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2020,,,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /Its source,2006,L,2020,,,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2020,,,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /Its source,2006,L,2020,,,,
 AL03160112-0105-101,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,14.12,miles,Valley Creek /Big Branch,2020,L,2020,,,,
 AL03160112-0105-102,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,7.7,miles,Big Branch /Its source,2020,L,2020,,,,
 AL03160112-0106-111,Valley Creek (Bankhead Lake),L,Black Warrior,Jefferson,Public Water Supply SwimmingFish & Wildlife,Nutrients,Municipal,119.67,acres,Black Warrior River / end of embayment,2016,M,2020,,,,
@@ -54,7 +54,7 @@ AL03160112-0410-111,Binion Creek(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Fis
 AL03160112-0411-101,North River(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,968.62,acres,Binion Creek /extent of reservoir,2010,L,2020,,,,
 AL03160112-0413-102,North River(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Public Water SupplySwimming,Metals (Mercury),Atmospheric deposition,3797.84,acres,Lake Tuscaloosa dam /Binion Creek,2010,L,2020,,,,
 AL03160112-0503-100,Cottondale Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),On-site wastewater systemsPasture grazing,9.58,miles,Hurricane Creek /Its source,2016,M,2020,,,,
-AL03160113-0201-100,Mill Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,10.36,miles,Warrior Lake /Its source,2018,L,2020,,,,
+AL03160113-0201-100,Mill Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,10.36,miles,Warrior Lake /Its source,2018,L,2020,,,,
 AL03160113-0302-110,Elliotts Creek,R,Black Warrior,Hale,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,24.74,miles,Warrior Lake /Its source,2018,L,2020,,,,
 AL03160113-0602-300,Carthage Branch,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,3.98,miles,Warrior Lake /Its source,2018,L,2020,,,,
 AL03160113-0704-100,Cottonwood Creek,R,Black Warrior,Hale MarengoPerry,Fish & Wildlife,Organic enrichment(BOD),Municipal Pasture grazing,11.42,miles,Big Prairie Creek / Its source,2006,L,2020,,,,
@@ -65,7 +65,7 @@ AL03160113-0801-200,Needham Creek,R,Black Warrior,Greene,Fish & Wildlife,Total D
 AL03140104-0104-100,Blackwater River,R,Blackwater,Escambia,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,2.78,miles,AL-FL state line /Its source,2004,L,2020,,,,
 AL03150202-0103-102,Little Cahaba River(Lake Purdy),L,Cahaba,JeffersonShelby,Public Water Supply,Metals (Mercury),Atmospheric deposition,961.95,acres,Lake Purdy dam /extent of reservoir,2018,L,2020,,,,
 AL03150202-0103-103,Little Cahaba River,R,Cahaba,Jefferson,Fish & Wildlife,Total Dissolved Solids,Industrial,13.75,miles,Lake Purdy /Its source,2018,L,2020,,,,
-AL03150202-0402-100,Mahan Creek,R,Cahaba,BibbChilton,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,15.47,miles,Little Cahaba River /Its source,2018,L,2020,,,,
+AL03150202-0402-100,Mahan Creek,R,Cahaba,BibbChilton,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,15.47,miles,Little Cahaba River /Its source,2018,L,2020,,,,
 AL03150202-0503-102,Cahaba River,R,Cahaba,Bibb,Outstanding Alabama Water Swimming,Pathogens (E. coli),Municipal Pasture grazingUrban runoff/storm sewers,10.58,miles,AL Highway 82 /lower Little Cahaba River,2016,H,2020,,,,
 AL03150202-0503-102,Cahaba River,R,Cahaba,Bibb,Outstanding Alabama WaterSwimming,Metals (Mercury),Atmospheric deposition,10.58,miles,Alabama Highway 82 /lower Little Cahaba River,2020,L,2020,,,,
 AL03150202-0505-100,Affonee Creek,R,Cahaba,Bibb,Swimming,Pathogens (E. coli),Pasture grazing,18.51,miles,Cahaba River /Its source,2018,L,2020,,,,
@@ -76,7 +76,7 @@ AL03150202-0702-100,Cahaba River,R,Cahaba,Perry,Outstanding Alabama WaterSwimmin
 AL03130002-0907-100,Moores Creek,R,Chattahoochee,Chambers,Fish & Wildlife,Pathogens (E. coli),Pasture grazingUrban runoff/storm sewers,11.4,miles,Chattahoochee River /Its source,2018,L,2020,,,,
 AL03130002-0907-100,Moores Creek,R,Chattahoochee,Chambers,Fish & Wildlife,Siltation,Land development,11.4,miles,Chattahoochee River /Its source,2012,L,2020,,,,
 AL03130002-1105-100,Osanippa Creek,R,Chattahoochee,ChambersLee,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,27.32,miles,Lake Harding /Its source,2018,L,2020,,,,
-AL03130002-1106-100,UT to Halawakee Creek,R,Chattahoochee,Lee,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,14.19,miles,Halawakee Creek /Its source,2018,L,2020,,,,
+AL03130002-1106-100,UT to Halawakee Creek,R,Chattahoochee,Lee,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,14.19,miles,Halawakee Creek /Its source,2018,L,2020,,,,
 AL03130002-1107-110,Halawakee Creek,R,Chattahoochee,Chambers Lee,Fish & Wildlife,Siltation,Land development,16.57,miles,Three miles upstream of County Road 79 /Its source,2012,L,2020,,,,
 AL03130003-0505-101,Uchee Creek,R,Chattahoochee,Russell,SwimmingFish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,8.96,miles,Chattahoochee River (Walter F. George Lake) /Russell County Road 39,2020,L,2020,,,,
 AL03130003-0505-102,Uchee Creek,R,Chattahoochee,Russell,Public Water Supply SwimmingFish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,11.59,miles,Russell County Road 39 / Island Creek,2018,L,2020,,,,
@@ -94,10 +94,10 @@ AL03130004-0403-110,Peterman Creek,R,Chattahoochee,Henry,Fish & Wildlife,Pathoge
 AL03130004-0405-100,Abbie Creek,R,Chattahoochee,Barbour Henry,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations MunicipalPasture grazing,42.53,miles,Chattahoochee River / Its source,2016,L,2020,,,,
 AL03130004-0602-500,Cedar Creek,R,Chattahoochee,HenryHouston,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,4.04,miles,Omusee Creek /Its source,2008,L,2020,,,,
 AL03130004-0801-100,Chattahoochee River,R,Chattahoochee,Houston,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,14.14,miles,AL-FL state line /Woods Branch,2016,L,2020,,,,
-AL03130012-0101-100,Limestone Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,10.8,miles,Big Creek /Its source,2018,L,2020,,,,
+AL03130012-0101-100,Limestone Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,10.8,miles,Big Creek /Its source,2018,L,2020,,,,
 AL03130012-0101-410,Cypress Creek,R,Chipola,Houston,Fish & Wildlife,Nutrients,MunicipalUrban runoff/storm sewers,8.11,miles,Limestone Creek /Its source,1998,L,2020,,,,
 AL03130012-0101-410,Cypress Creek,R,Chipola,Houston,Fish & Wildlife,Organic enrichment(BOD),MunicipalUrban runoff/storm sewers,8.11,miles,Limestone Creek /Its source,1998,L,2020,,,,
-AL03130012-0201-310,Webb Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,10.22,miles,Cowarts Creek /Its source,2020,L,2020,,,,
+AL03130012-0201-310,Webb Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,10.22,miles,Cowarts Creek /Its source,2020,L,2020,,,,
 AL03130012-0201-410,Cooper Creek,R,Chipola,Houston,Fish & Wildlife,Nutrients,Animal feeding operations Pasturegrazing,3.13,miles,Cowarts Creek /Its source,2020,L,2020,,,,
 AL03130012-0201-410,Cooper Creek,R,Chipola,Houston,Fish & Wildlife,Organic enrichment(BOD),Animal feeding operations Pasturegrazing,3.13,miles,Cowarts Creek /Its source,2020,L,2020,,,,
 AL03130012-0201-410,Cooper Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasturegrazing,3.13,miles,Cowarts Creek /Its source,2020,L,2020,,,,
@@ -162,7 +162,7 @@ AL03150106-0504-102,Choccolocco Creek,R,Coosa,CalhounCleburne,Fish & Wildlife,Pa
 AL03150106-0505-100,UT to Choccolocco Creek,R,Coosa,Calhoun,Fish & Wildlife,Pathogens (E. coli),Collection system failureUrban runoff/storm sewer,5.59,miles,Choccolocco Creek /Its source,2020,L,2020,,,,
 AL03150106-0507-102,Choccolocco Creek,R,Coosa,Calhoun,Public Water SupplyFish & Wildlife,Priority Organics (PCBs),Contaminated sediments,2.37,miles,UT from Boiling Spring /Hillabee Creek,1996,*,2020,,,,
 AL03150106-0507-102,Choccolocco Creek,R,Coosa,Calhoun,Public Water SupplyFish & Wildlife,Metals (Mercury),Atmospheric deposition,2.37,miles,UT from Boiling Spring /Hillabee Creek,2010,L,2020,,,,
-AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2018,L,2020,,,,
+AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2018,L,2020,,,,
 AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Priority Organics (PCBs),Contaminated sediments,33.03,miles,Logan Martin Lake /UT from Boiling Spring,1996,*,2020,,,,
 AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2010,L,2020,,,,
 AL03150106-0514-111,Choccolocco Creek(Logan Martin Lake),L,Coosa,Talladega,SwimmingFish & Wildlife,Priority Organics (PCBs),Contaminated sediments,1125.61,acres,Coosa River /end of embayment,2014,*,2020,,,,
@@ -184,7 +184,7 @@ AL03150106-0808-111,Kelly Creek (Lay Lake),L,Coosa,St. Clair,Public Water Supply
 AL03150106-0808-111,Kelly Creek (Lay Lake),L,Coosa,St. Clair,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,6.49,acres,Coosa River /end of embayment,2010,L,2020,,,,
 AL03150106-0810-102,Coosa River (Lay Lake),L,Coosa,Shelby St. ClairTalladega,Public Water Supply SwimmingFish & Wildlife,Priority Organics (PCBs),Contaminated sediments,698.04,acres,River Mile 89 / Logan Martin Dam,1996,*,2020,,,,
 AL03150106-0810-102,Coosa River (Lay Lake),L,Coosa,Shelby St. ClairTalladega,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,698.04,acres,River Mile 89 / Logan Martin Dam,2010,L,2020,,,,
-AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,4.67,miles,Tallaseehatchee Creek /Its source,2018,L,2020,,,,
+AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,4.67,miles,Tallaseehatchee Creek /Its source,2018,L,2020,,,,
 AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Total Dissolved Solids,IndustrialMunicipal,4.67,miles,Tallaseehatchee Creek /Its source,2010,H,2020,,,,
 AL03150107-0106-100,Tallaseehatchee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,16.74,miles,Lay Lake /Howard dam,2018,L,2020,,,,
 AL03150107-0106-100,Tallaseehatchee Creek,R,Coosa,Talladega,Fish & Wildlife,Total Dissolved Solids,IndustrialMunicipal,16.74,miles,Lay Lake /Howard dam,2010,H,2020,,,,
@@ -204,7 +204,7 @@ AL03150107-0603-110,Weogufka Creek,R,Coosa,ClayCoosa,SwimmingFish & Wildlife,Pat
 AL03150107-0706-102,Hatchet Creek,R,Coosa,Clay Coosa,Outstanding Alabama Water Public Water Supply SwimmingFish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,18.87,miles,Wildcat Creek / Its source,2020,L,2020,,,,
 AL03150107-0709-100,Hatchet Creek,R,Coosa,Coosa,Outstanding Alabama Water SwimmingFish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,35.47,miles,Coosa River (Mitchell Lake) / Wildcat Creek,2020,L,2020,,,,
 AL03150107-0801-100,Yellow Leaf Creek,R,Coosa,Chilton,Fish & Wildlife,Siltation,Agriculture,31.27,miles,Mitchell Lake /Its source,2010,L,2020,,,,
-AL03150107-0802-110,Walnut Creek,R,Coosa,Chilton,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,15.66,miles,Mitchell Lake /Its source,2018,L,2020,,,,
+AL03150107-0802-110,Walnut Creek,R,Coosa,Chilton,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,15.66,miles,Mitchell Lake /Its source,2018,L,2020,,,,
 AL03140301-0403-100,Feagin Creek,R,Escambia,Covington,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,7.76,miles,Gantt Lake /Its source,2018,L,2020,,,,
 AL03140301-0404-111,Conecuh River(Gantt Lake),L,Escambia,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,1817.43,acres,Gantt Dam /extent of reservoir,2010,L,2020,,,,
 AL03140301-0405-101,Conecuh River(Point A Lake),L,Escambia,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,610.56,acres,Point A Dam /extent of reservoir,2010,L,2020,,,,
@@ -292,24 +292,24 @@ AL03140106-0603-101,Blackwater River,R,Perdido,Baldwin,Fish & Wildlife,Metals (M
 AL03140106-0703-100,Perdido River,R,Perdido,Baldwin,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,21.93,miles,Perdido Bay /Jacks Branch,2006,L,2020,,,,
 AL03140107-0103-100,Perdido Bay,E,Perdido,Baldwin,Shellfish Harvesting SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,2694.4,acres,Lillian Bridge / Its source,2016,L,2020,,,,
 AL03140107-0201-100,Wolf Creek,R,Perdido,Baldwin,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,8.91,miles,Wolf Bay /Its source,2020,L,2020,,,,
-AL03140107-0201-210,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failurePasture grazing,2.41,miles,Wolf Creek /10 feet above MSL,2020,L,2020,,,,
+AL03140107-0201-210,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failure Pasture grazing,2.41,miles,Wolf Creek /10 feet above MSL,2020,L,2020,,,,
 AL03140107-0201-210,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,2.41,miles,Wolf Creek /10 feet above MSL,2020,L,2020,,,,
-AL03140107-0201-220,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failurePasture grazing,5.16,miles,10 feet above MSL /Its source,2020,L,2020,,,,
+AL03140107-0201-220,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failure Pasture grazing,5.16,miles,10 feet above MSL /Its source,2020,L,2020,,,,
 AL03140107-0201-220,Sandy Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,5.16,miles,10 feet above MSL /Its source,2020,L,2020,,,,
-AL03140107-0202-101,Miflin Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failurePasture grazing,2.96,miles,Wolf Bay /10 feet above MSL,2020,L,2020,,,,
+AL03140107-0202-101,Miflin Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failure Pasture grazing,2.96,miles,Wolf Bay /10 feet above MSL,2020,L,2020,,,,
 AL03140107-0202-101,Miflin Creek,R,Perdido,Baldwin,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,2.96,miles,Wolf Bay /10 feet above MSL,2020,L,2020,,,,
-AL03140107-0202-102,Miflin Creek,R,Perdido,Baldwin,Fish & Wildlife,Pathogens (Enterococcus),Collection system failurePasture grazing,5.41,miles,10 feet above MSL /Its source,2020,L,2020,,,,
+AL03140107-0202-102,Miflin Creek,R,Perdido,Baldwin,Fish & Wildlife,Pathogens (Enterococcus),Collection system failure Pasture grazing,5.41,miles,10 feet above MSL /Its source,2020,L,2020,,,,
 AL03140107-0202-102,Miflin Creek,R,Perdido,Baldwin,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,5.41,miles,10 feet above MSL /Its source,2020,L,2020,,,,
 AL03140107-0204-302,Perdido Bay,E,Perdido,Baldwin,Shellfish Harvesting SwimmingFish & Wildlife,Pathogens (Enterococcus),Collection system failure On-site wastewater systems,825.6,acres,Suarez Point / Lillian Bridge,2012,L,2020,,,,
 AL03150108-0405-102,Tallapoosa River,R,Tallapoosa,Cleburne,Outstanding Alabama WaterFish & Wildlife,Pathogens (E. coli),Pasture grazingSources outside state,31.6,miles,Cane Creek /AL-GA state line,2016,L,2020,,,,
 AL03150109-0105-102,Tallapoosa River(R L Harris Lake),L,Tallapoosa,Randolph,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,5356.95,acres,R L Harris dam /Little Tallapoosa River,2018,L,2020,,,,
-AL03150109-0303-100,High Pine Creek,R,Tallapoosa,RandolphChambers,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,13.74,miles,Tallapoosa River /Highway 431,2018,L,2020,,,,
+AL03150109-0303-100,High Pine Creek,R,Tallapoosa,RandolphChambers,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,13.74,miles,Tallapoosa River /Highway 431,2018,L,2020,,,,
 AL03150109-0308-100,Emuckfaw Creek,R,Tallapoosa,ClayTallapoosa,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,23.51,miles,Tallapoosa River /Its source,2018,L,2020,,,,
 AL03150109-0803-301,Sugar Creek(Lake Martin),L,Tallapoosa,Tallapoosa,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,58.93,acres,Elkahatchee Creek /end of embayment,2012,L,2020,,,,
 AL03150110-0104-101,Sougahatchee Creek (Yates Lake),L,Tallapoosa,Tallapoosa,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,203.78,acres,Tallapoosa River / end of embayment,2016,L,2020,,,,
 AL03150110-0104-104,Sougahatchee Creek,R,Tallapoosa,Lee MaconTallapoosa,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,33.42,miles,Sycamore Creek / Sougahatchee Lake dam,2018,L,2020,,,,
 AL03150110-0202-300,Moores Mill Creek,R,Tallapoosa,Lee,SwimmingFish & Wildlife,Siltation,Land developmentUrban runoff/storm sewers,10.51,miles,Chewacla Creek /Its source,2000,L,2020,,,,
-AL03150110-0304-100,Uphapee Creek,R,Tallapoosa,Macon,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,21.16,miles,Tallapoosa River /Its source,2018,L,2020,,,,
+AL03150110-0304-100,Uphapee Creek,R,Tallapoosa,Macon,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,21.16,miles,Tallapoosa River /Its source,2018,L,2020,,,,
 AL03150110-0402-101,Channahatchee Creek (Yates Lake),L,Tallapoosa,Elmore,Public Water Supply SwimmingFish & Wildlife,Organic enrichment(BOD),Nonpoint source runoff,62.63,acres,Tallapoosa River / end of embayment,2012,L,2020,,,,
 AL03150110-0402-102,Channahatchee Creek,R,Tallapoosa,Elmore,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,17.31,miles,Yates Lake /Its source,2018,L,2020,,,,
 AL03150110-0406-102,Tallapoosa River (Thurlow Lake),L,Tallapoosa,Elmore Tallapoosa,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,538.6,acres,Thurlow dam / Yates dam,2012,L,2020,,,,
@@ -382,7 +382,7 @@ AL06030004-0405-101,Elk River(Wheeler Lake),L,Tennessee,LauderdaleLimestone,Swim
 AL06030005-0105-100,Big Nance Creek,R,Tennessee,Lawrence,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,24.75,miles,Wilson Lake /Its source,2012,L,2020,,,,
 AL06030005-0105-111,Big Nance Creek(Wilson Lake),L,Tennessee,Lawrence,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,44.57,acres,Tennessee River /end of embayment,2016,L,2020,,,,
 AL06030005-0301-200,Chandelower Creek,R,Tennessee,Colbert,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,5.95,miles,Rock Creek /Its source,2018,L,2020,,,,
-AL06030005-0509-800,Indiancamp Creek,R,Tennessee,Lauderdale,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,5.98,miles,Shoal Creek /Its source,2020,L,2020,,,,
+AL06030005-0509-800,Indiancamp Creek,R,Tennessee,Lauderdale,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,5.98,miles,Shoal Creek /Its source,2020,L,2020,,,,
 AL06030005-0605-111,Cypress Creek(Pickwick Lake),L,Tennessee,Lauderdale,Public Water SupplyFish & Wildlife,Metals (Mercury),Atmospheric deposition,57,acres,Tennessee River /end of embayment,2016,L,2020,,,,
 AL06030005-0703-111,Spring Creek(Pickwick Lake),L,Tennessee,Colbert,Fish & Wildlife,Nutrients,Agriculture,18.34,acres,Tennessee River /end of embayment,2014,L,2020,,,,
 AL06030005-0801-100,Tennessee River(Wilson Lake),L,Tennessee,ColbertLauderdale,Public Water SupplySwimming,Nutrients,Agriculture,13363.37,acres,Wilson dam /Wheeler dam,2016,L,2020,,,,
@@ -444,7 +444,7 @@ AL03140103-0402-100,Yellow River,R,Yellow,Covington,Fish & Wildlife,Metals (Merc
 AL03140103-0601-300,Lake Jackson,L,Yellow,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,415.46,acres,Within Florala and north of theAlabama-Florida state line,2010,L,2020,,,,
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,11.78,miles,Bouldin tailrace canal /its source,2010,H,2018,,,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pathogens (E. coli),Urban development,7.65,miles,Lower Wetumpka Road /its source,2010,L,2018,,,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2018,,,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2018,,,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation,Urban development,7.65,miles,Lower Wetumpka Road /its source,2010,L,2018,,,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation,Urban development,8.86,miles,Still Creek /its source,2010,L,2018,,,,
 AL03150201-1006-101,Mulberry Creek,R,Alabama,AutaugaDallas,SwimmingFish & Wildlife,Pathogens (E. coli),Pasture grazing,22.2,miles,Alabama River /Harris Branch,2016,L,2018,,,,
@@ -485,8 +485,8 @@ AL03160111-0106-100,Slab Creek,R,Black Warrior,Blount Marshall,Fish & Wildlife,P
 AL03160111-0204-111,Blackburn Fork(Inland Lake),L,Black Warrior,Blount,Public Water SupplySwimming,Metals (Mercury),Atmospheric deposition,1389.78,acres,Inland Lake dam /extent of reservoir,2018,L,2018,,,,
 AL03160111-0307-400,Black Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Surface mining-abandoned,6.36,miles,Cunningham Creek /its source,2014,H,2018,,,,
 AL03160111-0407-103,Fivemile Creek,R,Black Warrior,Jefferson,SwimmingFish & Wildlife,Pathogens (E. coli),Collection system failureUrban runoff/storm sewers,9.07,miles,Alabama Highway 79 /its source,2018,L,2018,,,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2018,,,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /its source,2006,L,2018,,,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2018,,,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /its source,2006,L,2018,,,,
 AL03160112-0106-111,Valley Creek (Bankhead Lake),L,Black Warrior,Jefferson,Public Water Supply SwimmingFish & Wildlife,Nutrients,Municipal,119.67,acres,Black Warrior River / end of embayment,2016,L,2018,,,,
 AL03160112-0304-110,Pegues Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Chromium),Surface mining-abandoned,2.47,miles,Holt Lake /its source,2006,L,2018,,,,
 AL03160112-0304-110,Pegues Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Lead),Surface mining-abandoned,2.47,miles,Holt Lake /its source,2006,L,2018,,,,
@@ -498,7 +498,7 @@ AL03160112-0413-102,North River(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Publ
 AL03160112-0411-101,North River(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,968.62,acres,Binion Creek /extent of reservoir,2010,L,2018,,,,
 AL03160112-0410-111,Binion Creek(Lake Tuscaloosa),L,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,305.18,acres,North River /end of embayment,2010,L,2018,,,,
 AL03160112-0503-100,Cottondale Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),On-site wastewater systemsPasture grazing,9.58,miles,Hurricane Creek /its source,2016,L,2018,,,,
-AL03160113-0201-100,Mill Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,10.36,miles,Warrior Lake /its source,2018,L,2018,,,,
+AL03160113-0201-100,Mill Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,10.36,miles,Warrior Lake /its source,2018,L,2018,,,,
 AL03160113-0302-110,Elliotts Creek,R,Black Warrior,Hale,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,24.74,miles,Warrior Lake /its source,2018,L,2018,,,,
 AL03160113-0602-300,Carthage Branch,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,3.98,miles,Warrior Lake /its source,2018,L,2018,,,,
 AL03160113-0704-100,Cottonwood Creek,R,Black Warrior,HaleMarengo Perry,Fish & Wildlife,Organic enrichment(BOD),Municipal Pasture grazing,11.42,miles,Big Prairie Creek / its source,2006,L,2018,,,,
@@ -510,14 +510,14 @@ AL03140104-0104-100,Blackwater River,R,Blackwater,Escambia,Fish & Wildlife,Metal
 AL03150202-0503-102,Cahaba River,R,Cahaba,Bibb,Outstanding Alabama Water Swimming,Pathogens (E. coli),Municipal Pasture grazingUrban runoff/storm sewers,10.58,miles,AL Hwy 82 /lower Little Cahaba River,2016,L,2018,,,,
 AL03150202-0103-103,Little Cahaba River,R,Cahaba,Jefferson,Fish & Wildlife,Total Dissolved Solids,Industrial,13.75,miles,Lake Purdy /its source,2018,L,2018,,,,
 AL03150202-0103-102,Little Cahaba River(Lake Purdy),L,Cahaba,JeffersonShelby,Public Water Supply,Metals (Mercury),Atmospheric deposition,961.95,acres,Lake Purdy dam /extent of reservoir,2018,L,2018,,,,
-AL03150202-0402-100,Mahan Creek,R,Cahaba,BibbChilton,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,15.47,miles,Little Cahaba River /its source,2018,L,2018,,,,
+AL03150202-0402-100,Mahan Creek,R,Cahaba,BibbChilton,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,15.47,miles,Little Cahaba River /its source,2018,L,2018,,,,
 AL03150202-0505-100,Affonee Creek,R,Cahaba,Bibb,Swimming,Pathogens (E. coli),Pasture grazing,18.51,miles,Cahaba River /its source,2018,L,2018,,,,
 AL03150202-0506-200,Walton Creek,R,Cahaba,BibbPerry,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,5.45,miles,Cahaba River /its source,2016,L,2018,,,,
 AL03150202-0901-100,Childers Creek,R,Cahaba,Dallas,Fish & Wildlife,Siltation,Pasture grazing,18.79,miles,Cahaba River /its source,2006,L,2018,,,,
 AL03130002-0907-100,Moores Creek,R,Chattahoochee,Chambers,Fish & Wildlife,Siltation,Land development,11.4,miles,Chattahoochee River /its source,2012,L,2018,,,,
 AL03130002-0907-100,Moores Creek,R,Chattahoochee,Chambers,Fish & Wildlife,Pathogens (E. coli),Pasture grazingUrban runoff/storm sewers,11.4,miles,Chattahoochee River /its source,2018,L,2018,,,,
 AL03130002-1105-100,Osanippa Creek,R,Chattahoochee,ChambersLee,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,27.32,miles,Lake Harding /its source,2018,L,2018,,,,
-AL03130002-1106-100,UT to Halawakee Creek,R,Chattahoochee,Lee,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,14.19,miles,Halawakee Creek /its source,2018,L,2018,,,,
+AL03130002-1106-100,UT to Halawakee Creek,R,Chattahoochee,Lee,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,14.19,miles,Halawakee Creek /its source,2018,L,2018,,,,
 AL03130002-1107-110,Halawakee Creek,R,Chattahoochee,Chambers Lee,Fish & Wildlife,Siltation,Land development,16.57,miles,Three miles upstream of County Road 79 /its source,2012,L,2018,,,,
 AL03130003-0505-102,Uchee Creek,R,Chattahoochee,Russell,Public Water Supply SwimmingFish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,11.59,miles,County Road 39 / Island Creek,2018,L,2018,,,,
 AL03130003-0505-111,Uchee Creek(Walter F George Lake),L,Chattahoochee,Russell,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,105.15,acres,Chattahoochee River /end of embayment,2010,L,2018,,,,
@@ -534,7 +534,7 @@ AL03130004-0206-100,Bennett Mill Creek,R,Chattahoochee,Henry,Fish & Wildlife,Pat
 AL03130004-0405-100,Abbie Creek,R,Chattahoochee,Barbour Henry,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations MunicipalPasture grazing,42.53,miles,Chattahoochee River / its source,2016,L,2018,,,,
 AL03130004-0403-110,Peterman Creek,R,Chattahoochee,Henry,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,12.43,miles,Abbie Creek /its source,2016,L,2018,,,,
 AL03130004-0602-500,Cedar Creek,R,Chattahoochee,HenryHouston,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,4.04,miles,Omusee Creek /its source,2008,L,2018,,,,
-AL03130012-0101-100,Limestone Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,10.8,miles,Big Creek /its source,2018,L,2018,,,,
+AL03130012-0101-100,Limestone Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,10.8,miles,Big Creek /its source,2018,L,2018,,,,
 AL03130012-0101-410,Cypress Creek,R,Chipola,Houston,Fish & Wildlife,Nutrients,MunicipalUrban runoff/storm sewers,8.11,miles,Limestone Creek /its source,1998,L,2018,,,,
 AL03130012-0101-410,Cypress Creek,R,Chipola,Houston,Fish & Wildlife,Organic enrichment(BOD),MunicipalUrban runoff/storm sewers,8.11,miles,Limestone Creek /its source,1998,L,2018,,,,
 AL03130012-0202-210,Bruners Gin Creek,R,Chipola,Houston,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,5.43,miles,Rocky Creek /its source,2018,L,2018,,,,
@@ -593,7 +593,7 @@ AL03150106-0108-102,Big Wills Creek,R,Coosa,Etowah,SwimmingFish & Wildlife,Patho
 AL03150106-0103-100,Big Wills Creek,R,Coosa,Etowah DeKalb,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Collection system failurePasture grazing,51.63,miles,Little Sand Valley Creek /  100 yards below Allen Branch,2018,L,2018,,,,
 AL03150106-0408-100,Cane Creek,R,Coosa,Calhoun,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Collection system failurePasture grazing,30.68,miles,Logan Martin Lake / its source,2018,L,2018,,,,
 AL03150106-0602-100,Broken Arrow Creek,R,Coosa,St. Clair,Fish & Wildlife,Siltation,AgriculturePasture grazing,21.37,miles,Coosa River /its source,2010,L,2018,,,,
-AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2018,L,2018,,,,
+AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2018,L,2018,,,,
 AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,33.03,miles,Logan Martin Lake /UT from Boiling Spring,2010,L,2018,,,,
 AL03150106-0514-100,Choccolocco Creek,R,Coosa,CalhounTalladega,Fish & Wildlife,Priority Organics (PCBs),Contaminated sediments,33.03,miles,Logan Martin Lake /UT from Boiling Spring,1996,*,2018,,,,
 AL03150106-0507-102,Choccolocco Creek,R,Coosa,Calhoun,Public Water SupplyFish & Wildlife,Metals (Mercury),Atmospheric deposition,2.37,miles,UT from Boiling Spring /Hillabee Creek,2010,L,2018,,,,
@@ -603,7 +603,7 @@ AL03150106-0806-100,Wolf Creek,R,Coosa,ShelbySt. Clair,Fish & Wildlife,Turbidity
 AL03150106-0808-100,Kelly Creek,R,Coosa,ShelbySt. Clair,SwimmingFish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,33.58,miles,Lay Lake /its source,2018,L,2018,,,,
 AL03150107-0106-100,Tallaseehatchee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,16.74,miles,Lay Lake /Howard dam,2018,L,2018,,,,
 AL03150107-0106-100,Tallaseehatchee Creek,R,Coosa,Talladega,Fish & Wildlife,Total Dissolved Solids,IndustrialMunicipal,16.74,miles,Lay Lake /Howard dam,2010,H,2018,,,,
-AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,4.67,miles,Tallaseehatchee Creek /its source,2018,L,2018,,,,
+AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,4.67,miles,Tallaseehatchee Creek /its source,2018,L,2018,,,,
 AL03150107-0104-100,Shirtee Creek,R,Coosa,Talladega,Fish & Wildlife,Total Dissolved Solids,IndustrialMunicipal,4.67,miles,Tallaseehatchee Creek /its source,2010,H,2018,,,,
 AL03150107-0203-100,Weewoka Creek,R,Coosa,Talladega,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,18.32,miles,Tallaseehatchee Creek /its source,2018,L,2018,,,,
 AL03150107-0503-110,Coosa River (Lay Lake),L,Coosa,Chilton Coosa ShelbyTalladega,Public Water Supply SwimmingFish & Wildlife,Priority Organics (PCBs),Contaminated sediments,10559.35,acres,Lay Dam /Southern RR Bridge,1996,*,2018,,,,
@@ -623,7 +623,7 @@ AL03150106-0808-111,Kelly Creek (Lay Lake),L,Coosa,St. Clair,Public Water Supply
 AL03150106-0808-111,Kelly Creek (Lay Lake),L,Coosa,St. Clair,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,6.49,acres,Coosa River /end of embayment,2010,L,2018,,,,
 AL03150107-0405-100,Buxahatchee Creek,R,Coosa,ChiltonShelby,Fish & Wildlife,Pathogens (E. coli),Collection system failureMunicipal,14,miles,Waxahatchee Creek /its source,2016,L,2018,,,,
 AL03150107-0801-100,Yellow Leaf Creek,R,Coosa,Chilton,Fish & Wildlife,Siltation,Agriculture,31.27,miles,Mitchell Lake /its source,2010,L,2018,,,,
-AL03150107-0802-110,Walnut Creek,R,Coosa,Chilton,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,15.66,miles,Mitchell Lake /its source,2018,L,2018,,,,
+AL03150107-0802-110,Walnut Creek,R,Coosa,Chilton,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,15.66,miles,Mitchell Lake /its source,2018,L,2018,,,,
 AL03150107-0304-700,UT to Dry Branch,R,Coosa,Shelby,Fish & Wildlife,Nutrients,MunicipalUrban runoff/storm sewers,1.58,miles,Dry Branch /its source,1996,L,2018,,,,
 AL03140301-0403-100,Feagin Creek,R,Escambia,Covington,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,7.76,miles,Gantt Lake /its source,2018,L,2018,,,,
 AL03140301-0404-111,Conecuh River(Gantt Lake),L,Escambia,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,1817.43,acres,Gantt Dam /extent of reservoir,2010,L,2018,,,,
@@ -702,7 +702,7 @@ AL03140107-0204-302,Perdido Bay,E,Perdido,Baldwin,Shellfish Harvesting SwimmingF
 AL03140107-0103-100,Perdido Bay,E,Perdido,Baldwin,Shellfish Harvesting SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,2694.4,acres,Lillian Bridge / its source,2016,L,2018,,,,
 AL03150108-0405-102,Tallapoosa River,R,Tallapoosa,Cleburne,Outstanding Alabama WaterFish & Wildlife,Pathogens (E. coli),Pasture grazingSources outside state,31.6,miles,Cane Creek /AL-GA state line,2016,L,2018,,,,
 AL03150109-0105-102,Tallapoosa River(R L Harris Lake),L,Tallapoosa,Randolph,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,5356.95,acres,R L Harris dam /Little Tallapoosa River,2018,L,2018,,,,
-AL03150109-0303-100,High Pine Creek,R,Tallapoosa,RandolphChambers,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,13.74,miles,Tallapoosa River /Highway 431,2018,L,2018,,,,
+AL03150109-0303-100,High Pine Creek,R,Tallapoosa,RandolphChambers,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,13.74,miles,Tallapoosa River /Highway 431,2018,L,2018,,,,
 AL03150109-0308-100,Emuckfaw Creek,R,Tallapoosa,ClayTallapoosa,Fish & Wildlife,Pathogens (E. coli),Animal feeding operations Pasture grazing,23.51,miles,Tallapoosa River /its source,2018,L,2018,,,,
 AL03150109-0803-301,Sugar Creek(Lake Martin),L,Tallapoosa,Tallapoosa,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,58.93,acres,Elkahatchee Creek /end of embayment,2012,L,2018,,,,
 AL03150110-0104-104,Sougahatchee Creek,R,Tallapoosa,Lee MaconTallapoosa,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,33.42,miles,Sycamore Creek / Sougahatchee Lake dam,2018,L,2018,,,,
@@ -710,7 +710,7 @@ AL03150110-0104-101,Sougahatchee Creek (Yates Lake),L,Tallapoosa,Tallapoosa,Publ
 AL03150110-0402-101,Channahatchee Creek (Yates Lake),L,Tallapoosa,Elmore,Public Water Supply SwimmingFish & Wildlife,Organic enrichment(BOD),Nonpoint source runoff,62.63,acres,Tallapoosa River / end of embayment,2012,L,2018,,,,
 AL03150110-0402-102,Channahatchee Creek,R,Tallapoosa,Elmore,Fish & Wildlife,Pathogens (E. coli),Pasture grazing,17.31,miles,Yates Lake /its source,2018,L,2018,,,,
 AL03150110-0202-300,Moores Mill Creek,R,Tallapoosa,Lee,SwimmingFish & Wildlife,Siltation,Land developmentUrban runoff/storm sewers,10.51,miles,Chewacla Creek /its source,2000,L,2018,,,,
-AL03150110-0304-100,Uphapee Creek,R,Tallapoosa,Macon,Fish & Wildlife,Pathogens (E. coli),Collection system failurePasture grazing,21.16,miles,Tallapoosa River /its source,2018,L,2018,,,,
+AL03150110-0304-100,Uphapee Creek,R,Tallapoosa,Macon,Fish & Wildlife,Pathogens (E. coli),Collection system failure Pasture grazing,21.16,miles,Tallapoosa River /its source,2018,L,2018,,,,
 AL03150110-0406-102,Tallapoosa River (Thurlow Lake),L,Tallapoosa,Elmore Tallapoosa,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,538.6,acres,Thurlow dam / Yates dam,2012,L,2018,,,,
 AL03150110-0406-103,Tallapoosa River (Yates Lake),L,Tallapoosa,Elmore Tallapoosa,Public Water Supply SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,1595.89,acres,Yates dam / Martin dam,2018,L,2018,,,,
 AL03150110-0406-200,Mill Creek,R,Tallapoosa,MaconTallapoosa,Fish & Wildlife,Siltation,AgriculturePasture grazing,9.16,miles,Tallapoosa River /its source,2010,L,2018,,,,
@@ -831,7 +831,7 @@ AL03140103-0402-100,Yellow River,R,Yellow,Covington,Fish & Wildlife,Metals (Merc
 AL03140103-0601-300,Lake Jackson,L,Yellow,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,415.46,acres,Within Florala and north of theAlabama-Florida state line,2010,L,2018,,,,
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,13.02,miles,Bouldin tailrace canal /its source,2010,H,2016,,,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pathogens (E. coli),Urban development,7.65,miles,Lower Wetumpka Road /its source,2010,L,2016,,,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2016,,,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /its source,2002,L,2016,,,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation (habitat alteration),Urban development,7.65,miles,Lower Wetumpka Road /its source,2010,L,2016,,,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation (habitat alteration),Urban development,8.71,miles,Still Creek /its source,2010,L,2016,,,,
 AL03150201-1006-101,Mulberry Creek,R,Alabama,AutaugaDallas,SwimmingFish & Wildlife,Pathogens (E. coli),Pasture grazing,22.2,miles,Alabama River /Harris Branch,2016,L,2016,,,,
@@ -883,8 +883,8 @@ AL03160111-0208-101,Locust Fork,R,Black Warrior,Blount,Fish & Wildlife,Siltation
 AL03160111-0307-400,Black Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Surface mining-abandoned,6.36,miles,Cunningham Creek /its source,2014,M,2016,,,,
 AL03160111-0405-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,1998,L,2016,,,,
 AL03160111-0409-100,Village Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Nutrients,IndustrialMunicipalUrban runoff/storm sewers,17.9,miles,Locust Fork /Bayview Lake dam,2012,M,2016,,,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2016,,,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /its source,2006,L,2016,,,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,L,2016,,,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge /its source,2006,L,2016,,,,
 AL03160112-0106-111,Valley Creek(Bankhead Lake),L,Black Warrior,Jefferson,Public Water SupplySwimmingFish & Wildlife,Nutrients,Municipal,119.67,acres,Black Warrior River /end of embayment,2016,L,2016,,,,
 AL03160112-0201-102,Big Yellow Creek,R,Black Warrior,Tuscaloosa,SwimmingFish & Wildlife,Metals (Chromium),Surface mining-abandoned,14.59,miles,Bankhead Lake /its source,1998,H,2016,,,,
 AL03160112-0201-102,Big Yellow Creek,R,Black Warrior,Tuscaloosa,SwimmingFish & Wildlife,Metals (Lead),Surface mining-abandoned,14.59,miles,Bankhead Lake /its source,1998,H,2016,,,,
@@ -1159,7 +1159,7 @@ AL03140103-0102-800,UT to Lake Frank Jackson 2-S,R,Yellow,Covington,Fish & Wildl
 AL03140103-0402-100,Yellow River,R,Yellow,Covington,Fish & Wildlife,Metals (Mercury),Atmospheric deposition,14.87,miles,AL-FL state line /North Creek,2004,L,2016,,,,
 AL03140103-0601-300,Lake Jackson,L,Yellow,Covington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric deposition,415.46,acres,Within Florala and north of theAlabama-Florida stste line,2010,L,2016,,,,
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,13.02, miles,Bouldin tailrace canal /its source,2010,,2014,2017,2005,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65, miles,Lower Wetumpka Road /its source,2002,,2014,2017,1999,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65, miles,Lower Wetumpka Road /its source,2002,,2014,2017,1999,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation (habitat alteration),Urban development,7.65, miles,Lower Wetumpka Road /its source,2010,,2014,2017,2005,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban development,7.65, miles,Lower Wetumpka Road /its source,2010,,2014,2017,2005,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation (habitat alteration),Urban development,8.71, miles,Still Creek /its source,2010,,2014,2017,2005,,
@@ -1210,9 +1210,9 @@ AL03160111-0307-400,Black Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Sur
 AL03160111-0405-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,1998,,2014,2019,19862002,,
 AL03160111-0409-100,Village Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Nutrients,Industrial MunicipalUrban runoff/storm sewers,17.9,miles,Locust Fork / Bayview Lake dam,2012,,2014,2019,2005-2011,,
 AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Collection system failure Urban runoff/storm sewers,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2014,2015,2000 20012002 2004,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2014,2016,2000 20012002 2004,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2014,2016,2000 20012002 2004,,
 AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Collection system failure Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge / Its source,2006,,2014,2015,2000 20012002 2004,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge / its source,2006,,2014,2016,2000 20012002 2004,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers,4.04,miles,Woodlawn Bridge / its source,2006,,2014,2016,2000 20012002 2004,,
 AL03160112-0201-102,Big Yellow Creek,R,Black Warrior,Tuscaloosa,SwimmingFish & Wildlife,Metals (Chromium),Surface mining-abandoned,14.59,miles,Bankhead Lake /its source,1998,,2014,2016,1979-851988,,
 AL03160112-0201-102,Big Yellow Creek,R,Black Warrior,Tuscaloosa,SwimmingFish & Wildlife,Metals (Lead),Surface mining-abandoned,14.59,miles,Bankhead Lake /its source,1998,,2014,2016,1979-851988,,
 AL03160112-0304-110,Pegues Creek,R,Black Warrior,Tuscaloosa,Fish & Wildlife,Metals (Chromium),Surface mining-abandoned,4.23,miles,Black Warrior River /its source,2006,,2014,2016,2002,,
@@ -1430,7 +1430,7 @@ AL03160203-1103-700,Bilbo Creek,R,Tombigbee (lower),Washington,SwimmingFish & Wi
 AL03160203-1103-800,Olin Basin,L,Tombigbee (lower),Washington,Fish & Wildlife,Pesticides (DDT),Contaminated sediments,85.73,acres,all of Olin Basin,1996,,2014,*,1993,,
 AL03160203-1103-800,Olin Basin,L,Tombigbee (lower),Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,85.73,acres,all of Olin Basin,1996,,2014,2020,1993,,
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,13.02,miles,Bouldin tailrace canal /Its source,2010,,2012,2017,2005,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,2002,,2012,2017,1999,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,2002,,2012,2017,1999,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban development,7.65,miles,Lower Wetumpka Road /Its source,2010,,2012,2017,2005,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation (habitat alteration),Urban development,7.65,miles,Lower Wetumpka Road /Its source,2010,,2012,2017,2005,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation (habitat alteration),Urban development,8.71,miles,Still Creek /Its source,2010,,2012,2017,2005,,
@@ -1502,9 +1502,9 @@ AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,"Organic En
 AL03160111-0405-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,1998,,2012,2014,19862002,,
 AL03160111-0409-100,Village Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Nutrients,Industrial MunicipalUrban runoff/storm sewers,17.9,miles,Locust Fork / Bayview Lake dam,2012,,2012,2019,2005-2011,,
 AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Collection system failureUrban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,,2012,2014,2000 20012002 2004,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Collection system failureUrban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,,2012,2014,2000 20012002 2004,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Collection system failureUrban runoff/storm sewers,12.6,miles,Second Creek /Woodlawn Bridge,2006,,2012,2014,2000 20012002 2004,,
 AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Collection system failureUrban runoff/storm sewers,4.04,miles,Woodlawn Bridge /Its source,2006,,2012,2014,2000 20012002 2004,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Collection system failureUrban runoff/storm sewers,4.04,miles,Woodlawn Bridge /Its source,2006,,2012,2014,2000 20012002 2004,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Collection system failureUrban runoff/storm sewers,4.04,miles,Woodlawn Bridge /Its source,2006,,2012,2014,2000 20012002 2004,,
 AL03160112-0101-101,Valley Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Metals (Mercury),Atmospheric deposition,0.9,miles,19th Street North (Bessemer) /Opossum Creek,2004,,2012,2019,2003,,
 AL03160112-0101-200,Opossum Creek,R,Black Warrior,Jefferson,Agricultural & Industrial,Metals (Mercury),Atmospheric deposition,7.45,miles,Valley Creek /Its source,2004,,2012,2019,2003,,
 AL03160112-0105-101,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Unknown source,14.12,miles,Valley Creek /Big Branch,1998,,2012,2014,1974-83,,
@@ -1731,7 +1731,7 @@ AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wild
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Pesticides (DDT),Contaminated sediments,85.73,acres,All of Olin Basin,1996,,2012,*,1993,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,85.73,acres,All of Olin Basin,1996,,2012,2018,1993,,
 AL03150201-0101-200,Callaway Creek,R,Alabama,Elmore,Fish & Wildlife,Nutrients,AgricultureMunicipal,13.02,miles,Bouldin tailrace canal /Its source,2010,,2010,2005,2017,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,2002,,2010,1999,2017,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,2002,,2010,1999,2017,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban development,7.65,miles,Lower Wetumpka Road / Its source,2010,,2010,2005,2017,,
 AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Siltation (habitat alteration),Urban development,7.65,miles,Lower Wetumpka Road / Its source,2010,,2010,2005,2017,,
 AL03150201-0105-300,Mill Creek,R,Alabama,AutaugaElmore,Fish & Wildlife,Siltation (habitat alteration),Urban development,8.71,miles,Still Creek /Its source,2010,,2010,2005,2017,,
@@ -1807,9 +1807,9 @@ AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,Ammonia,Pas
 AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,"Organic Enrichment (CBOD, NBOD)",Pasture grazing,12,miles,Locust Fork / Its source,1998,,2010,19881991,2012,,
 AL03160111-0405-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,1998,,2010,19862002,2014,,
 AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2010,2000 20012002 2004,2014,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2010,2000 20012002 2004,2014,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,2006,,2010,2000 20012002 2004,2014,,
 AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,2006,,2010,2000 20012002 2004,2014,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,2006,,2010,2000 20012002 2004,2014,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,2006,,2010,2000 20012002 2004,2014,,
 AL03160112-0101-101,Valley Creek,R,Black Warrior,Jefferson,Limited WarmwaterFishery,Metals (Mercury),Atmospheric deposition,0.9,miles,19th Street North (Bessemer) /Opossum Creek,2004,,2010,2003,2019,,
 AL03160112-0101-200,Opossum Creek,R,Black Warrior,Jefferson,Agricultural & Industrial,Metals (Mercury),Atmospheric deposition,7.45,miles,Valley Creek /Its source,2004,,2010,2003,2019,,
 AL03160112-0105-101,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Unknown source,14.12,miles,Valley Creek / Big Branch,1998,,2010,1974-83,2014,,
@@ -2022,7 +2022,7 @@ AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wild
 AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,Swimming Fish & Wildlife,Metals (Mercury),Atmospheric deposition,30.74,miles,Tombigbee River / Its source,2008,,2010,2006,2018,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Pesticides (DDT),Contaminated sediments,85.73,acres,All of Olin Basin,1996,,2010,1993,2018,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,85.73,acres,All of Olin Basin,1996,,2010,1993,2018,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,,M,2008,1999,2008,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,,M,2008,1999,2008,,
 AL03150201-0203-102,Autauga Creek,R,Alabama,Autauga,SwimmingFish & Wildlife,Unknown,Unkown source,26.87,miles,Matthews Branch /Its source,,L,2008,2000,2012,,
 AL03150201-0309-100,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban runoff/storm sewersAgriculture,23.19,miles,Alabama River /Ramer Creek,,M,2008,1999,2008,,
 AL03150201-0402-100,Pintlalla Creek,R,Alabama,CrenshawMontgomery,SwimmingFish & Wildlife,Pathogens,Pasture grazing,26.45,miles,Pinchony Creek /Its source,,L,2008,1999-2000,2012,,
@@ -2088,9 +2088,9 @@ AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,"Organic En
 AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,Pathogens,Pasture grazing,12,miles,Locust Fork / Its source,,M,2008,19881991,2009,,
 AL03160111-0406-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,,M,2008,19862002,2009,,
 AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2008,2000 20012002 2004,2014,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2008,2000 20012002 2004,2014,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2008,2000 20012002 2004,2014,,
 AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2008,2000 20012002 2004,2014,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2008,2000 20012002 2004,2014,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2008,2000 20012002 2004,2014,,
 AL03160112-0101-101,Valley Creek,R,Black Warrior,Jefferson,Limited WarmwaterFishery,Metals (Mercury),Unknown source,0.9,miles,19th Street North (Bessemer) /Opossum Creek,,L,2008,2003,2014,,
 AL03160112-0101-200,Opossum Creek,R,Black Warrior,Jefferson,Agricultural & Industrial,Metals (Mercury),Unknown source,7.45,miles,Valley Creek /Its source,,H,2008,2003,2014,,
 AL03160112-0105-101,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Unknown source,14.12,miles,Valley Creek / Big Branch,,H,2008,1974-83,2009,,
@@ -2324,7 +2324,7 @@ AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wild
 AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wildlife,Metals (Mercury),Atmospheric Deposition,29.27,miles,Tombigbee River /Its source,,L,2008,2006,2013,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Pesticides (DDT),Contaminated sediments,85.73,acres,All of Olin Basin,,L,2008,1993,2013,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,85.73,acres,All of Olin Basin,,L,2008,1993,2013,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,,M,2006,1999,2008,,
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.65,miles,Lower Wetumpka Road /Its source,,M,2006,1999,2008,,
 AL03150201-0203-102,Autauga Creek,R,Alabama,Autauga,SwimmingFish & Wildlife,Unknown,Unkown source,26.87,miles,Matthews Branch /Its source,,L,2006,2000,2012,,
 AL03150201-0309-100,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban runoff/storm sewers Agriculture,23.19,miles,Alabama River / Ramer Creek,,M,2006,1999,2008,,
 AL03150201-0402-100,Pintlalla Creek,R,Alabama,CrenshawMontgomery,SwimmingFish & Wildlife,Pathogens,Pasture grazing,26.45,miles,Pinchony Creek /Its source,,L,2006,1999-2000,2012,,
@@ -2384,9 +2384,9 @@ AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,Organic Enr
 AL03160111-0203-100,Dry Creek,R,Black Warrior,Blount,Fish & Wildlife,Pathogens,Pasture grazing,12,miles,Locust Fork / Its source,,M,2006,19881991,2009,,
 AL03160111-0406-101,Newfound Creek,R,Black Warrior,Jefferson,Fish & Wildlife,Siltation (habitat alteration),Urban runoff/storm sewers,2.76,miles,Fivemile Creek /Impoundment,,M,2006,19862002,2009,,
 AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2006,2000 20012002 2004,2009,,
-AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2006,2000 20012002 2004,2009,,
+AL03160111-0408-102,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,12.6,miles,Second Creek / Woodlawn Bridge,,L,2006,2000 20012002 2004,2009,,
 AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pathogens,Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2006,2000 20012002 2004,2009,,
-AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Pesticides (Dieldrin),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2006,2000 20012002 2004,2009,,
+AL03160111-0408-103,Village Creek,R,Black Warrior,Jefferson,Limited Warmwater Fishery,Dieldrin (Pesticide),Urban runoff/storm sewers Collection system failure,4.04,miles,Woodlawn Bridge / Its source,,L,2006,2000 20012002 2004,2009,,
 AL03160112-0101-101,Valley Creek,R,Black Warrior,Jefferson,Limited WarmwaterFishery,Metals (Mercury),Unknown source,0.9,miles,19th Street North (Bessemer) /Opossum Creek,,L,2006,2003,2014,,
 AL03160112-0101-200,Opossum Creek,R,Black Warrior,Jefferson,Agricultural &Industrial,Metals (Mercury),Unknown source,7.45,miles,Valley Creek /Its source,,H,2006,2003,2014,,
 AL03160112-0105-101,Mud Creek,R,Black Warrior,Jefferson,Fish & Wildlife,pH,Unknown source,14.12,miles,Valley Creek /Big Branch,,H,2006,1974-83,2009,,
@@ -2621,7 +2621,7 @@ AL03160203-1103-102,Tombigbee River,R,Lower Tombigbee,ClarkeWashington,Fish & Wi
 AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wildlife,Organic Enrichment/DO,Unknown source,30.74,miles,Tombigbee River /Its source,,L,2006,2001-02,2012,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Pesticides (DDT),Contaminated sediments,85.73,acres,All of Olin Basin,,L,2006,1993,N/A,,
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,85.73,acres,All of Olin Basin,,L,2006,1993,N/A,,
-AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.6,miles,Lower Wetumpka Rd /Its source,,M,2004,1999,2007,Non,No
+AL03150201-0104-302,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.6,miles,Lower Wetumpka Rd /Its source,,M,2004,1999,2007,Non,No
 AL03150201-0309-100,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Organic Enrichment/DO,Pasture grazingUrban runoff/storm sewers,23.2,miles,Alabama River /Ramer Creek,,M,2004,1990-911996-97,2002,Partial,Yes
 AL03150201-0309-100,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Urban runoff/storm sewersAgriculture,23.2,miles,Alabama River /Ramer Creek,,M,2004,1999,2007,Partial,No
 AL03150203-0703-101,Alabama River,R,Alabama,Wilcox,Public Water Supply,Organic Enrichment/DO,Dam constructionFlow regulation/modification,5,miles,Beaver Creek /Rockwest Creek,,L,2004,1991,2003,Partial,Yes
@@ -2905,7 +2905,7 @@ AL03160203-1103-102,Tombigbee River,R,Lower Tombigbee,ClarkeWashington,Fish & Wi
 AL03160203-1103-700,Bilbo Creek,R,Lower Tombigbee,Washington,SwimmingFish & Wildlife,Organic Enrichment/DO,Unknown source,29.3,miles,Tombigbee River /Its source,,L,2004,2001-02,2008,Non,No
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Pesticides,Contaminated sediments,65,acres,All of Olin Basin,,L,2004,1993,N/A,Non,Yes
 AL03160203-1103-800,Olin Basin,L,Lower Tombigbee,Washington,Fish & Wildlife,Metals (Mercury),Contaminated sediments,65,acres,All of Olin Basin,,L,2004,1993,N/A,Non,Yes
-AL/03150201-040_01,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Pesticides (Dieldrin),Unknown source,7.4,miles,Lower Wetumpka Rd/Its Source,,M,2002,1999,2006,Non,No
+AL/03150201-040_01,Three Mile Branch,R,Alabama,Montgomery,Fish & Wildlife,Dieldrin (Pesticide),Unknown source,7.4,miles,Lower Wetumpka Rd/Its Source,,M,2002,1999,2006,Non,No
 AL/03150201-080_01,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Organic Enrichment/DO,Urban runoff/Storm sewers,23.2,miles,Alabama River /Ramer Creek,,M,2002,1990-91,2002,Partial,Yes
 AL/03150201-080_01,Catoma Creek,R,Alabama,Montgomery,Fish & Wildlife,Pathogens,Pasture Grazing,23.2,miles,Alabama River /Ramer Creek,,M,2002,1996-97,2006*,Partial,No*
 AL/Alabama R_01,Alabama River,R,Alabama,Wilcox,Public Water Supply,Nutrients,Dam construc.Flow reg/mod,5,miles,Beaver Creek /Rockwest Creek,,L,2002,1991,2003,Partial,Yes
@@ -3069,8 +3069,8 @@ AL/03140106-070_01,Boggy Branch,R,Perdido-Escambia,Escambia,Fish & Wildlife,Chlo
 AL/03140106-070_02,Brushy Creek,R,Perdido-Escambia,Escambia,Fish & Wildlife,Organic Enrichment/DO,Industrial MunicipalUrban runoff/Storm sewers,0.2,miles,Al/Fla. State Line/ Boggy Branch,,H,2002,1999,2005,Non,No
 AL/03140106-170_01,Styx River,R,Perdido-Escambia,Baldwin,Fish & Wildlife,Metals (Mercury),Unknown source,27.1,miles,Perdido River/Its Source,,M,2002,2002,2007,Partial,No
 AL/03140107-040_01,Intracoastal Waterway,E,Perdido-Escambia,Baldwin,Fish & Wildlife,Organic Enrichment/DO,Urban runoff/Storm sewersNatural sources,5,miles,AL Hwy. 59 /Wolf Bay,,L,2002,1995-99,2003,Non,Yes
-AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Siltation,Nonirrigated crop prod.Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2002,1991,2002,Non,Yes
-AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2002,1991,2002,Non,Yes
+AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2002,1991,2002,Non,Yes
+AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2002,1991,2002,Non,Yes
 AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & WildlifeSwimming,Siltation,Nonirrigated crop prod.,18,miles,Point A Dam /Hornet Creek,,L,2002,1991,2002,Non,Yes
 AL/03140303-030_01,Rocky Creek,R,Perdido-Escambia,Butler,Fish & Wildlife,Unknown Toxicity,Unknown source,8,miles,Persimmon Creek /Co. Rd. N of Chapman,,H,2002,19861990,2005,Non,No
 AL/03150108-250_01,Wolf Creek,R,Tallapoosa,Randolph,Fish & Wildlife,Pathogens,Int. animal feeding oper.,4,miles,L. Tallapoosa  River /Its Source,,M,2002,1990,2002,Partial,Yes
@@ -3087,10 +3087,10 @@ AL/03150110-140_01,Line Creek,R,Tallapoosa,Macon,Fish & Wildlife,Siltation (habi
 AL/03150110-140_02,Line Creek,R,Tallapoosa,Macon,Fish & Wildlife,Siltation,Surface miningAgriculture,5.1,miles,Johnsons Creek /Panther Creek,,M,2002,1996,2002,Partial,No
 AL/03150110-050_01,Moores Mill Creek,R,Tallapoosa,Lee,Fish & WildlifeSwimming,Siltation,Land developmentUrban runoff/Storm sewers,10.1,miles,Chewacla Creek/Its Source,,L,2002,1998,2002,Non,No
 AL/06030001-160_03,Warren Smith Creek,R,Tennessee,Jackson,Fish & Wildlife,Siltation,Surface mining-abandoned,3,miles,Dry Creek /Ross Branch,,H,2002,19861987,2004,Non,No
-AL/06030001-170_01,Mud Creek,R,Tennessee,Jackson,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,18,miles,Tennessee River /Its Source,,L,2002,19881991,2003,Partial,Yes
+AL/06030001-170_01,Mud Creek,R,Tennessee,Jackson,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,18,miles,Tennessee River /Its Source,,L,2002,19881991,2003,Partial,Yes
 AL/06030001-220_01,South Sauty Creek,R,Tennessee,DeKalb,Fish & Wildlife,pH,Unknown source,32,miles,Lake Guntersville/Its Source,,L,2002,1988-98,2003,Partial,Yes
 AL/06030001-250_01,Town Creek,R,Tennessee,DeKalb,Fish & Wildlife,pH,Unknown,63.3,miles,Lake Guntersville/Its Source,,L,2002,1988-98,2003,Partial,Yes
-AL/06030001-270_01,Scarham Creek,R,Tennessee,Marshall,Fish & Wildlife,Siltation,Nonirrigated crop prod.Pasture grazing,24,miles,Short Creek /Its Source,,H,2002,19911993-95,2001,Non,Yes
+AL/06030001-270_01,Scarham Creek,R,Tennessee,Marshall,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazing,24,miles,Short Creek /Its Source,,H,2002,19911993-95,2001,Non,Yes
 AL/06030002-060_01,Guess Creek,R,Tennessee,Jackson,Fish & Wildlife,Unknown Toxicity,Unknown source Pasture grazing,10.8,miles,Paint Rock River / Bee Branch,,H,2002,1997,2004,Non,No
 AL/06030002-060_01,Guess Creek,R,Tennessee,Jackson,Fish & Wildlife,Organic Enrichment/DO,Unknown source Pasture grazing,10.8,miles,Paint Rock River / Bee Branch,,H,2002,1997,2004,Non,No
 AL/06030002-060_01,Guess Creek,R,Tennessee,Jackson,Fish & Wildlife,Pathogens,Unknown source Pasture grazing,10.8,miles,Paint Rock River / Bee Branch,,H,2002,1997,2004,Non,No
@@ -3148,8 +3148,8 @@ AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Ammonia,Pastu
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Nutrients,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2002,1994-95,2001,Non,No
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Siltation,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2002,1994-95,2001,Non,No
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2002,1994-95,2001,Non,No
-AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2002,1994-951997,2001,Non,Yes
-AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod.Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2002,1994-951997,2001,Non,Yes
+AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2002,1994-951997,2001,Non,Yes
+AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod. Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2002,1994-951997,2001,Non,Yes
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2002,1993-951997,20012004*,Partial,NoNo
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2002,1993-951997,20012004*,Partial,NoNo
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2002,1993-951997,20012004*,Partial,NoNo
@@ -3164,7 +3164,7 @@ AL/06030002-360_03,Flat Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enric
 AL/06030002-360_03,Flat Creek,R,Tennessee,Lawrence,Fish & Wildlife,Siltation,Pasture grazing,7.3,miles,West Flint Creek / Its Source,,H,2002,1997,2004,Non,No
 AL/06030002-360_04,Elam Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Pasture grazing,11.9,miles,Rocky Branch /Its Source,,M,2002,1994-95,2004,Partial,No
 AL/06030002-390_01,Swan Creek,R,Tennessee,Limestone,Agri. & Ind. Fish & Wildlife,Siltation,Nonirrigated crop prod. Urban runoff/Storm sewersPasture grazing,7.9,miles,Wheeler Lake/ Town Creek,,L,2002,1994-95,2001,Non,Yes
-AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Siltation,Nonirrigated crop prod.Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2002,1994-95,2001,Partial,Yes
+AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2002,1994-95,2001,Partial,Yes
 AL/06030002-410_01,Mallard Creek,R,Tennessee,Lawrence,Fish & Wildlife,Siltation,Agriculture,10.2,miles,Wheeler Lake /Its Source,,L,2002,1994-95,2001,Partial,Yes
 AL/06030002-440_01,Second Creek,R,Tennessee,Lauderdale,Fish & Wildlife,Pathogens,Pasture grazing,11.6,miles,Lauderdale Co. Rd. 76 /AL/TN State Line,,H,2002,1997,2004,Non,No
 AL/06030002-440_02,First Creek,R,Tennessee,Lauderdale,SwimmingFish & Wildlife,Pathogens,Pasture grazing,10,miles,AL Hwy. 72 /Its Source,,H,2002,1997,2004,Non,No
@@ -3197,7 +3197,7 @@ AL/Alabama R_01,Alabama River,R,Alabama,Wilcox,Public Water Supply,Organic Enric
 AL/Alabama R_03,Alabama River,R,Alabama,Wilcox,Public Water Supply,Nutrients,Dam construc.Flow reg/mod,10.2,miles,Pursley Creek/Beaver Creek /,,L,2000,1995-99,2002,Partial,No
 AL/Alabama R_03,Alabama River,R,Alabama,Wilcox,Public Water Supply,Organic Enrichment/DO,Dam construc.Flow reg/mod,10.2,miles,Pursley Creek/Beaver Creek /,,L,2000,1995-99,2002,Partial,No
 AL/Alabama R_02,Alabama River,R,Alabama,Wilcox,Public Water Supply,Nutrients,Industrial,12.6,miles,Bear Creek /Pursley Creek,,L,2000,1991,2002,Partial,Yes
-AL/Alabama R_02,Alabama River,R,Alabama,Wilcox,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated Crop prod.Pasture Grazing,12.6,miles,Bear Creek /Pursley Creek,,L,2000,1995-99,2002,Partial,Yes
+AL/Alabama R_02,Alabama River,R,Alabama,Wilcox,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,12.6,miles,Bear Creek /Pursley Creek,,L,2000,1995-99,2002,Partial,Yes
 AL/03160109-020_01,Duck Creek,R,Black Warrior,Cullman,Fish & Wildlife,Organic Enrichment/DO,Pasture GrazingInt. animal feeding oper.,6.4,miles,Duck River /Its Source,,H,2000,19911997,2001,Non,Yes
 AL/03160109-020_02,Long Branch,R,Black Warrior,Cullman,Fish & Wildlife,Ammonia,Int. animal feeding oper.,2,miles,Wolf Creek /Its Source,,M,2000,1990,2001,Partial,Yes
 AL/03160109-020_02,Long Branch,R,Black Warrior,Cullman,Fish & Wildlife,Organic Enrichment/DO,Pasture Grazing,2,miles,Wolf Creek /Its Source,,M,2000,1997,2001,Partial,Yes
@@ -3372,11 +3372,11 @@ AL/03140106-070_01,Boggy Branch,R,Perdido-Escambia,Escambia,Fish & Wildlife,Meta
 AL/03140106-070_01,Boggy Branch,R,Perdido-Escambia,Escambia,Fish & Wildlife,Chlorides,Industrial,0.2,miles,Atmore WWTP / Masland CarpetsWWTP,,L,2000,"1996,97",2005,Partial,No
 AL/03140106-070_02,Brushy Creek,R,Perdido-Escambia,Escambia,Fish & Wildlife,Organic Enrichment/DO,Industrial MunicipalUrban runoff/Storm sewers,0.2,miles,Al/Fla. State Line/ Boggy Branch,,H,2000,1999,2005,Non,No
 AL/03140107-040_01,Intracoastal Waterway,E,Perdido-Escambia,Baldwin,Fish & Wildlife,Organic Enrichment/DO,Urban runoff/Storm sewersNatural sources,5,miles,AL Hwy. 59 /Wolf Bay,,L,2000,1995-99,2003,Non,Yes
-AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Siltation,Nonirrigated crop prod.Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2000,1991,2003,Non,Yes
-AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2000,1991,2003,Non,Yes
-AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Siltation,Nonirrigated crop prod. Flow reg/modPasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
-AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Organic Enrichment/DO,Nonirrigated crop prod. Flow reg/modPasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
-AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Pathogens,Nonirrigated crop prod. Flow reg/modPasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
+AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2000,1991,2003,Non,Yes
+AL/03140301-030_01,Conecuh River,R,Perdido-Escambia,Pike,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,24.7,miles,Broadhead Creek /Mannings Creek,,L,2000,1991,2003,Non,Yes
+AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Siltation,Nonirrigated crop prod. Flow reg/mod Pasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
+AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Organic Enrichment/DO,Nonirrigated crop prod. Flow reg/mod Pasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
+AL/03140301-040_01,Conecuh River,R,Perdido-Escambia,Covington,Fish & Wildlife Swimming,Pathogens,Nonirrigated crop prod. Flow reg/mod Pasture grazing,18,miles,Point A Dam / Hornet Creek,,L,2000,1991,2003,Non,Yes
 AL/03140303-030_01,Rocky Creek,R,Perdido-Escambia,Butler,Fish & Wildlife,Unknown Toxicity,Unknown source,8,miles,Persimmon Creek /Co. Rd. N of Chapman,,H,2000,19861990,2005,Non,No
 AL/Tallapoosa R_01,Tallapoosa River,R,Tallapoosa,Cleburne,Fish & Wildlife,Organic Enrichment/DO,Industrial MunicipalNonirrigated crop prod. Pasture grazingFlow reg/mod,4.3,miles,Dam-Cleb. Co. Rd. 36 / Cleburne Co. Rd. 19,,M,2000,1992,2001,Partial,Yes
 AL/03150108-250_01,Wolf Creek,R,Tallapoosa,Randolph,Fish & Wildlife,Ammonia,Int. animal feeding oper.,4,miles,L. Tallapoosa  River / Its Source,,M,2000,1990,2002,Partial,Yes
@@ -3406,7 +3406,7 @@ AL/06030001-160_04,Rocky Branch,R,Tennessee,Jackson,Fish & Wildlife,Siltation,Su
 AL/06030001-160_05,Coon/Flat Rock Creek,R,Tennessee,Jackson,Fish & Wildlife,Metals,Surface mining-abandoned Mine tailings-abandoned,20,miles,Tennessee River / Its Source,,L,2000,19881991,2002,Partial,Yes
 AL/06030001-160_05,Coon/Flat Rock Creek,R,Tennessee,Jackson,Fish & Wildlife,pH,Surface mining-abandoned Mine tailings-abandoned,20,miles,Tennessee River / Its Source,,L,2000,19881991,2002,Partial,Yes
 AL/06030001-160_05,Coon/Flat Rock Creek,R,Tennessee,Jackson,Fish & Wildlife,Siltation (habitat alteration),Surface mining-abandoned Mine tailings-abandoned,20,miles,Tennessee River / Its Source,,L,2000,19881991,2002,Partial,Yes
-AL/06030001-170_01,Mud Creek,R,Tennessee,Jackson,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,18,miles,Tennessee River /Its Source,,L,2000,19881991,2002,Partial,Yes
+AL/06030001-170_01,Mud Creek,R,Tennessee,Jackson,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,18,miles,Tennessee River /Its Source,,L,2000,19881991,2002,Partial,Yes
 AL/06030001-220_01,South Sauty Creek,R,Tennessee,DeKalb,Fish & Wildlife,pH,Unknown source,32,miles,Lake Guntersville/Its Source,,L,2000,1988-98,2002,Partial,Yes
 AL/06030001-250_01,Town Creek,R,Tennessee,DeKalb,Fish & Wildlife,pH,Unknown,63.3,miles,Lake Guntersville/Its Source,,L,2000,1988-98,2002,Partial,Yes
 AL/06030001-270_01,Scarham Creek,R,Tennessee,Marshall,Fish & Wildlife,Pesticides,Nonirrigated crop prod. Specialty crop prod.Int. animal feeding oper. Pasture grazing,24,miles,Short Creek / Its Source,,H,2000,19911993-95,2001,Non,Yes
@@ -3480,8 +3480,8 @@ AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Ammonia,Pastu
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Nutrients,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2000,1994-95,2001,Non,No
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Siltation,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2000,1994-95,2001,Non,No
 AL/06030002-340_02,Herrin Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Pasture grazing,6.3,miles,Crowdabout Creek / Its Source,,M,2000,1994-95,2001,Non,No
-AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2000,1994-951997,2001,Non,Yes
-AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod.Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2000,1994-951997,2001,Non,Yes
+AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2000,1994-951997,2001,Non,Yes
+AL/06030002-350_01,No Business Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod. Pasture grazing,6.3,miles,Flint Creek /Johnson Chapel Creek,,L,2000,1994-951997,2001,Non,Yes
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2000,1993-951997,2001,Partial,No
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Pathogens,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2000,1993-951997,2001,Partial,No
 AL/06030002-350_02,West Flint Creek,R,Tennessee,Morgan,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazingInt. animal feeding oper.,19.4,miles,Flint Creek / McDaniel Creek,,M,2000,1993-951997,2001,Partial,No
@@ -3497,8 +3497,8 @@ AL/06030002-360_03,Flat Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enric
 AL/06030002-360_04,Elam Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Pasture grazing,11.9,miles,Rocky Branch /Its Source,,M,2000,1994-95,2001,Partial,No
 AL/06030002-390_01,Swan Creek,R,Tennessee,Limestone,Agri. & Ind. Fish & Wildlife,Siltation,Nonirrigated crop prod. Urban runoff/Storm sewers Pasture grazing,7.9,miles,Tennessee River / Town Creek,,L,2000,1994-95,2001,Non,Yes
 AL/06030002-390_01,Swan Creek,R,Tennessee,Limestone,Agri. & Ind. Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Urban runoff/Storm sewers Pasture grazing,7.9,miles,Tennessee River / Town Creek,,L,2000,1994-95,2001,Non,Yes
-AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Siltation,Nonirrigated crop prod.Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2000,1994-95,2001,Partial,Yes
-AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2000,1994-95,2001,Partial,Yes
+AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Siltation,Nonirrigated crop prod. Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2000,1994-95,2001,Partial,Yes
+AL/06030002-400_01,Round Island Creek,R,Tennessee,Limestone,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,3.6,miles,Browns Ferry Road /Beauchamp Branch,,L,2000,1994-95,2001,Partial,Yes
 AL/06030002-410_01,Mallard Creek,R,Tennessee,Lawrence,Fish & Wildlife,Siltation,Agriculture,10.2,miles,Wheeler Reservoir /Its Source,,L,2000,1994-95,2001,Partial,Yes
 AL/06030002-410_01,Mallard Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Agriculture,10.2,miles,Wheeler Reservoir /Its Source,,L,2000,1994-95,2001,Partial,Yes
 AL/Wheeler Res_01,Tennessee River,R,Tennessee,Lawrence,Public Water Supply SwimmingFish & Wildlife,pH,Industrial Flow reg/mod Dam construc.Unknown source,10,miles,Wheeler Dam / Elk River,,L,2000,1990-911993-97,2002,Partial,Yes
@@ -3516,7 +3516,7 @@ AL/06030005-010_01,Big Nance Creek,R,Tennessee,Lawrence,Fish & Wildlife,Ammonia,
 AL/06030005-010_01,Big Nance Creek,R,Tennessee,Lawrence,Fish & Wildlife,Siltation,Nonirrigated crop prod. Int. animal feeding oper. LandfillsPasture grazing,24,miles,Wilson Lake / Its Source,,H,2000,19911995,2001,Non,Yes
 AL/06030005-010_01,Big Nance Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Int. animal feeding oper. LandfillsPasture grazing,24,miles,Wilson Lake / Its Source,,H,2000,19911995,2001,Non,Yes
 AL/06030005-010_01,Big Nance Creek,R,Tennessee,Lawrence,Fish & Wildlife,Pathogens,Nonirrigated crop prod. Int. animal feeding oper. LandfillsPasture grazing,24,miles,Wilson Lake / Its Source,,H,2000,19911995,2001,Non,Yes
-AL/06030005-040_01,Town Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod.Pasture grazing,46,miles,Wheeler Reservoir /Its Source,,L,2000,1991,2002,Partial,Yes
+AL/06030005-040_01,Town Creek,R,Tennessee,Lawrence,Fish & Wildlife,Organic Enrichment/DO,Nonirrigated crop prod. Pasture grazing,46,miles,Wheeler Reservoir /Its Source,,L,2000,1991,2002,Partial,Yes
 AL/06030005-160_01,Pond Creek,R,Tennessee,Colbert,Agri. & Ind.,Metals,Nonirrigated crop prod. Urban runoff/Storm sewersNatural sources,12,miles,Tennessee River / Its Source,,L,2000,1991,2002,Non,Yes
 AL/06030005-160_01,Pond Creek,R,Tennessee,Colbert,Agri. & Ind.,Organic Enrichment/DO,Nonirrigated crop prod. Urban runoff/Storm sewersNatural sources,12,miles,Tennessee River / Its Source,,L,2000,1991,2002,Non,Yes
 AL/06030005-160_02,McKiernan Creek,R,Tennessee,Colbert,Fish & Wildlife,Ammonia,Agriculture,2.2,miles,Tennessee River / Shegog Creek,,H,2000,1988,2004,Non,No
