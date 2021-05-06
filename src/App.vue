@@ -104,15 +104,15 @@
             <pattern
               id="img1"
               patternUnits="userSpaceOnUse"
-              width="42"
-              height="16"
+              width="58"
+              height="70"
             >
               <image
                 href="./assets/monsantoAnniston.jpg"
-                x="-6"
-                y="0"
-                width="42"
-                height="16"
+                x="-4.5"
+                y="-14"
+                width="58"
+                height="70"
               />
             </pattern>
           </linearGradient>
@@ -998,7 +998,7 @@ export default {
 .IntroGlacier3 .drop2 {
   margin-left: 74%;
   margin-right: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 
   margin-top: 18%;
   grid-column-start: 2;
