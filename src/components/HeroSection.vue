@@ -3,13 +3,13 @@
     <div class="darken"></div>
     <div class="margins"></div>
     <div class="curved-div">
-      <span style="color: #fff">20 Years of </span>
+      <span style="color: #333">20 Years of </span>
 
-      <span style="color: #fff">Water</span>
-      <p style="color: #fff">Visualising Alabama's List of Impaired Waters</p>
+      <span style="color: #333">Water</span>
+      <p style="color: #555">Visualising Alabama's List of Impaired Waters</p>
       <svg viewBox="0 0 1440 319">
         <path
-          fill="#fff"
+          fill="#f8fcfd"
           fill-opacity="1"
           d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
@@ -45,12 +45,9 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-    url("../assets/glacier.jpg") center center;
+  background: #f8fcfd;
   width: 100%;
   height: 100%;
-  opacity: 0.9;
-  background-size: cover; /* Fixed from 100vw */
 }
 .margins {
   margin-top: 35vh;

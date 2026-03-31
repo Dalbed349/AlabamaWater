@@ -73,13 +73,8 @@ export default {
   bottom: 0;
   left: 0%;
   right: 0%;
-  background-image: linear-gradient(
-      rgba(69, 143, 161, 0.075),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("../assets/Blackwarrior.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  right: 0%;
+  background: #f8fcfd;
   width: 100%;
 
   margin-bottom: 2%;
@@ -178,7 +173,7 @@ div.transbox3 {
 .map3 .transbox2 p {
   font-weight: bold;
   font-size: 12px;
-  color: #ffffff;
+  color: #666;
   margin: 20px;
   opacity: 0.7;
 }

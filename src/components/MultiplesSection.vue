@@ -5,15 +5,22 @@
     <div class="viz2details">
       <!-- NEW COMPONENT -->
       <div class="filters" id="viz2filters">
-        <el-checkbox-group :model-value="checkedUnits" @update:model-value="$emit('update:checkedUnits', $event)">
-          <el-checkbox
+        <div class="checkbox-group">
+          <label
             @mousedown="$emit('removeOtherUnit')"
             v-for="unit in units"
-            :label="unit"
             :key="unit"
-            >{{ unit }}</el-checkbox
+            class="native-checkbox"
           >
-        </el-checkbox-group>
+            <input
+              type="checkbox"
+              :value="unit"
+              :checked="checkedUnits.includes(unit)"
+              @change="updateUnits(unit, $event.target.checked)"
+            />
+            <span class="checkbox-label">{{ unit }}</span>
+          </label>
+        </div>
       </div>
       <StackedSideBar
         :checkedUnits="checkedUnits"
@@ -60,6 +67,17 @@ export default {
     counter: Number,
     sortedBasin: Array,
   },
+  methods: {
+    updateUnits(unit, isChecked) {
+      let newUnits = [...this.checkedUnits];
+      if (isChecked) {
+        if (!newUnits.includes(unit)) newUnits.push(unit);
+      } else {
+        newUnits = newUnits.filter(u => u !== unit);
+      }
+      this.$emit('update:checkedUnits', newUnits);
+    }
+  }
 };
 </script>
 
@@ -99,6 +117,17 @@ export default {
 .filters {
   position: relative;
   text-align: center;
+}
+.native-checkbox {
+  display: inline-block;
+  margin: 5px 10px;
+  cursor: pointer;
+  font-family: -apple-system, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+.native-checkbox input {
+  margin-right: 5px;
 }
 #viz2filters {
   margin-right: 0;

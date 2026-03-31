@@ -56,16 +56,10 @@ export default {
   left: 0;
   right: 0;
   margin-top: 10%;
-  background-image: linear-gradient(
-      to left,
-      rgb(116, 156, 243, 0.4),
-      rgb(158, 188, 216, 0.7)
-    ),
-    linear-gradient(rgb(158, 188, 216, 0.1), rgba(0, 104, 40, 1));
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: #f8fcfd;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   grid-template-columns: minmax(5px, 40px) minmax(5px, 50px) auto minmax(5px, 50px) minmax(5px, 40px);
   grid-template-rows: 25% 100px 100px 100px auto;
 }

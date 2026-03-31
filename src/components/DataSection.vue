@@ -3,15 +3,22 @@
     <h2>The Size of the Problem.</h2>
   </div>
   <div class="filters">
-    <el-checkbox-group :model-value="checkedUnits" @update:model-value="$emit('update:checkedUnits', $event)">
-      <el-checkbox
+    <div class="checkbox-group">
+      <label
         @mousedown="$emit('removeOtherUnit')"
         v-for="unit in units"
-        :label="unit"
         :key="unit"
-        >{{ unit }}</el-checkbox
+        class="native-checkbox"
       >
-    </el-checkbox-group>
+        <input
+          type="checkbox"
+          :value="unit"
+          :checked="checkedUnits.includes(unit)"
+          @change="updateUnits(unit, $event.target.checked)"
+        />
+        {{ unit }}
+      </label>
+    </div>
   </div>
   <!-- Viz1 -->
   <div class="section">
@@ -70,6 +77,17 @@ export default {
     listOfCauses: Array,
     fromChild: String,
   },
+  methods: {
+    updateUnits(unit, isChecked) {
+      let newUnits = [...this.checkedUnits];
+      if (isChecked) {
+        if (!newUnits.includes(unit)) newUnits.push(unit);
+      } else {
+        newUnits = newUnits.filter(u => u !== unit);
+      }
+      this.$emit('update:checkedUnits', newUnits);
+    }
+  }
 };
 </script>
 
@@ -89,9 +107,19 @@ export default {
 .filters {
   position: relative;
   text-align: center;
-  margin-right: 55px;
-  margin-bottom: -32px;
-  margin-left: 550px;
+  margin: 20px 0;
+}
+.native-checkbox {
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #606266;
+}
+.native-checkbox input {
+  margin-right: 5px;
+  cursor: pointer;
 }
 .section {
   display: block;

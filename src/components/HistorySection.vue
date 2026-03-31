@@ -1,26 +1,63 @@
 <template>
-  <div class="IntroGlacier3" style="height: 90vh">
-    <h2>A Troubling History</h2>
-    <h3>
-      A history of industrial accidents, oversight, and abuse has led to
-      disasters that have harmed everything from ponds to rivers and cities.
-    </h3>
-    <!--  -->
-    <div class="drop">
-      <p class="droptxt">Monsanto PCB plant in Anniston</p>
+  <div class="HistorySection">
+    <div class="header-block">
+      <h2>A Troubling History</h2>
+      <h3>
+        A history of industrial accidents, oversight, and abuse has led to
+        disasters that have harmed everything from ponds to rivers and cities.
+      </h3>
+    </div>
+
+    <!-- Lay Dam Coosa River -->
+    <div class="drop-container lay-dam">
       <svg
         width="100%"
         height="100%"
         viewBox="0 0 32 32"
-        @mouseenter="dropHover = true"
-        @mouseleave="dropHover = null"
       >
         <defs>
-          <linearGradient id="linear1" x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id="linearLayDam" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="10%" stop-color="#fff" />
+            <stop offset="100%" stop-color="teal" />
+          </linearGradient>
+          <pattern
+            id="imgLayDam"
+            patternUnits="userSpaceOnUse"
+            width="45"
+            height="65"
+          >
+            <image
+              href="../assets/LayDamCoosa.jpg"
+              x="-4"
+              y="-11"
+              width="45"
+              height="65"
+            />
+          </pattern>
+        </defs>
+        <path
+          fill="url(#imgLayDam)"
+          stroke="url(#linearLayDam)"
+          stroke-width="0.3"
+          d="M15 3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
+        />
+      </svg>
+      <p class="drop-label">Lay Dam Coosa River</p>
+    </div>
+
+    <!-- Monsanto PCB plant in Anniston -->
+    <div class="drop-container monsanto">
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 32 32"
+      >
+        <defs>
+          <linearGradient id="linearMonsanto" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
             <stop offset="100%" stop-color="teal" />
             <pattern
-              id="img1"
+              id="imgMonsanto"
               patternUnits="userSpaceOnUse"
               width="58"
               height="70"
@@ -36,26 +73,25 @@
           </linearGradient>
         </defs>
         <path
-          fill="url(#img1)"
-          opacity="1"
-          stroke="url(#linear1)"
-          stroke-width=".2"
-          d="M15
-        3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
+          fill="url(#imgMonsanto)"
+          stroke="url(#linearMonsanto)"
+          stroke-width="0.4"
+          d="M15 3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
         />
       </svg>
+      <p class="drop-label">Monsanto PCB plant in Anniston</p>
     </div>
-    <!--  -->
-    <div class="drop2">
-      <p class="droptxt">Coal Ash Waste at Barry Power Plant</p>
+
+    <!-- Coal Ash Waste at Barry Power Plant -->
+    <div class="drop-container coal-ash">
       <svg width="100%" height="100%" viewBox="0 0 32 32">
         <defs>
-          <linearGradient id="linear2" x1="0%" y1="0%" x2="0%" y2="100%">
+          <linearGradient id="linearCoalAsh" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
             <stop offset="100%" stop-color="teal" />
           </linearGradient>
           <pattern
-            id="img2"
+            id="imgCoalAsh"
             patternUnits="userSpaceOnUse"
             width="100"
             height="55"
@@ -70,52 +106,13 @@
           </pattern>
         </defs>
         <path
-          fill="url(#img2)"
-          opacity="1"
-          stroke="url(#linear2)"
-          stroke-width=".2"
-          d="M15 3
-           Q16.5 6.8 25 18
-           A12.8 12.8 0 1 1 5 18
-           Q13.5 6.8 15 3z"
+          fill="url(#imgCoalAsh)"
+          stroke="url(#linearCoalAsh)"
+          stroke-width="0.3"
+          d="M15 3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
         />
       </svg>
-    </div>
-    <!--  -->
-    <div class="drop3">
-      <p class="droptxt">Lay Dam Coosa River</p>
-      <svg width="100%" height="100%" viewBox="0 0 32 32">
-        <defs>
-          <linearGradient id="linear3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="10%" stop-color="#fff" />
-            <stop offset="100%" stop-color="teal" />
-          </linearGradient>
-          <pattern
-            id="img3"
-            patternUnits="userSpaceOnUse"
-            width="45"
-            height="65"
-          >
-            <image
-              href="../assets/LayDamCoosa.jpg"
-              x="-4"
-              y="-11"
-              width="45"
-              height="65"
-            />
-          </pattern>
-        </defs>
-        <path
-          fill="url(#img3)"
-          opacity="1"
-          stroke="url(#linear3)"
-          stroke-width=".2"
-          d="M15 3
-           Q16.5 6.8 25 18
-           A12.8 12.8 0 1 1 5 18
-           Q13.5 6.8 15 3z"
-        />
-      </svg>
+      <p class="drop-label">Coal Ash Waste at Barry Power Plant</p>
     </div>
   </div>
 </template>
@@ -132,94 +129,139 @@ export default {
 </script>
 
 <style scoped>
-.IntroGlacier3 {
+.HistorySection {
   display: grid;
-  grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px 100px 100px auto;
-  margin-top: 15%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  gap: 20px;
+  padding: 5% 5% 10% 5%;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
 }
-.IntroGlacier3 > h2 {
-  margin-left: 44%;
-  margin-right: 10%;
-  font-size: clamp(2em, 5vw, 3em);
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  color: black;
-}
-.IntroGlacier3 > h3 {
+
+.header-block {
+  grid-column: 3 / 6;
+  grid-row: 1;
   text-align: left;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  margin-left: 55%;
-  margin-right: 10%;
-  margin-top: -2%;
+  padding-left: 20px;
 }
-.drop {
-  margin-top: -15px;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 6;
-}
-.IntroGlacier3 .drop {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: -5%;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 6;
-  transform: scale(0.9, 0.9);
-}
-.IntroGlacier3 .drop2 {
-  margin-left: 74%;
-  margin-right: 0%;
-  margin-bottom: 4%;
 
-  margin-top: 18%;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 6;
+.header-block h2 {
+  font-size: clamp(2.5em, 5vw, 4em);
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
-.IntroGlacier3 .drop3 {
-  grid-column-start: 2;
-  grid-column-end: span 3; /* Fixed typo from span3 */
-  grid-row-start: 1;
-  grid-row-end: 6;
+
+.header-block h3 {
+  font-size: clamp(1.1em, 2vw, 1.5em);
+  color: #333;
+  font-weight: normal;
+  line-height: 1.5;
+  max-width: 600px;
 }
-.drop .droptxt:hover,
-.drop2 .droptxt:hover,
-.drop3 .droptxt:hover {
+
+.drop-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-label {
+  position: absolute;
+  color: #444;
+  font-size: 1.1em;
+  opacity: 0.8;
+  transition: opacity 0.3s, color 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.drop-container:hover .drop-label {
   opacity: 1;
-  color: red;
-}
-.drop .droptxt {
-  position: absolute;
-  margin-left: 65%;
-  margin-top: 35%;
-  opacity: 0.1;
-  height: 50px;
-  transition: opacity 0.3s, color 0.3s;
+  color: #d84541;
+  font-weight: bold;
 }
 
-.drop2 .droptxt {
-  position: absolute;
-  margin-left: -9%;
-  margin-top: 23%;
-  opacity: 0.1;
-  transition: opacity 0.3s, color 0.3s;
+/* Specific Placements matching 1.png */
+.lay-dam {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 90%;
+  justify-self: start;
+}
+.lay-dam .drop-label {
+  top: 15%;
+  left: 80%;
 }
 
-.drop3 .droptxt {
-  position: absolute;
-  margin-left: 13%;
-  margin-top: 3%;
-  opacity: 0.11;
-  transition: opacity 0.3s, color 0.3s;
+.monsanto {
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  width: 130%; /* Massive Drop */
+  margin-left: -15%;
+  z-index: 2;
+}
+.monsanto .drop-label {
+  top: 50%;
+  right: 80%;
+  margin-right: 10px;
+}
+
+.coal-ash {
+  grid-column: 4 / 6;
+  grid-row: 3 / 5;
+  width: 100%;
+  margin-top: 10%;
+  justify-self: center;
+}
+.coal-ash .drop-label {
+  bottom: 10%;
+  right: 75%;
+}
+
+@media (max-width: 1024px) {
+  .HistorySection {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-block {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .lay-dam {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+  }
+  .monsanto {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    width: 80%;
+    margin-left: 0;
+    justify-self: center;
+  }
+  .coal-ash {
+    grid-column: 2;
+    grid-row: 4;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .HistorySection {
+    grid-template-columns: 1fr;
+  }
+  .header-block {
+    grid-column: 1;
+  }
+  .lay-dam, .monsanto, .coal-ash {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    justify-self: center;
+  }
 }
 </style>
