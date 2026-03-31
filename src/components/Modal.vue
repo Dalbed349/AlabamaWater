@@ -422,9 +422,12 @@ export default {
   -webkit-transition: opacity 1s ease-out;
   -moz-transition: opacity 1s ease-out;
   -o-transition: opacity 1s ease-out;
-  transition: opacity 1s ease-out;
   opacity: 1;
-  /* // padding: 5px; */
+}
+@media (max-width: 1024px) {
+  .Modal {
+    display: none !important;
+  }
 }
 
 .fade-enter-active,

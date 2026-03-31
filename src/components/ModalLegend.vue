@@ -154,7 +154,8 @@ export default {
 .ModalLegend {
   position: fixed;
   top: 30vh;
-  left: 89vw;
+  right: 2vw;
+  left: auto;
   width: 200px;
   height: 0;
   opacity: 1;
@@ -166,6 +167,11 @@ export default {
   -o-transition: opacity 1s ease-out;
   transition: opacity 1s ease-out;
   opacity: 1;
+}
+@media (max-width: 1024px) {
+  .ModalLegend {
+    display: none !important;
+  }
 }
 .lengend1 {
 }

@@ -34,7 +34,7 @@ export default {
 }
 .IntroGlacier2 {
   display: grid;
-  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-columns: minmax(10px, 40px) minmax(10px, 50px) auto minmax(10px, 50px) minmax(10px, 40px);
   grid-template-rows: 25%;
   margin-top: 15%;
 }
@@ -61,7 +61,7 @@ export default {
   width: 100%;
 }
 .curved-div span {
-  font-size: 8rem;
+  font-size: clamp(3rem, 8vw, 8rem);
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -69,7 +69,7 @@ export default {
   -webkit-text-stroke-color: black;
 }
 .curved-div p {
-  font-size: 2rem;
+  font-size: clamp(1rem, 3vw, 2rem);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }

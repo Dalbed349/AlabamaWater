@@ -11,7 +11,7 @@
     </div>
     <h1>A Lush Habitat</h1>
     <div class="drop">
-      <svg width="100%" height="101%" viewBox="0 0 20 22">
+      <svg width="100%" height="101%" viewBox="0 0 32 32">
         <defs>
           <linearGradient id="linearHabitat" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
@@ -22,7 +22,6 @@
           fill="white"
           opacity="1"
           stroke-width=".2"
-          transform="scale(23 25)"
           d="M15 3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
         />
       </svg>

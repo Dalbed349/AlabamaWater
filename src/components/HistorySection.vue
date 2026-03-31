@@ -11,7 +11,7 @@
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 20 22"
+        viewBox="0 0 32 32"
         @mouseenter="dropHover = true"
         @mouseleave="dropHover = null"
       >
@@ -40,7 +40,6 @@
           opacity="1"
           stroke="url(#linear1)"
           stroke-width=".2"
-          transform="scale(23 25)"
           d="M15
         3 Q16.5 6.8 25 18 A12.8 12.8 0 1 1 5 18 Q13.5 6.8 15 3z"
         />
@@ -49,7 +48,7 @@
     <!--  -->
     <div class="drop2">
       <p class="droptxt">Coal Ash Waste at Barry Power Plant</p>
-      <svg width="100%" height="100%" viewBox="0 0 20 22">
+      <svg width="100%" height="100%" viewBox="0 0 32 32">
         <defs>
           <linearGradient id="linear2" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
@@ -75,7 +74,6 @@
           opacity="1"
           stroke="url(#linear2)"
           stroke-width=".2"
-          transform="scale(12 12)"
           d="M15 3
            Q16.5 6.8 25 18
            A12.8 12.8 0 1 1 5 18
@@ -86,7 +84,7 @@
     <!--  -->
     <div class="drop3">
       <p class="droptxt">Lay Dam Coosa River</p>
-      <svg width="100%" height="100%" viewBox="0 0 20 22">
+      <svg width="100%" height="100%" viewBox="0 0 32 32">
         <defs>
           <linearGradient id="linear3" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="10%" stop-color="#fff" />
@@ -112,7 +110,6 @@
           opacity="1"
           stroke="url(#linear3)"
           stroke-width=".2"
-          transform="scale(14 13)"
           d="M15 3
            Q16.5 6.8 25 18
            A12.8 12.8 0 1 1 5 18
@@ -144,7 +141,7 @@ export default {
 .IntroGlacier3 > h2 {
   margin-left: 44%;
   margin-right: 10%;
-  font-size: 3em;
+  font-size: clamp(2em, 5vw, 3em);
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;

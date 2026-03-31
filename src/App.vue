@@ -264,7 +264,7 @@ export default {
   height: 50vh;
   opacity: 1;
   background-repeat: no-repeat;
-  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-columns: minmax(5px, 40px) minmax(5px, 50px) auto minmax(5px, 50px) minmax(5px, 40px);
   grid-template-rows: 25% 100px 100px 100px auto;
 }
 .map1 h1 {
@@ -272,11 +272,17 @@ export default {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: span 2;
-  font-size: 3em;
+  font-size: clamp(2em, 5vw, 3em);
   z-index: 1;
   margin-top: 15%;
-  margin-right: 10%;
-  margin-left: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+@media (min-width: 1024px) {
+  .map1 h1 {
+    margin-right: 10%;
+    margin-left: 15%;
+  }
 }
 .map1 .curved-div {
   position: relative;

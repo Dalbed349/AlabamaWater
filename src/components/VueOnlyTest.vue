@@ -192,6 +192,7 @@ export default {
   name: "VueOnlyTest",
   data() {
     return {
+      windowWidth: window.innerWidth,
       hover: null,
       active: false,
       colors: [
@@ -245,10 +246,12 @@ export default {
       return d3.extent(Array.from(this.FinalByBasin.values()));
     },
     xScale() {
+      // Use responsive width, fallback to some default if unavailable
+      let activeWidth = this.windowWidth > 768 ? this.windowWidth / 2 : this.windowWidth * 0.8;
       return d3
         .scaleLinear()
         .domain([0, this.maxPollution[1]])
-        .range([0, window.innerWidth / 2]);
+        .range([0, activeWidth]);
     },
     coloring() {
       let color = d3
@@ -304,7 +307,16 @@ export default {
       return color.domain(this.listofCauses);
     },
   },
+  mounted() {
+    window.addEventListener("resize", this.onResize);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.onResize);
+  },
   methods: {
+    onResize() {
+      this.windowWidth = window.innerWidth;
+    },
     emitToParent() {
       this.$emit("hoverMain", this.hover);
     },
@@ -447,9 +459,16 @@ export default {
   font-weight: bold;
   font-size: 26px;
   margin-bottom: 0;
-  margin-left: 25%;
   text-align: left;
-  width: 50vw;
+  width: 100%;
+  padding-left: 10%;
+}
+@media (min-width: 1024px) {
+  .title-chart-1 {
+    margin-left: 25%;
+    padding-left: 0;
+    width: 50vw;
+  }
 }
 .icon {
   height: 20px;
@@ -466,8 +485,14 @@ export default {
 }
 .BoundsByBasin {
   text-align: left;
-  margin-left: 25%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 5%;
+}
+@media (min-width: 1024px) {
+  .BoundsByBasin {
+    margin-left: 25%;
+    margin-right: 20%;
+  }
 }
 @keyframes example {
   0% {

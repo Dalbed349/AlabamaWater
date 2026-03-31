@@ -66,7 +66,7 @@ export default {
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-columns: minmax(5px, 40px) minmax(5px, 50px) auto minmax(5px, 50px) minmax(5px, 40px);
   grid-template-rows: 25% 100px 100px 100px auto;
 }
 .map2 img {
@@ -83,12 +83,18 @@ export default {
   grid-row-start: 1;
   grid-row-end: span 2;
   z-index: 1;
-  font-size: 3em;
-  margin-left: 35%;
+  font-size: clamp(2em, 5vw, 3em);
+  margin-left: 10%;
   margin-top: 17%;
 }
+@media (min-width: 1024px) {
+  .map2 h1 {
+    margin-left: 35%;
+  }
+}
 .map2 .transbox2 {
-  margin-left: 37%;
+  margin-left: 5%;
+  margin-right: 5%;
   grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -96,9 +102,14 @@ export default {
   border-radius: 55px;
   opacity: 1;
   margin-bottom: 7%;
-  margin-top: -1%;
-  text-align: left;
   margin-top: 7%;
+  text-align: left;
+}
+@media (min-width: 1024px) {
+  .map2 .transbox2 {
+    margin-left: 37%;
+    margin-right: 0;
+  }
 }
 .map2 .transbox2 p {
   margin-bottom: 4%;
