@@ -224,19 +224,44 @@ export default {
 </script>
 
 <style>
-/* Global Styles remain here, scoped styles went into components */
+/* Global Data Article Styles */
+:root {
+  --serif-font: "Georgia", "Times New Roman", serif;
+  --sans-font: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --text-color: #1a1a1a;
+  --bg-color: #f8fcfd;
+  --max-width: 800px;
+}
+
 #app {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: var(--sans-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #000;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: -2%;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-color);
 }
 
+.content-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: var(--serif-font);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  font-family: var(--sans-font);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
 </style>
