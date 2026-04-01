@@ -176,13 +176,14 @@ export default {
     window.addEventListener("scroll", this.onScroll);
     
     // Modal positioning timeout allows DOM render
+    // Use window.scrollY to ensure absolute document coordinates even on reload
     setTimeout(() => {
       const x = document.getElementsByClassName("TitleLarge")[0];
-      if (x) this.modalYpos = x.getBoundingClientRect().y;
+      if (x) this.modalYpos = x.getBoundingClientRect().top + window.scrollY;
       
       const x2 = document.getElementsByClassName("section")[0]; // Target the inner DataSection container
-      if (x2) this.modalYposEnd = x2.getBoundingClientRect().bottom;
-    }, 100);
+      if (x2) this.modalYposEnd = x2.getBoundingClientRect().bottom + window.scrollY;
+    }, 1000);
   },
   unmounted() {
     window.removeEventListener("scroll", this.onScroll);
