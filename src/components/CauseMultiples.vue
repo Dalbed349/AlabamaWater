@@ -3,10 +3,10 @@
     class="CauseMultiples"
     @mouseenter="hover = basin"
     @mouseleave="hover = null"
-    v-on:mouseenter="emitToParent"
+    @click="emitToParent"
   >
     <p>{{ basin }}</p>
-    <svg :width="svgWidth" :height="svgHeight">
+    <svg viewBox="0 0 370 330" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
       <g
         class="barwithtooltip"
         :transform="'translate(' + margin.left + ',' + margin.top + ')'"
@@ -169,23 +169,33 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .CauseMultiples {
-  overflow: visible;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.CauseMultiples:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 .CauseMultiples p {
-  height: 1 vh;
-  margin-top: 1%;
   position: absolute;
-  margin-left: 30px;
-}
-.testingya {
+  top: 10px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  z-index: 10;
 }
 .bars:hover {
   fill: brown;
-}
-.tooltip {
-  position: absolute;
-  height: 10px;
 }
 </style>

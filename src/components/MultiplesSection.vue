@@ -1,9 +1,7 @@
 <template>
   <div class="viz2Wrapper">
-    <h2>Causes and Sources of Impairment</h2>
-    <img id="industry" src="../assets/industry.svg" />
-    <div class="viz2details">
-      <!-- NEW COMPONENT -->
+    <div class="header-multiples">
+      <h2>Causes and Sources of Impairment</h2>
       <div class="filters" id="viz2filters">
         <div class="checkbox-group">
           <label
@@ -22,16 +20,9 @@
           </label>
         </div>
       </div>
-      <StackedSideBar
-        :checkedUnits="checkedUnits"
-        :data="filteredSmallMultiples"
-        :basin="hoverSecondVis"
-        :cause="hoverSecondVisCause"
-        v-on:increment="$emit('increment')"
-        v-on:decrease="$emit('decrease')"
-        :counter="counter"
-      ></StackedSideBar>
     </div>
+    
+    <!-- Responsive Container for Small Multiples -->
     <div class="viz2Wrapper2">
       <div class="viz2">
         <CauseMultiples
@@ -41,10 +32,28 @@
           :basin="key[0]"
           v-on:hoverSecondVis="$emit('hoverSecondVis', $event)"
           v-on:hoverSecondVisCause="$emit('hoverSecondVisCause', $event)"
-        >
-        </CauseMultiples>
+        />
       </div>
     </div>
+
+    <!-- Side Modal for StackedSideBar (shows when a basin is hovered) -->
+    <transition name="slide-fade">
+      <div class="viz2details-modal" v-if="hoverSecondVis">
+        <div class="modal-content">
+          <button class="close-btn" @click="$emit('hoverSecondVis', null)">✕</button>
+          <h3>Sources for: {{ hoverSecondVis }} Basin</h3>
+          <StackedSideBar
+            :checkedUnits="checkedUnits"
+            :data="filteredSmallMultiples"
+            :basin="hoverSecondVis"
+            :cause="hoverSecondVisCause"
+            v-on:increment="$emit('increment')"
+            v-on:decrease="$emit('decrease')"
+            :counter="counter"
+          />
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -83,36 +92,26 @@ export default {
 
 <style scoped>
 .viz2Wrapper {
-  display: inline-block;
-  margin-right: 0%;
-  margin-top: 5%;
-  margin-bottom: 7%;
-  margin-left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5% auto 10% auto;
+  max-width: 1400px;
+  position: relative;
+  min-height: 80vh;
 }
-.viz2Wrapper h2 {
+.header-multiples {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  margin-bottom: 2%;
+}
+.header-multiples h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 3em;
-  margin-bottom: 1%;
-  margin-left: 3%;
-}
-#industry {
-  position: sticky;
-  margin-top: -5%;
-  margin-right: 78%;
-  margin-bottom: -0.8%;
-  width: 19.99vw;
-  z-index: -1;
-}
-.viz2details {
-  position: absolute;
-  margin-left: 1%;
-  z-index: 0;
-  width: 20vw;
-  height: 90%;
-  border-radius: 15px;
-  background-color: #5696bc;
-  opacity: 1;
+  font-size: clamp(2rem, 4vw, 3em);
 }
 .filters {
   position: relative;
@@ -123,27 +122,78 @@ export default {
   margin: 5px 10px;
   cursor: pointer;
   font-family: -apple-system, sans-serif;
-  font-size: 14px;
-  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
 }
 .native-checkbox input {
   margin-right: 5px;
 }
-#viz2filters {
-  margin-right: 0;
-  margin-bottom: 0px;
-  margin-left: 0;
-}
 .viz2Wrapper2 {
-  display: inline-block;
-  margin-right: 0%;
-  margin-top: -1%;
-  margin-bottom: 2%;
-  margin-left: 20%;
+  width: 90%;
+  margin: 0 auto;
 }
 .viz2 {
   display: grid;
-  grid-template-rows: repeat(5);
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  width: 100%;
+}
+
+/* Side Modal Styles */
+.viz2details-modal {
+  position: fixed;
+  top: 10%;
+  right: 0;
+  width: 400px;
+  max-width: 90vw;
+  height: 80vh;
+  background-color: #f8fcfd;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 20px;
+  overflow-y: auto;
+}
+.modal-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 2px solid #5696bc;
+  padding-bottom: 10px;
+}
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #aaa;
+}
+.close-btn:hover {
+  color: #333;
+}
+
+/* Transitions */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
 }
 </style>

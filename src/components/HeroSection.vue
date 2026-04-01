@@ -30,13 +30,15 @@ export default {
 <style scoped>
 .IntroGlacier {
   position: relative;
-  height: 100vh;
+  height: auto;
+  min-height: 50vh;
+  padding-bottom: 50px;
 }
 .IntroGlacier2 {
   display: grid;
   grid-template-columns: minmax(10px, 40px) minmax(10px, 50px) auto minmax(10px, 50px) minmax(10px, 40px);
   grid-template-rows: 25%;
-  margin-top: 15%;
+  margin-top: 0;
 }
 .IntroGlacier .darken {
   position: absolute;
@@ -50,11 +52,11 @@ export default {
   height: 100%;
 }
 .margins {
-  margin-top: 35vh;
+  margin-top: 15vh;
 }
 .curved-div {
-  position: block;
-  height: 55vh;
+  position: relative;
+  height: auto;
   width: 100%;
 }
 .curved-div span {

@@ -63,7 +63,7 @@ export default {
     scrollCheck() {
       if (
         this.scrollPosition < this.modalYpos - 190 ||
-        this.scrollPosition > this.modalYposEnd + 1600
+        this.scrollPosition > this.modalYposEnd
       ) {
         let result = "none";
 
@@ -77,7 +77,7 @@ export default {
     scrollopacity() {
       if (
         this.scrollPosition < this.modalYpos - 90 ||
-        this.scrollPosition > this.modalYposEnd + 1600 - 100
+        this.scrollPosition > this.modalYposEnd - 100
       ) {
         let result = 0;
 

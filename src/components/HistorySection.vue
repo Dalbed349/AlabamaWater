@@ -134,8 +134,8 @@ export default {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(100px, auto);
   gap: 20px;
-  padding: 5% 5% 10% 5%;
-  min-height: 100vh;
+  padding: 5% 5% 5% 5%;
+  min-height: auto;
   max-width: 1400px;
   margin: 0 auto;
   align-items: center;

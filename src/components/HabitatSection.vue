@@ -78,7 +78,9 @@ export default {
   width: 100%;
 
   margin-bottom: 2%;
-  height: 100vh;
+  height: auto;
+  min-height: 50vh;
+  padding-bottom: 100px;
   opacity: 1;
   grid-template-columns: 40px 50px auto 50px 40px;
   grid-template-rows: 25% 10% auto 100px auto;
@@ -92,8 +94,8 @@ export default {
   transform: scale(1, 0.6);
 }
 .curved-div {
-  position: block;
-  height: 55vh;
+  position: relative;
+  height: auto;
   width: 100%;
 }
 .curved-div svg {
